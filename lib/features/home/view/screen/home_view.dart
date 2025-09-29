@@ -1,6 +1,7 @@
 import 'package:assignment/features/home/view/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
+// translate-me-ignore-all-file
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -8,7 +9,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home', style: TextStyle(color: Colors.white)),
+        title: const Text('Assignment', style: TextStyle(color: Colors.white)),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),

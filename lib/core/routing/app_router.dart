@@ -12,7 +12,6 @@ class AppRouter {
       name: RoutesName.homeView,
       page: () => HomeView(),
       transition: Transition.fadeIn,
-      
     ),
     GetPage(
       name: RoutesName.assignmentView,
@@ -21,7 +20,7 @@ class AppRouter {
     ),
     GetPage(
       name: RoutesName.scoreView,
-      page: () => ScoreView(),
+      page: () => ScoreView(score: 0, total: 0),
       transition: Transition.fadeIn,
     ),
   ];
