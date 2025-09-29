@@ -1,5 +1,6 @@
 import 'package:assignment/core/routing/routes_name.dart';
 import 'package:assignment/features/assignment/model/question_model.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AssignmentController extends GetxController {
@@ -32,5 +33,16 @@ class AssignmentController extends GetxController {
       // assignment finished go to score screen
       Get.offNamed(RoutesName.scoreView);
     }
+  }
+
+  Color getColor(int selectedIndex) {
+    final isSelected = selectedAnswer == selectedIndex;
+    final isCorrect =
+        selectedIndex == questions[currentQuestionIndex].correctOptionIndex;
+    if (!isAnswered) return Colors.blueAccent;
+    if (isSelected && isCorrect) return Colors.green;
+    if (isSelected && !isCorrect) return Colors.red;
+    if (isCorrect) return Colors.green;
+    return Colors.grey;
   }
 }
