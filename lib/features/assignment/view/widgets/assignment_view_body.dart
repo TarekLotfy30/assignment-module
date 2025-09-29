@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:assignment/features/assignment/controller/assignment_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -9,69 +11,93 @@ class AssignmentViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<AssignmentController>(
-      init: AssignmentController(),
-      builder: (controller) {
-        final question = questions[controller.currentQuestionIndex];
-
-        return Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Question text
-              Text(
-                "Q${controller.currentQuestionIndex + 1}. ${question.questionText}",
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Question text
+          GetBuilder<AssignmentController>(
+            builder: (controller) {
+              log("rebuilt the question text widget");
+              return Text(
+                "Question ${controller.currentQuestionIndex + 1} of ${questions.length}",
                 style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
                 ),
-              ),
-              const SizedBox(height: 20),
+              );
+            },
+          ),
 
-              // Options
-              ...List.generate(question.options.length, (index) {
-                final option = question.options[index];
-                final isSelected = controller.selectedAnswer == index;
-                final isCorrect = index == question.correctOptionIndex;
+          const SizedBox(height: 20),
 
-                Color getColor() {
-                  if (!controller.isAnswered) return Colors.blueAccent;
-                  if (isSelected && isCorrect) return Colors.green;
-                  if (isSelected && !isCorrect) return Colors.red;
-                  if (isCorrect) return Colors.green;
-                  return Colors.grey;
-                }
+          // Options
+          GetBuilder<AssignmentController>(
+            builder: (controller) {
+              log("rebuilt the options widget");
+              return Column(
+                children: List.generate(
+                  questions[controller.currentQuestionIndex].options.length,
+                  (index) {
+                    final option = questions[controller.currentQuestionIndex]
+                        .options[index];
+                    final isSelected = controller.selectedAnswer == index;
+                    final isCorrect =
+                        index ==
+                        questions[controller.currentQuestionIndex]
+                            .correctOptionIndex;
 
-                return Container(
-                  margin: const EdgeInsets.symmetric(vertical: 6),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: getColor(),
-                      padding: const EdgeInsets.all(14),
-                      shape: RoundedRectangleBorder(
+                    Color getColor() {
+                      if (!controller.isAnswered) return Colors.blueAccent;
+                      if (isSelected && isCorrect) return Colors.green;
+                      if (isSelected && !isCorrect) return Colors.red;
+                      if (isCorrect) return Colors.green;
+                      return Colors.grey;
+                    }
+
+                    return Container(
+                      margin: const EdgeInsets.symmetric(vertical: 6),
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.blueAccent,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                    ),
-                    onPressed: () => controller.checkAnswer(index),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        option,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
+
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: getColor(),
+                          padding: const EdgeInsets.all(14),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        onPressed: () => controller.checkAnswer(index),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            option,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                );
-              }),
+                    );
+                  },
+                ),
+              );
+            },
+          ),
 
-              const Spacer(),
+          const Spacer(),
 
-              // Next button
-              Align(
+          // Next button
+          GetBuilder<AssignmentController>(
+            builder: (controller) {
+              log("rebuilt the next button widget");
+              return Align(
                 alignment: Alignment.centerRight,
                 child: ElevatedButton(
                   onPressed: controller.isAnswered
@@ -83,11 +109,11 @@ class AssignmentViewBody extends StatelessWidget {
                         : "Next",
                   ),
                 ),
-              ),
-            ],
+              );
+            },
           ),
-        );
-      },
+        ],
+      ),
     );
   }
 }

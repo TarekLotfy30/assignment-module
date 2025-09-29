@@ -1,13 +1,9 @@
-import 'package:assignment/features/assignment/controller/assignment_controller.dart';
 import 'package:assignment/features/assignment/view/widgets/assignment_view_body.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 // translate-me-ignore-all-file
 class AssignmentView extends StatelessWidget {
-  AssignmentView({super.key});
-
-  final AssignmentController controller = Get.put(AssignmentController());
+  const AssignmentView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +16,7 @@ class AssignmentView extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
-      body: AssignmentViewBody(),
+      body: const AssignmentViewBody(),
     );
   }
 }

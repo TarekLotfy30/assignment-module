@@ -1,6 +1,5 @@
 import 'package:assignment/core/routing/app_router.dart';
 import 'package:assignment/core/routing/routes_name.dart';
-import 'package:assignment/features/home/view/screen/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 

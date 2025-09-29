@@ -1,3 +1,4 @@
+import 'package:assignment/core/bindings/assignment_binding.dart';
 import 'package:assignment/core/routing/routes_name.dart';
 import 'package:assignment/features/assignment/view/screen/assignment_view.dart';
 import 'package:assignment/features/assignment/view/screen/score_view.dart';
@@ -16,11 +17,12 @@ class AppRouter {
     GetPage(
       name: RoutesName.assignmentView,
       page: () => AssignmentView(),
+      binding: AssignmentBinding(),
       transition: Transition.fadeIn,
     ),
     GetPage(
       name: RoutesName.scoreView,
-      page: () => ScoreView(score: 0, total: 0),
+      page: () => ScoreView(),
       transition: Transition.fadeIn,
     ),
   ];
