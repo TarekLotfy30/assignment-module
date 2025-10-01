@@ -4,8 +4,8 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
 // translate-me-ignore-all-file
-class HomeViewBody extends StatelessWidget {
-  const HomeViewBody({super.key});
+class HomePageBody extends StatelessWidget {
+  const HomePageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class HomeViewBody extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              Get.toNamed(RoutesName.assignmentView);
+              Get.toNamed(RoutesName.assignmentPage);
             },
             child: const Text('Start Assignment'),
           ),

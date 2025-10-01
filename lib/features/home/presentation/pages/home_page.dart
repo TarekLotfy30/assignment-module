@@ -1,9 +1,11 @@
-import 'package:assignment/features/home/view/widgets/home_view_body.dart';
+import 'package:assignment/features/home/presentation/widgets/home_view_body.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 // translate-me-ignore-all-file
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+@RoutePage()
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class HomeView extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
-      body: HomeViewBody(),
+      body: HomePageBody(),
     );
   }
 }

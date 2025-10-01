@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:assignment/features/assignment/controller/assignment_controller.dart';
-import 'package:assignment/features/assignment/view/widgets/card_option.dart';
+import 'package:assignment/features/assignment/presentation/widgets/card_option.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:assignment/features/assignment/model/question_model.dart';

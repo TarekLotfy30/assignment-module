@@ -1,10 +1,12 @@
 import 'package:assignment/features/assignment/controller/assignment_controller.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // translate-me-ignore-all-file
-class ScoreView extends StatelessWidget {
-  const ScoreView({super.key});
+@RoutePage()
+class ScorePage extends StatelessWidget {
+  const ScorePage({super.key});
 
   @override
   Widget build(BuildContext context) {

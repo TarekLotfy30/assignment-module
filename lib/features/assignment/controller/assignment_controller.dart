@@ -31,7 +31,7 @@ class AssignmentController extends GetxController {
       update(); // triggers GetBuilder rebuild
     } else {
       // assignment finished go to score screen
-      Get.offNamed(RoutesName.scoreView);
+      Get.offNamed(RoutesName.scorePage);
     }
   }
 

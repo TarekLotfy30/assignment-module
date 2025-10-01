@@ -1,9 +1,11 @@
-import 'package:assignment/features/assignment/view/widgets/assignment_view_body.dart';
+import 'package:assignment/features/assignment/presentation/widgets/assignment_view_body.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 // translate-me-ignore-all-file
-class AssignmentView extends StatelessWidget {
-  const AssignmentView({super.key});
+@RoutePage()
+class AssignmentPage extends StatelessWidget {
+  const AssignmentPage({super.key});
 
   @override
   Widget build(BuildContext context) {
