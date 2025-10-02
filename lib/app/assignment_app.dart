@@ -2,7 +2,8 @@ import 'package:assignment/core/routing/app_router.dart';
 import 'package:flutter/material.dart';
 
 class AssignmentApp extends StatelessWidget {
-  const AssignmentApp({super.key});
+  AssignmentApp({super.key});
+  final _appRouter = AppRouter();
 
   // This widget is the root of your application.
   @override
@@ -10,13 +11,14 @@ class AssignmentApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xF5F5F5f5),
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
       // initialRoute: RoutesName.homeView,
       // getPages: AppRouter.routes,
-      routerConfig: AppRouter().config(),
+      routerConfig: _appRouter.config(),
+      locale: Locale('ar', ''),
     );
   }
 }

@@ -1,7 +1,6 @@
-import 'package:assignment/core/routing/routes_name.dart';
+import 'package:assignment/core/routing/app_router.gr.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 
 // translate-me-ignore-all-file
 class HomePageBody extends StatelessWidget {
@@ -20,9 +19,19 @@ class HomePageBody extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
-              Get.toNamed(RoutesName.assignmentPage);
+              //Get.toNamed(RoutesName.assignmentPage);
+              context.router.push(const AssignmentRoute());
             },
             child: const Text('Start Assignment'),
+          ),
+          SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: () {
+              //Get.toNamed(RoutesName.assignmentPage);
+              //context.router.replaceAll([const OfferRoute()]);
+              context.router.push(const OfferRoute());
+            },
+            child: const Text('go to offers'),
           ),
         ],
       ),

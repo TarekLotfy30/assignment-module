@@ -35,11 +35,13 @@ import 'package:auto_route/auto_route.dart';
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {
   @override
+  RouteType get defaultRouteType => const RouteType.material();
+  @override
   List<AutoRoute> get routes => [
-    AutoRoute(page: HomeRoute.page, initial: true, path: RoutesName.homePage),
+    AutoRoute(page: HomeRoute.page, path: RoutesName.homePage,initial: true),
     AutoRoute(page: AssignmentRoute.page, path: RoutesName.assignmentPage),
     AutoRoute(page: ScoreRoute.page, path: RoutesName.scorePage),
-    AutoRoute(page: OfferRoute.page, path: RoutesName.offerPage),
+    AutoRoute(page: OfferRoute.page, path: RoutesName.offerPage,),
     AutoRoute(page: OfferDetailsRoute.page, path: RoutesName.offerDetailsPage),
   ];
 }
