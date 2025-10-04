@@ -10,7 +10,7 @@ class OffersTypes {
 List<OffersTypes> offersTypes = [
   OffersTypes(id: 1, title: 'الكل', isSelected: true),
   OffersTypes(id: 2, title: 'مطاعم'),
-  OffersTypes(id: 3, title: 'كافيهات'),
-  OffersTypes(id: 4, title: 'سوبر ماركت'),
-  OffersTypes(id: 5, title: 'صيدليات'),
+  OffersTypes(id: 3, title: 'مكتبات'),
+  OffersTypes(id: 4, title: 'ترفيهى'),
+  OffersTypes(id: 3, title: 'ماركت'),
 ];

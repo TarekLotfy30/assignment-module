@@ -1,4 +1,5 @@
 import 'package:assignment/core/routing/app_router.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class AssignmentApp extends StatelessWidget {
@@ -17,8 +18,10 @@ class AssignmentApp extends StatelessWidget {
       ),
       // initialRoute: RoutesName.homeView,
       // getPages: AppRouter.routes,
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       routerConfig: _appRouter.config(),
-      locale: Locale('ar', ''),
     );
   }
 }

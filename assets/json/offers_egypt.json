@@ -1,0 +1,962 @@
+[
+  {
+    "id": "c3cc2705-e493-4fdd-9f34-692f9123231e",
+    "category": "مطاعم",
+    "location": "القاهرة",
+    "title": "عرض خصم 20% على البيتزا",
+    "description": "استمتع بألذ بيتزا إيطالي مع خصم خاص لفترة محدودة.",
+    "coverPhoto": "https://example.com/images/0261d9_cover.jpg",
+    "profilePhoto": "https://example.com/images/3594f5_profile.jpg",
+    "imageUrl": "https://example.com/images/5f394f_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "3ff054d9-0281-40cf-880e-3c1836867ce2",
+        "title": "يشمل جميع أنواع البيتزا"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "c9df561b-5e98-4e53-8fb1-c31c125033dc",
+        "location": "12 شارع النصر - المعادي - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "a77802ff-5afd-41ef-87a0-8510d2584038",
+    "category": "مطاعم",
+    "location": "الإسكندرية",
+    "title": "بوفيه مفتوح بسعر خاص",
+    "description": "بوفيه عشاء فاخر يشمل المأكولات الشرقية والعالمية.",
+    "coverPhoto": "https://example.com/images/de2561_cover.jpg",
+    "profilePhoto": "https://example.com/images/e5ff99_profile.jpg",
+    "imageUrl": "https://example.com/images/190955_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "ff5b7162-9f44-4746-a542-8bb6592afa75",
+        "title": "يشمل المشروبات الغازية مجاناً"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "d4562898-cfc9-41b5-a1e9-71334da81a78",
+        "location": "45 شارع الثورة - مصر الجديدة - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "94dc006c-2a7e-474c-8ef8-b97caf6d23e9",
+    "category": "مطاعم",
+    "location": "الجيزة",
+    "title": "خصم على وجبات البرجر",
+    "description": "أفضل برجر مع خصم مميز لجميع الطلبات.",
+    "coverPhoto": "https://example.com/images/fd68d0_cover.jpg",
+    "profilePhoto": "https://example.com/images/a0f5ff_profile.jpg",
+    "imageUrl": "https://example.com/images/b5d52c_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "f854e30f-5647-46ac-8503-4746847b59ae",
+        "title": "يشمل جميع أنواع البرجر"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "3ea1bc39-1f04-4418-9503-fe309eb3c64d",
+        "location": "كورنيش الإسكندرية - الإسكندرية"
+      }
+    ]
+  },
+  {
+    "id": "c3d4398d-eee5-4ccf-afdd-135bd9c98042",
+    "category": "مطاعم",
+    "location": "المنصورة",
+    "title": "عرض وجبة عائلية",
+    "description": "احصل على وجبة عائلية كاملة بسعر مميز.",
+    "coverPhoto": "https://example.com/images/5a5c13_cover.jpg",
+    "profilePhoto": "https://example.com/images/356666_profile.jpg",
+    "imageUrl": "https://example.com/images/c6e516_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "8775b73d-25ca-4af3-823c-61bf0f23c31f",
+        "title": "يشمل وجبة لعدد 4 أفراد"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "80e56b5b-584f-4256-9d11-704ca7c7923d",
+        "location": "شارع الهرم - الجيزة"
+      }
+    ]
+  },
+  {
+    "id": "bc7aa24b-8236-45b3-9929-ec85288827a2",
+    "category": "مطاعم",
+    "location": "طنطا",
+    "title": "خصم 25% على المأكولات البحرية",
+    "description": "تمتع بأفضل الأسماك الطازجة.",
+    "coverPhoto": "https://example.com/images/e8e732_cover.jpg",
+    "profilePhoto": "https://example.com/images/3d2285_profile.jpg",
+    "imageUrl": "https://example.com/images/fefab2_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "e52a91ea-a917-466e-9668-b53c47a278d3",
+        "title": "يشمل جميع المأكولات البحرية"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "58bebf48-5244-43e1-bcfe-398e449e5d6c",
+        "location": "كورنيش البحر - بورسعيد"
+      }
+    ]
+  },
+  {
+    "id": "1dfcb8b7-098f-4ca7-b7f3-6cb52af39623",
+    "category": "مطاعم",
+    "location": "أسيوط",
+    "title": "بيتزا واحدة + الثانية مجاناً",
+    "description": "عرض خاص على جميع أنواع البيتزا.",
+    "coverPhoto": "https://example.com/images/a0967e_cover.jpg",
+    "profilePhoto": "https://example.com/images/3a43ee_profile.jpg",
+    "imageUrl": "https://example.com/images/6bae37_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "f57bcbf1-e986-4dda-b702-9aebf70e2fa5",
+        "title": "يشمل جميع الفروع"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "0cdffff2-fc54-4272-81ec-872a7b2b52a8",
+        "location": "شارع الجمهورية - المنصورة"
+      }
+    ]
+  },
+  {
+    "id": "d5dc88d2-e76b-458a-9687-82bfd6caef9a",
+    "category": "مطاعم",
+    "location": "الزقازيق",
+    "title": "خصم على الفطور",
+    "description": "استمتع بأشهى فطور شرقي وغربي.",
+    "coverPhoto": "https://example.com/images/215add_cover.jpg",
+    "profilePhoto": "https://example.com/images/4875c2_profile.jpg",
+    "imageUrl": "https://example.com/images/ebc375_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "3c78e618-1b58-4699-9f74-33dae1a665b0",
+        "title": "يشمل السندوتشات والمشروبات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "49626d17-1542-4539-bf85-51cbc6b092b1",
+        "location": "ميدان العتبة - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "ddf16121-54b6-4372-ad6e-146d5cf75174",
+    "category": "مطاعم",
+    "location": "الإسماعيلية",
+    "title": "عرض على الحلويات",
+    "description": "خصم خاص على الكنافة الشرقية.",
+    "coverPhoto": "https://example.com/images/1ea193_cover.jpg",
+    "profilePhoto": "https://example.com/images/835727_profile.jpg",
+    "imageUrl": "https://example.com/images/4a81db_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "f60a48a3-06b9-4624-ac97-1d01acfde4ad",
+        "title": "يشمل جميع أنواع الكنافة"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "f3580c90-fdfe-4867-bbde-f902c124ffce",
+        "location": "شارع الجيش - طنطا"
+      }
+    ]
+  },
+  {
+    "id": "4625d391-5722-4beb-81b6-ba91180e929f",
+    "category": "مطاعم",
+    "location": "سوهاج",
+    "title": "وجبة غداء عمل بسعر خاص",
+    "description": "بوفيه عمل يومي.",
+    "coverPhoto": "https://example.com/images/62b978_cover.jpg",
+    "profilePhoto": "https://example.com/images/04a548_profile.jpg",
+    "imageUrl": "https://example.com/images/4d1b65_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "259ae674-b2e3-4b5e-bb81-e3eb9a177aff",
+        "title": "يشمل المقبلات والمشروبات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "d562095d-f689-4755-9b78-dad93067fbf7",
+        "location": "شارع 23 يوليو - الإسماعيلية"
+      }
+    ]
+  },
+  {
+    "id": "096b4e5b-ad88-4640-9e10-95f684a46028",
+    "category": "مطاعم",
+    "location": "بورسعيد",
+    "title": "خصم 30% على المشويات",
+    "description": "تمتع بأشهى المشويات المصرية.",
+    "coverPhoto": "https://example.com/images/b1f3f2_cover.jpg",
+    "profilePhoto": "https://example.com/images/3b0d3b_profile.jpg",
+    "imageUrl": "https://example.com/images/70dbbd_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "1e120a4f-8d36-4bc0-a5af-6cad9b6f15de",
+        "title": "يشمل جميع المشويات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "ea768e28-459c-4de0-ad1b-7e1a75b8ba7e",
+        "location": "حي شرق - سوهاج"
+      }
+    ]
+  },
+  {
+    "id": "7fd4120f-16d8-4d7f-b4a2-ffef64a94e99",
+    "category": "مكتبات",
+    "location": "القاهرة",
+    "title": "خصم 30% على جميع الكتب",
+    "description": "استمتع بتجربة قراءة ممتعة مع أفضل الكتب العربية والعالمية.",
+    "coverPhoto": "https://example.com/images/74e613_cover.jpg",
+    "profilePhoto": "https://example.com/images/05a616_profile.jpg",
+    "imageUrl": "https://example.com/images/6b0109_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "d9857b70-b6ca-4d47-81a3-79316d7681a2",
+        "title": "يشمل الكتب الأدبية والعلمية"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "a2b6fa0f-01ef-4971-bfc0-ba93a1c787fe",
+        "location": "وسط البلد - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "d50dcccd-9a88-416e-bf73-5614ed0b91ba",
+    "category": "مكتبات",
+    "location": "الإسكندرية",
+    "title": "عرض العودة للمدارس",
+    "description": "خصومات على الأدوات المدرسية.",
+    "coverPhoto": "https://example.com/images/688e62_cover.jpg",
+    "profilePhoto": "https://example.com/images/562bd2_profile.jpg",
+    "imageUrl": "https://example.com/images/5150c6_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "8a8a9c0c-312d-4d6b-84f8-298571c1cbbd",
+        "title": "يشمل جميع الأدوات المكتبية"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "adb29746-27c7-4648-989b-425940cbb94d",
+        "location": "طريق الحرية - الإسكندرية"
+      }
+    ]
+  },
+  {
+    "id": "d31b09e4-de9c-4803-9082-bc0288c39e7f",
+    "category": "مكتبات",
+    "location": "الجيزة",
+    "title": "خصم على الروايات",
+    "description": "أفضل الروايات العربية والعالمية بخصم خاص.",
+    "coverPhoto": "https://example.com/images/01b700_cover.jpg",
+    "profilePhoto": "https://example.com/images/7b4c69_profile.jpg",
+    "imageUrl": "https://example.com/images/07faca_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "06cd33a8-b4cb-4722-b4a7-f1e75f1673f0",
+        "title": "يشمل جميع الروايات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "11caa745-3bb3-4bcc-8684-26febe921a97",
+        "location": "شارع الهرم - الجيزة"
+      }
+    ]
+  },
+  {
+    "id": "036807c4-b94a-4aa1-b90b-1bb4d2116012",
+    "category": "مكتبات",
+    "location": "المنصورة",
+    "title": "خصم على الكتب التعليمية",
+    "description": "خصم خاص للطلاب.",
+    "coverPhoto": "https://example.com/images/304ce3_cover.jpg",
+    "profilePhoto": "https://example.com/images/7afb63_profile.jpg",
+    "imageUrl": "https://example.com/images/5b02ea_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "9d5c0bf4-ac90-4f24-897b-f2c92e67c14f",
+        "title": "يشمل الكتب الجامعية"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "7ab032a8-5f9a-4198-b504-b8c134796a6e",
+        "location": "ميدان التحرير - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "18da13fc-8e19-4100-88aa-de1b53be2db0",
+    "category": "مكتبات",
+    "location": "طنطا",
+    "title": "عرض على الأدوات الهندسية",
+    "description": "خصم للطلاب الجامعيين.",
+    "coverPhoto": "https://example.com/images/d6e937_cover.jpg",
+    "profilePhoto": "https://example.com/images/c9a8cf_profile.jpg",
+    "imageUrl": "https://example.com/images/b64b2b_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "73ad2d4f-53cb-4d4c-8715-217ea910622c",
+        "title": "يشمل المساطر والآلات الحاسبة"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "62c6e9f1-67a2-4fb5-86b0-ea6de68e6b6e",
+        "location": "محطة الرمل - الإسكندرية"
+      }
+    ]
+  },
+  {
+    "id": "c9aebfd3-8fac-45be-8d76-9b09e4b9f731",
+    "category": "مكتبات",
+    "location": "أسيوط",
+    "title": "خصم 20% على كتب الأطفال",
+    "description": "أفضل كتب وقصص للأطفال.",
+    "coverPhoto": "https://example.com/images/ce7564_cover.jpg",
+    "profilePhoto": "https://example.com/images/a15731_profile.jpg",
+    "imageUrl": "https://example.com/images/6444c0_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "9e7c9106-4695-4f4e-9c8e-91f282c110b4",
+        "title": "يشمل جميع كتب الأطفال"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "68193691-8b36-40ed-ac04-4f956178b338",
+        "location": "حي الزهور - بورسعيد"
+      }
+    ]
+  },
+  {
+    "id": "e5aad92a-1375-423c-96dd-ba76b5536661",
+    "category": "مكتبات",
+    "location": "الزقازيق",
+    "title": "خصم على المجلات",
+    "description": "خصم خاص على اشتراكات المجلات.",
+    "coverPhoto": "https://example.com/images/e76cfd_cover.jpg",
+    "profilePhoto": "https://example.com/images/c4ffa4_profile.jpg",
+    "imageUrl": "https://example.com/images/857803_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "55f4f2fc-6d2f-4734-ab48-ac85c9f8ce4b",
+        "title": "يشمل جميع الإصدارات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "ff011562-32c3-4376-b097-95d83f587ddb",
+        "location": "شارع الكورنيش - المنصورة"
+      }
+    ]
+  },
+  {
+    "id": "bf0dc8cc-a116-4c14-afe3-1c96047a1e53",
+    "category": "مكتبات",
+    "location": "الإسماعيلية",
+    "title": "عرض على القواميس",
+    "description": "خصومات على القواميس والمعاجم.",
+    "coverPhoto": "https://example.com/images/2f8486_cover.jpg",
+    "profilePhoto": "https://example.com/images/792c79_profile.jpg",
+    "imageUrl": "https://example.com/images/bb0d8e_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "47b809d6-076b-47f4-8a0d-3de4a2a1adec",
+        "title": "يشمل جميع اللغات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "9f20bdc3-9720-452a-aa99-a7669c6231e2",
+        "location": "حي الجامعة - أسيوط"
+      }
+    ]
+  },
+  {
+    "id": "90cd7f14-d6a9-493d-9b38-ea29ebb401de",
+    "category": "مكتبات",
+    "location": "سوهاج",
+    "title": "خصم على كتب التنمية البشرية",
+    "description": "أفضل كتب التطوير الذاتي.",
+    "coverPhoto": "https://example.com/images/f0fce7_cover.jpg",
+    "profilePhoto": "https://example.com/images/7cb110_profile.jpg",
+    "imageUrl": "https://example.com/images/466f0a_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "358b91a9-5bec-492a-bf96-65dbed58c2ea",
+        "title": "يشمل جميع العناوين"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "e810b13f-4552-47e9-9dc1-009810c8b9e9",
+        "location": "حي ثاني - الزقازيق"
+      }
+    ]
+  },
+  {
+    "id": "970b20b9-bc0f-422c-9224-c99763e3358c",
+    "category": "مكتبات",
+    "location": "بورسعيد",
+    "title": "خصم على الكتب الجامعية",
+    "description": "عرض خاص للطلاب.",
+    "coverPhoto": "https://example.com/images/994882_cover.jpg",
+    "profilePhoto": "https://example.com/images/be41cc_profile.jpg",
+    "imageUrl": "https://example.com/images/1dbe43_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "72080780-ce41-47c0-874a-e0badb3c22af",
+        "title": "يشمل جميع الكتب الجامعية"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "35104de2-11aa-4cc9-a6ef-fc3d23db18d5",
+        "location": "شارع البحر - طنطا"
+      }
+    ]
+  },
+  {
+    "id": "ae9e15d4-6962-42ee-8cca-0a099f9a1b1e",
+    "category": "ترفيهي",
+    "location": "القاهرة",
+    "title": "تذكرة مدينة الملاهي بخصم 50%",
+    "description": "ادخل مدينة الألعاب الترفيهية بنصف السعر.",
+    "coverPhoto": "https://example.com/images/3eec1c_cover.jpg",
+    "profilePhoto": "https://example.com/images/4c8e9a_profile.jpg",
+    "imageUrl": "https://example.com/images/76f603_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "a7ebcb80-edfc-4557-bcbc-7c414b44213f",
+        "title": "يشمل جميع الألعاب"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "8702c939-0643-42d9-8ca9-5d0964a57ae1",
+        "location": "مدينة نصر - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "4b956eff-c6c1-4532-b7c9-f00bd647f218",
+    "category": "ترفيهي",
+    "location": "الإسكندرية",
+    "title": "خصم على السينما",
+    "description": "تذكرة بسعر مخفض.",
+    "coverPhoto": "https://example.com/images/f21b32_cover.jpg",
+    "profilePhoto": "https://example.com/images/7fb0ca_profile.jpg",
+    "imageUrl": "https://example.com/images/117c7d_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "e1211026-3a9e-47b9-a8c3-cffcefd0642a",
+        "title": "يشمل جميع الأفلام"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "d327cb22-da07-4886-83d1-a75b65eabd7c",
+        "location": "مول طنطا - طنطا"
+      }
+    ]
+  },
+  {
+    "id": "ec4e155d-59c2-42f5-95a1-9c40da65308b",
+    "category": "ترفيهي",
+    "location": "الجيزة",
+    "title": "خصم على الكارتينج",
+    "description": "استمتع بسباق السيارات.",
+    "coverPhoto": "https://example.com/images/0ee408_cover.jpg",
+    "profilePhoto": "https://example.com/images/0d10f1_profile.jpg",
+    "imageUrl": "https://example.com/images/b176a2_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "6842fcd7-a594-47ca-beaa-3a7c2066817b",
+        "title": "يشمل جميع الجلسات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "26af38a4-8b9c-4bf4-9776-2da7e070ba60",
+        "location": "كورنيش الإسكندرية - الإسكندرية"
+      }
+    ]
+  },
+  {
+    "id": "01775568-db76-442d-a1d8-77d60f0247b2",
+    "category": "ترفيهي",
+    "location": "المنصورة",
+    "title": "عرض خاص على التزلج",
+    "description": "تذكرة تزلج بسعر مميز.",
+    "coverPhoto": "https://example.com/images/2d0b1c_cover.jpg",
+    "profilePhoto": "https://example.com/images/205764_profile.jpg",
+    "imageUrl": "https://example.com/images/111d08_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "b77addcb-93cc-406c-bfba-1bebe3444948",
+        "title": "يشمل جميع الأعمار"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "4f4e7427-5773-4a3d-abcf-3569e7265276",
+        "location": "مركز الترفيه - الجيزة"
+      }
+    ]
+  },
+  {
+    "id": "0cc75cca-6396-4540-86a7-1bf4edeedaee",
+    "category": "ترفيهي",
+    "location": "طنطا",
+    "title": "خصم على حفلات الصيف",
+    "description": "استمتع بأفضل الحفلات الموسيقية.",
+    "coverPhoto": "https://example.com/images/0780d3_cover.jpg",
+    "profilePhoto": "https://example.com/images/647452_profile.jpg",
+    "imageUrl": "https://example.com/images/e6b455_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "8ef858f8-b9f1-44bf-af2c-b15883b4d28d",
+        "title": "يشمل جميع الفعاليات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "68e2272d-8b3e-4189-8785-05543a4036f7",
+        "location": "كورنيش البحر - بورسعيد"
+      }
+    ]
+  },
+  {
+    "id": "517cd9b7-84eb-493f-80a5-6f69d0905b8e",
+    "category": "ترفيهي",
+    "location": "أسيوط",
+    "title": "خصم على البولينج",
+    "description": "لعب بولينج بسعر خاص.",
+    "coverPhoto": "https://example.com/images/b6b09b_cover.jpg",
+    "profilePhoto": "https://example.com/images/0d5a06_profile.jpg",
+    "imageUrl": "https://example.com/images/a56086_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "991c27ea-c8a4-464a-8eaa-771830125e15",
+        "title": "يشمل جميع الأيام"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "b9690360-ed51-4f3b-9b10-bb92eb888666",
+        "location": "مول الجامعة - المنصورة"
+      }
+    ]
+  },
+  {
+    "id": "c224d5d0-96c5-430a-a2b4-46b2d0b06014",
+    "category": "ترفيهي",
+    "location": "الزقازيق",
+    "title": "عرض على السينما",
+    "description": "تذكرة مجانية عند شراء تذكرة.",
+    "coverPhoto": "https://example.com/images/6bae64_cover.jpg",
+    "profilePhoto": "https://example.com/images/710d1e_profile.jpg",
+    "imageUrl": "https://example.com/images/e90ecf_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "4ab58cda-8f0e-4d98-8d4f-bb588f7c0cd5",
+        "title": "يشمل جميع الأفلام"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "f86d0e3d-a62c-43f3-90f7-4dbeea1178a2",
+        "location": "حي شرق - سوهاج"
+      }
+    ]
+  },
+  {
+    "id": "5fcb03ff-7483-4dbc-928d-ee13d48340e1",
+    "category": "ترفيهي",
+    "location": "الإسماعيلية",
+    "title": "خصم على ألعاب الفيديو",
+    "description": "استمتع بوقتك في صالة الألعاب.",
+    "coverPhoto": "https://example.com/images/455c4a_cover.jpg",
+    "profilePhoto": "https://example.com/images/f31ddd_profile.jpg",
+    "imageUrl": "https://example.com/images/6a8e15_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "73f1a2aa-e397-41fd-a3c6-f47ea7032436",
+        "title": "يشمل جميع الأجهزة"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "e400200d-b226-42e9-9b55-c2f6fe41ebd2",
+        "location": "مول أسيوط - أسيوط"
+      }
+    ]
+  },
+  {
+    "id": "7a1b4a2a-cd5b-4c94-947b-7e59ac12055e",
+    "category": "ترفيهي",
+    "location": "سوهاج",
+    "title": "عرض على المسرحيات",
+    "description": "تذاكر مسرحية بسعر خاص.",
+    "coverPhoto": "https://example.com/images/ad2a99_cover.jpg",
+    "profilePhoto": "https://example.com/images/4cd120_profile.jpg",
+    "imageUrl": "https://example.com/images/a97aff_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "d2224e11-d76e-425f-a55e-ef1108cadbb4",
+        "title": "يشمل جميع العروض"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "d07d6636-e744-479c-94e1-e1cceddb4071",
+        "location": "مسرح قصر الثقافة - الزقازيق"
+      }
+    ]
+  },
+  {
+    "id": "c47321fa-b0d5-4c6e-953f-6eb5a5031b2e",
+    "category": "ترفيهي",
+    "location": "بورسعيد",
+    "title": "خصم على حفلات الغناء",
+    "description": "تذاكر حفلات بخصم مميز.",
+    "coverPhoto": "https://example.com/images/ade61c_cover.jpg",
+    "profilePhoto": "https://example.com/images/a816fb_profile.jpg",
+    "imageUrl": "https://example.com/images/0d8ba8_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "c472e9d6-bc66-4e04-a5df-63e79d5a6b0d",
+        "title": "يشمل الحفلات الصيفية"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "c9330179-11ee-4237-8a60-ee4df58ec00f",
+        "location": "قاعة المؤتمرات - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "d2741a41-fae4-4b83-99c7-5fe1d6fea010",
+    "category": "ماركت",
+    "location": "القاهرة",
+    "title": "خصم 10% على المشتريات اليومية",
+    "description": "تسوق جميع احتياجاتك اليومية بأسعار مميزة.",
+    "coverPhoto": "https://example.com/images/eb51e4_cover.jpg",
+    "profilePhoto": "https://example.com/images/227aaf_profile.jpg",
+    "imageUrl": "https://example.com/images/786a6c_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "a23a1a6b-a5c4-4105-ab8d-d0804479dfa8",
+        "title": "يشمل السلع الغذائية فقط"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "80907d15-a3d1-47fc-bfdc-6f9a28a14c35",
+        "location": "مدينة نصر - القاهرة"
+      }
+    ]
+  },
+  {
+    "id": "6e64c7ac-7405-4160-be08-683463dfc576",
+    "category": "ماركت",
+    "location": "الإسكندرية",
+    "title": "عرض خاص على الفواكه",
+    "description": "خصم على الفواكه الطازجة.",
+    "coverPhoto": "https://example.com/images/d3e0ae_cover.jpg",
+    "profilePhoto": "https://example.com/images/14f435_profile.jpg",
+    "imageUrl": "https://example.com/images/989343_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "74a11332-1c74-4f5c-897c-1d576b3479e3",
+        "title": "يشمل جميع الأنواع"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "d624f5d4-3fbd-46dc-b287-b540e2bcc555",
+        "location": "حي ثاني - الزقازيق"
+      }
+    ]
+  },
+  {
+    "id": "ee6b42fa-95d1-45f3-83c9-b050a4364be7",
+    "category": "ماركت",
+    "location": "الجيزة",
+    "title": "خصم على منتجات التنظيف",
+    "description": "استمتع بنظافة بيتك بأقل الأسعار.",
+    "coverPhoto": "https://example.com/images/e4b1bf_cover.jpg",
+    "profilePhoto": "https://example.com/images/bba077_profile.jpg",
+    "imageUrl": "https://example.com/images/34f6ac_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "334f500c-3e33-46d2-892b-bdeb93d7ca55",
+        "title": "يشمل المنظفات فقط"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "f4b4649e-5baf-4069-9bc3-e98d4e96b8c8",
+        "location": "حي الجامعة - أسيوط"
+      }
+    ]
+  },
+  {
+    "id": "2caaef6f-bef9-4427-ae42-b4e6794cbbcc",
+    "category": "ماركت",
+    "location": "المنصورة",
+    "title": "خصم على منتجات الألبان",
+    "description": "عروض على الأجبان والألبان.",
+    "coverPhoto": "https://example.com/images/99b19b_cover.jpg",
+    "profilePhoto": "https://example.com/images/e1d127_profile.jpg",
+    "imageUrl": "https://example.com/images/0669c2_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "1d0b226b-0158-421b-a3cd-aac13203a846",
+        "title": "يشمل جميع الأنواع"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "5cc1e7e0-37b4-4c32-bff1-61396b97f45b",
+        "location": "سيدي بشر - الإسكندرية"
+      }
+    ]
+  },
+  {
+    "id": "cb555326-82eb-439f-93e6-b33997a147d9",
+    "category": "ماركت",
+    "location": "طنطا",
+    "title": "عرض على الخضار",
+    "description": "خضار طازج يومياً.",
+    "coverPhoto": "https://example.com/images/62c571_cover.jpg",
+    "profilePhoto": "https://example.com/images/f80d09_profile.jpg",
+    "imageUrl": "https://example.com/images/420ab6_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "641f8982-acd1-49c6-9ead-7e756058c0e7",
+        "title": "يشمل جميع الخضار"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "df3da446-deb7-4785-96c1-9489006793e3",
+        "location": "حي شرق - سوهاج"
+      }
+    ]
+  },
+  {
+    "id": "bac838a9-370c-4363-ad0d-efb11c955d9d",
+    "category": "ماركت",
+    "location": "أسيوط",
+    "title": "خصم على السلع الرمضانية",
+    "description": "عروض خاصة بمناسبة رمضان.",
+    "coverPhoto": "https://example.com/images/15fa02_cover.jpg",
+    "profilePhoto": "https://example.com/images/b59af6_profile.jpg",
+    "imageUrl": "https://example.com/images/95285b_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "8a8e4993-8b45-478c-aa86-0c4f298d4581",
+        "title": "يشمل التمور والعصائر"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "b503c2d9-831b-4cc9-b1f8-26129e5d9e55",
+        "location": "شارع البحر - طنطا"
+      }
+    ]
+  },
+  {
+    "id": "0d4c3fe4-a97c-43da-9134-026bee167870",
+    "category": "ماركت",
+    "location": "الزقازيق",
+    "title": "عرض على المشروبات",
+    "description": "خصم خاص على العصائر والمياه الغازية.",
+    "coverPhoto": "https://example.com/images/6309f8_cover.jpg",
+    "profilePhoto": "https://example.com/images/bfbc3b_profile.jpg",
+    "imageUrl": "https://example.com/images/eb86f7_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "1fb891c4-f90a-4165-8489-555c6793818b",
+        "title": "يشمل جميع المشروبات"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "6f1c4b45-f430-44d5-894b-17bd1b1d193c",
+        "location": "حي الزهور - بورسعيد"
+      }
+    ]
+  },
+  {
+    "id": "0868061a-2b38-402a-bc7c-17d8ffbeb3cb",
+    "category": "ماركت",
+    "location": "الإسماعيلية",
+    "title": "خصم على اللحوم",
+    "description": "لحوم طازجة يومياً.",
+    "coverPhoto": "https://example.com/images/0361cc_cover.jpg",
+    "profilePhoto": "https://example.com/images/e57a0d_profile.jpg",
+    "imageUrl": "https://example.com/images/500145_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "9488a257-f27c-4d3a-a358-b03bcb690d97",
+        "title": "يشمل جميع الأنواع"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "6633ff74-d209-4e12-bddf-703bd98809da",
+        "location": "شارع الجمهورية - المنصورة"
+      }
+    ]
+  },
+  {
+    "id": "b367dbde-1bea-46a1-9daf-d3de95c74410",
+    "category": "ماركت",
+    "location": "سوهاج",
+    "title": "عرض على المنتجات المجمدة",
+    "description": "خصومات على جميع المنتجات المجمدة.",
+    "coverPhoto": "https://example.com/images/43b2e5_cover.jpg",
+    "profilePhoto": "https://example.com/images/c2f030_profile.jpg",
+    "imageUrl": "https://example.com/images/08abce_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "6cce916b-42cd-4dd4-bc27-24ea2d729c22",
+        "title": "يشمل جميع الأنواع"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "8e7e7b32-f976-4ce6-a47e-363166bcde95",
+        "location": "حي شرق - الجيزة"
+      }
+    ]
+  },
+  {
+    "id": "debd58ef-60fb-45a8-8014-f3e2b76edf94",
+    "category": "ماركت",
+    "location": "بورسعيد",
+    "title": "خصم على الزيت والسكر",
+    "description": "عروض على المواد الأساسية.",
+    "coverPhoto": "https://example.com/images/d400a0_cover.jpg",
+    "profilePhoto": "https://example.com/images/998837_profile.jpg",
+    "imageUrl": "https://example.com/images/48d30e_offer.jpg",
+    "discount": 10,
+    "hasDiscount": true,
+    "offerDetailsList": [
+      {
+        "id": "260e237b-5ffc-4418-b12e-c1d53cd0836e",
+        "title": "يشمل الزيت والسكر"
+      }
+    ],
+    "branchesList": [
+      {
+        "id": "ccf0e361-56c8-4641-8ab8-50f3615e9453",
+        "location": "حي أول - الإسماعيلية"
+      }
+    ]
+  }
+]
