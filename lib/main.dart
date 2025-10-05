@@ -8,7 +8,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureSystemUI();
   await initializeServices();
-  
+
   runApp(
     EasyLocalization(
       supportedLocales: [Locale('ar')],

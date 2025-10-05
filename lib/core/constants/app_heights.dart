@@ -1,4 +1,4 @@
-abstract final class AppSizes {
+abstract final class AppHeights {
   /// Standard button height
   static const double buttonHeight = 48;
 

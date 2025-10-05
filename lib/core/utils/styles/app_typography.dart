@@ -11,6 +11,13 @@ abstract final class AppTypography {
     fontWeight: AppFontWeight.bold,
   );
 
+  
+  static final textStyle18SemiBold = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: AppFontWeight.semiBold,
+  );
+
+
   static final textStyle16Bold = TextStyle(
     fontSize: 16.sp,
     fontWeight: AppFontWeight.bold,

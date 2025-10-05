@@ -19,7 +19,7 @@ abstract final class AppInputTheme {
       filled: true,
       fillColor: isDark
           ? colorScheme.surfaceContainerHighest
-          : AppColors.grayscale50.withValues(alpha: 0.5),
+          : AppColors.gray50.withValues(alpha: 0.5),
 
       // Default border (unfocused, enabled)
       border: OutlineInputBorder(
@@ -110,12 +110,12 @@ abstract final class AppInputTheme {
 
       //Content padding
       contentPadding: EdgeInsets.symmetric(
-        vertical: AppPaddings.padding16.h,
-        horizontal: AppPaddings.padding24.w,
+        vertical: AppPadding.padding16.h,
+        horizontal: AppPadding.padding24.w,
       ),
 
       // Icon colors
-      prefixIconColor: colorScheme.primary,  
+      prefixIconColor: colorScheme.primary,
       suffixIconColor: colorScheme.outlineVariant,
       iconColor: isDark
           ? colorScheme.onSurfaceVariant

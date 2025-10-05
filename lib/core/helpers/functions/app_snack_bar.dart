@@ -5,7 +5,7 @@ import '../../constants/app_corners.dart';
 import '../../constants/app_durations.dart';
 import '../../constants/app_elevation.dart';
 import '../../constants/app_icon_sizes.dart';
-import '../../constants/app_icons.dart';
+import '../../constants/app_icon.dart';
 import '../../constants/app_padding.dart';
 import '../../utils/colors/app_colors.dart';
 
@@ -57,12 +57,12 @@ abstract class AppSnackBar {
 
           //3
           margin: EdgeInsets.symmetric(
-            horizontal: AppPaddings.padding16.w,
-            vertical: AppPaddings.padding16.h,
+            horizontal: AppPadding.padding16.w,
+            vertical: AppPadding.padding16.h,
           ),
           padding: EdgeInsets.symmetric(
-            horizontal: AppPaddings.padding12.w,
-            vertical: AppPaddings.padding12.h,
+            horizontal: AppPadding.padding12.w,
+            vertical: AppPadding.padding12.h,
           ),
           dismissDirection: DismissDirection.endToStart,
           action: action != null

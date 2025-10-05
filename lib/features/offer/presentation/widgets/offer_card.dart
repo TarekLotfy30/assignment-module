@@ -1,9 +1,14 @@
 import 'package:assignment/core/constants/app_assets.dart';
-import 'package:assignment/core/constants/app_icons.dart';
+import 'package:assignment/core/constants/app_corners.dart';
+import 'package:assignment/core/constants/app_icon.dart';
+import 'package:assignment/core/constants/app_padding.dart';
+import 'package:assignment/core/constants/app_spacing.dart';
+import 'package:assignment/core/helpers/extensions/theme_extension.dart';
+import 'package:assignment/core/widgets/build_optimized_svg.dart';
 import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
+// translate-me-ignore-all-file
 class OfferCard extends StatelessWidget {
   const OfferCard({super.key, required this.index, required this.offer});
 
@@ -13,10 +18,6 @@ class OfferCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-      margin: const EdgeInsets.only(bottom: 24.0),
-      clipBehavior: Clip.antiAlias,
-      color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -27,8 +28,8 @@ class OfferCard extends StatelessWidget {
                 aspectRatio: 358 / 170,
                 child: ClipRRect(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16.0),
-                    topRight: Radius.circular(16.0),
+                    topLeft: Radius.circular(AppCorners.buttonBorderRadius),
+                    topRight: Radius.circular(AppCorners.buttonBorderRadius),
                   ),
                   child: Image.asset(AppAssets.cover, fit: BoxFit.cover),
                 ),
@@ -55,63 +56,55 @@ class OfferCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: const Color(0xffE9FFEE),
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(16.0),
-                      bottomRight: Radius.circular(16.0),
+                      topLeft: Radius.circular(AppCorners.buttonBorderRadius),
+                      bottomRight: Radius.circular(
+                        AppCorners.buttonBorderRadius,
+                      ),
                     ),
                   ),
                   child: Text(
                     "🔥 خصم ${offer.discount}%",
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xff06B694),
-                    ),
+                    style: context.textTheme.titleMedium,
                   ),
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 39.0),
+          const SizedBox(height: AppSpacing.spacing40),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppCorners.buttonBorderRadius,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   offer.title ?? '',
-                  style: const TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  style: context.textTheme.headlineMedium,
                 ),
-                const SizedBox(height: 12.0),
+                const SizedBox(height: AppSpacing.spacing12),
                 Text(
                   offer.description ?? '',
-                  style: const TextStyle(
-                    fontSize: 12.0,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.grey,
-                  ),
+                  style: context.textTheme.labelMedium,
                 ),
                 const SizedBox(height: 16.0),
                 Container(
-                  margin: const EdgeInsets.only(bottom: 16.0),
+                  margin: const EdgeInsets.only(bottom: AppPadding.padding16),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 8.0,
-                    vertical: 4.0,
+                    horizontal: AppPadding.padding8,
+                    vertical: AppPadding.padding4,
                   ),
                   decoration: BoxDecoration(
                     color: const Color(0xffECF0FA),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(
+                      AppCorners.smallBorderRadius,
+                    ),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      SvgPicture.asset(
+                      BuildOptimizedSvg(
                         AppIcons.locationFilter,
-                        height: 14,
-                        width: 14,
-                        semanticsLabel: 'Filter Icon',
                         colorFilter: ColorFilter.mode(
                           const Color(0xff064698),
                           BlendMode.srcIn,
@@ -120,11 +113,7 @@ class OfferCard extends StatelessWidget {
                       const SizedBox(width: 8.0),
                       Text(
                         offer.location ?? '',
-                        style: TextStyle(
-                          fontSize: 12.0,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xff064698),
-                        ),
+                        style: context.textTheme.labelMedium,
                       ),
                     ],
                   ),

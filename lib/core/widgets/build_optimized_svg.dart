@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class BuildOptimizedSvg extends StatelessWidget {
-  const BuildOptimizedSvg({
+  const BuildOptimizedSvg(
+    this.assetPath, {
     super.key,
-    required this.assetPath,
     this.fit,
     this.semanticLabel,
     this.colorFilter,

@@ -1,11 +1,12 @@
 // Spacing and padding constants for consistent layout
 
-abstract final class Spacing {
+abstract final class AppSpacing {
   static const double spacing4 = 4;
 
   static const double spacing8 = 8;
 
   static const double spacing11 = 11;
+  static const double spacing12 = 12;
 
   static const double spacing16 = 16;
 

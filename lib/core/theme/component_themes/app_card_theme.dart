@@ -1,3 +1,4 @@
+import 'package:assignment/core/constants/app_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,11 +12,12 @@ abstract final class AppCardTheme {
     return CardThemeData(
       elevation: AppElevation.xSmallElevation, //2
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius.r),
+        borderRadius: BorderRadius.circular(AppCorners.buttonBorderRadius.r),
       ),
       shadowColor: colorScheme.shadow,
       color: colorScheme.surface,
       surfaceTintColor: colorScheme.primary,
+      margin: EdgeInsets.only(bottom: AppPadding.padding24.h),
     );
   }
 }

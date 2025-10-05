@@ -1,8 +1,8 @@
 import 'dart:developer';
 
 import 'package:assignment/core/constants/app_constant.dart';
+import 'package:assignment/core/constants/app_padding.dart';
 import 'package:assignment/features/offer/controller/offer_controller.dart';
-import 'package:assignment/features/offer/data/models/offers_types.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -19,7 +19,7 @@ class OfferTypeChip extends StatelessWidget {
       builder: (controller) => Padding(
         padding: index == 0
             ? EdgeInsets.zero
-            : const EdgeInsets.only(right: 8.0),
+            : const EdgeInsets.only(right: AppPadding.padding8),
         child: InkWell(
           onTap: () {
             controller.changeIndex(index);
@@ -30,18 +30,18 @@ class OfferTypeChip extends StatelessWidget {
             backgroundColor: controller.selectedIndex == index
                 ? Colors.blueAccent
                 : Colors.white,
-            labelPadding: const EdgeInsets.symmetric(horizontal: 12.0),
+            labelPadding: const EdgeInsets.symmetric(
+              horizontal: AppPadding.padding12,
+            ),
             label: Text(
               AppConstant.offersTypes[index].title,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: controller.selectedIndex == index
-                    ? FontWeight.w500
-                    : FontWeight.w400,
-                color: controller.selectedIndex == index
-                    ? Colors.white
-                    : Colors.blueAccent,
-              ),
+              style: controller.selectedIndex == index
+                  ? context.textTheme.headlineMedium?.copyWith(
+                      color: Colors.white,
+                    )
+                  : context.textTheme.headlineSmall?.copyWith(
+                      color: Colors.blueAccent,
+                    ),
             ),
           ),
         ),

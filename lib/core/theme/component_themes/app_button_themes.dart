@@ -5,7 +5,7 @@ import '../../constants/app_border_width.dart';
 import '../../constants/app_corners.dart';
 import '../../constants/app_elevation.dart';
 import '../../constants/app_padding.dart';
-import '../../constants/app_sizes.dart';
+import '../../constants/app_heights.dart';
 import '../../utils/styles/app_fonts_family.dart';
 import '../text_themes/app_text_themes.dart';
 
@@ -35,8 +35,8 @@ abstract final class AppButtonThemes {
             AppCorners.buttonBorderRadius.r, //16
           ),
         ),
-        padding: EdgeInsets.symmetric(vertical: AppPaddings.padding12.h),
-        minimumSize: Size(double.maxFinite, AppSizes.buttonHeight.h), //48
+        padding: EdgeInsets.symmetric(vertical: AppPadding.padding12.h),
+        minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h), //48
         textStyle: AppTextThemes.textTheme.titleLarge?.copyWith(
           fontFamily: AppFontFamily.teshrin,
         ),
@@ -60,14 +60,14 @@ abstract final class AppButtonThemes {
           ),
         ),
         padding: EdgeInsets.symmetric(
-          vertical: AppPaddings.padding8.h,
-          horizontal: AppPaddings.padding14.w,
+          vertical: AppPadding.padding8.h,
+          horizontal: AppPadding.padding14.w,
         ),
-        minimumSize: Size(double.maxFinite, AppSizes.buttonHeight.h),
+        minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h),
         textStyle: AppTextThemes.textTheme.titleMedium?.copyWith(
           fontFamily: AppFontFamily.teshrin,
         ),
-      ),  
+      ),
     );
   }
 

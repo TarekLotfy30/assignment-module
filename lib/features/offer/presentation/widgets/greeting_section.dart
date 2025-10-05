@@ -1,9 +1,11 @@
 import 'package:assignment/core/constants/app_assets.dart';
-import 'package:assignment/features/offer/presentation/widgets/back_icon_button.dart';
-import 'package:assignment/features/offer/presentation/widgets/greeting_with_user_name.dart';
-import 'package:assignment/features/offer/presentation/widgets/zaker_only_text.dart';
+import 'package:assignment/core/constants/app_icon.dart';
+import 'package:assignment/core/constants/app_padding.dart';
+import 'package:assignment/core/constants/app_spacing.dart';
+import 'package:assignment/core/widgets/build_optimized_svg.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 // translate-me-ignore-all-file
 class GreetingSection extends StatelessWidget {
@@ -16,14 +18,24 @@ class GreetingSection extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Padding(
-            padding: const EdgeInsets.only(top: 15.0),
+            padding: const EdgeInsets.only(top: AppPadding.padding16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              spacing: 8,
+              spacing: AppSpacing.spacing8,
               children: [
-                const BackIconButton(),
-                const GreetingWithUserName(),
-                const ZakerOnlyText(),
+                InkWell(
+                  onTap: () => context.router.pop(),
+                  child: BuildOptimizedSvg(AppIcons.backArrow),
+                ),
+                Text(
+                  "اهلا بك محمد في العروض",
+                  style: context.textTheme.displayMedium,
+                ),
+                // 14 400
+                Text(
+                  "هذه العروض متاحة لطلاب ذاكر فقط.",
+                  style: context.textTheme.titleSmall,
+                ),
               ],
             ),
           ),
@@ -32,10 +44,7 @@ class GreetingSection extends StatelessWidget {
           flex: 1,
           child: FittedBox(
             fit: BoxFit.contain,
-            child: SvgPicture.asset(
-              AppAssets.openedGift,
-              semanticsLabel: 'Offer Image',
-            ),
+            child: BuildOptimizedSvg(AppAssets.openedGift),
           ),
         ),
       ],

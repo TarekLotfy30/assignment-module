@@ -1,69 +1,62 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: lines_longer_than_80_chars
 
+import 'package:flutter/material.dart';
 import '../../utils/colors/app_colors.dart';
 
+/// Dark theme color scheme using AppColors
+
 abstract final class DarkColorScheme {
-  /// Dark theme color scheme using AppColors
   static const ColorScheme colorScheme = ColorScheme(
     brightness: Brightness.dark,
 
     // ========== PRIMARY COLORS ==========
-    primary: AppColors.green400,
-    // Lighter green1 for dark theme
-    onPrimary: AppColors.green900,
-    // Dark text on light primary
-    primaryContainer: AppColors.green700,
-    // Dark green1 container
-    onPrimaryContainer: AppColors.green100,
-    // Light text on dark container
-    // ========== SECONDARY COLORS ==========
-    secondary: AppColors.green1_400,
-    // Lighter orange for dark theme
-    onSecondary: AppColors.green1_900,
-    // Dark text on light secondary
-    secondaryContainer: AppColors.green1_700,
-    onSecondaryContainer: AppColors.green1_100,
-    // ========== TERTIARY COLORS ==========
-    tertiary: AppColors.orange400,
-    // Lighter bright green for dark theme
-    onTertiary: AppColors.orange900,
-    // Dark text on light tertiary
-    tertiaryContainer: AppColors.orange700,
-    // Dark green container
-    onTertiaryContainer: AppColors.orange100,
-    // Light text on dark container
-    // ========== SURFACE COLORS ==========
-    surface: AppColors.darkSurface,
-    // Dark background
-    onSurface: AppColors.white,
-    // Light text on dark surface
-    // Dark surface variants
-    surfaceContainerHighest: AppColors.grayscale700,
-    surfaceContainerHigh: AppColors.grayscale700,
-    surfaceContainer: AppColors.grayscale800,
-    surfaceContainerLow: AppColors.grayscale800,
-    surfaceContainerLowest: AppColors.grayscale900,
+    // → Main brand color in dark mode (lighter tone for visibility)
+    primary: AppColors.blue300,
+    onPrimary: AppColors.blue900,
+    primaryContainer: AppColors.blue700,
+    onPrimaryContainer: AppColors.white,
 
-    onSurfaceVariant: AppColors.textDisabled,
+    // ========== SECONDARY COLORS ==========
+    secondary: AppColors.teal300,
+    onSecondary: AppColors.teal900,
+    secondaryContainer: AppColors.teal700,
+    onSecondaryContainer: AppColors.white,
+
+    // ========== TERTIARY COLORS ==========
+    tertiary: AppColors.azure300,
+    onTertiary: AppColors.azure900,
+    tertiaryContainer: AppColors.azure700,
+    onTertiaryContainer: AppColors.white,
+
+    // ========== SURFACE COLORS ==========
+    surface: AppColors.darkSurface, // main scaffold background
+    onSurface: AppColors.textPrimaryDark,
+    surfaceContainerHighest: AppColors.darkSurfaceElevated1,
+    surfaceContainerHigh: AppColors.darkSurfaceElevated2,
+    surfaceContainer: AppColors.gray800,
+    surfaceContainerLow: AppColors.gray700,
+    surfaceContainerLowest: AppColors.gray900,
+    onSurfaceVariant: AppColors.textSecondaryDark,
 
     // ========== OUTLINE COLORS ==========
-    outline: AppColors.grayscale600,
-    outlineVariant: AppColors.grayscale700,
+    outline: AppColors.gray600,
+    outlineVariant: AppColors.gray700,
 
     // ========== UTILITY COLORS ==========
-    shadow: AppColors.black,
-    scrim: AppColors.black,
+    shadow: AppColors.shadowStrong,
+    scrim: AppColors.scrim,
 
-    // Inverse colors
-    inverseSurface: AppColors.grayscale100,
-    onInverseSurface: AppColors.grayscale800,
-    inversePrimary: AppColors.green600,
-    surfaceTint: AppColors.green400,
+    // ========== INVERSE COLORS ==========
+    inverseSurface: AppColors.gray100,
+    onInverseSurface: AppColors.gray900,
+    inversePrimary: AppColors.blue500,
+
+    // ========== SURFACE TINT ==========
+    surfaceTint: AppColors.primary,
 
     // ========== ERROR COLORS ==========
     error: AppColors.error,
-    // Lighter error for dark theme
-    onError: AppColors.white,
+    onError: AppColors.textOnPrimary,
     errorContainer: AppColors.errorDark,
     onErrorContainer: AppColors.errorLight,
   );

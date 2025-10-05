@@ -8,7 +8,7 @@ abstract final class AppTextThemes {
   static final TextTheme textTheme = TextTheme(
     // Display styles (18pt) - Large headings
     displayLarge: AppTypography.textStyle18Bold,
-    //displayMedium: AppTypography.textStyle18SemiBold,
+    displayMedium: AppTypography.textStyle18SemiBold,
     // displaySmall: AppTypography.displaySmall,
 
     // Display styles (16pt) - Large headings
