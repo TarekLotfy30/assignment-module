@@ -1,4 +1,4 @@
-import 'package:assignment/core/constants/app_constants.dart';
+import 'package:assignment/core/constants/app_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -9,10 +9,7 @@ class SearchByTypeOrArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SearchBar(
-      leading: SvgPicture.asset(
-        AppAssets.searchIcon,
-        semanticsLabel: 'Search Icon',
-      ),
+      leading: SvgPicture.asset(AppIcons.search, semanticsLabel: 'Search Icon'),
       hintText: 'ابحث بالمنطقة او النوع',
       hintStyle: WidgetStateProperty.all<TextStyle>(
         TextStyle(

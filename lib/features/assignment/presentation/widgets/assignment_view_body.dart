@@ -12,7 +12,8 @@ class AssignmentViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      color: Colors.red,
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,45 +31,43 @@ class AssignmentViewBody extends StatelessWidget {
               );
             },
           ),
-
           const SizedBox(height: 20),
 
           // Options
-          GetBuilder<AssignmentController>(
-            builder: (controller) {
-              log("rebuilt the options widget");
-              return Column(
-                children: List.generate(
-                  questions[controller.currentQuestionIndex].options.length,
-                  (index) {
-                    return CardOption(index: index, controller: controller);
-                  },
-                ),
-              );
-            },
-          ),
-
-          const Spacer(),
+          // GetBuilder<AssignmentController>(
+          //   builder: (controller) {
+          //     log("rebuilt the options widget");
+          //     return Column(
+          //       children: List.generate(
+          //         questions[controller.currentQuestionIndex].options.length,
+          //         (index) {
+          //           return CardOption(index: index, controller: controller);
+          //         },
+          //       ),
+          //     );
+          //   },
+          // ),
+          // const Spacer(),
 
           // Next button
-          GetBuilder<AssignmentController>(
-            builder: (controller) {
-              log("rebuilt the next button widget");
-              return Align(
-                alignment: Alignment.centerRight,
-                child: ElevatedButton(
-                  onPressed: controller.isAnswered
-                      ? controller.nextQuestion
-                      : null,
-                  child: Text(
-                    controller.currentQuestionIndex == questions.length - 1
-                        ? "Finish"
-                        : "Next",
-                  ),
-                ),
-              );
-            },
-          ),
+          // GetBuilder<AssignmentController>(
+          //   builder: (controller) {
+          //     log("rebuilt the next button widget");
+          //     return Align(
+          //       alignment: Alignment.centerRight,
+          //       child: ElevatedButton(
+          //         onPressed: controller.isAnswered
+          //             ? controller.nextQuestion
+          //             : null,
+          //         child: Text(
+          //           controller.currentQuestionIndex == questions.length - 1
+          //               ? "Finish"
+          //               : "Next",
+          //         ),
+          //       ),
+          //     );
+          //   },
+          // ),
         ],
       ),
     );

@@ -1,4 +1,4 @@
-import 'package:assignment/core/constants/app_constants.dart';
+import 'package:assignment/core/constants/app_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -17,7 +17,7 @@ class Location extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset(
-            AppAssets.locationFilter,
+            AppIcons.locationFilter,
             height: 16,
             width: 16,
             semanticsLabel: 'Filter Icon',

@@ -1,19 +1,19 @@
 // translate-me-ignore-all-file
-class Offer {
-  final String id;
-  final String category;
-  final String location;
-  final String title;
-  final String description;
-  final String coverPhoto;
-  final String profilePhoto;
-  final String imageUrl;
-  final int discount;
-  final bool hasDiscount;
+class OfferModel {
+  final String? id;
+  final String? category;
+  final String? location;
+  final String? title;
+  final String? description;
+  final String? coverPhoto;
+  final String? profilePhoto;
+  final String? imageUrl;
+  final int? discount;
+  final bool? hasDiscount;
   final List<OfferDetail>? offerDetailsList;
   final List<Branch>? branchesList;
 
-  Offer({
+  OfferModel({
     required this.id,
     required this.location,
     required this.category,
@@ -28,8 +28,8 @@ class Offer {
     required this.branchesList,
   });
 
-  factory Offer.fromJson(Map<String, dynamic> json) {
-    return Offer(
+  factory OfferModel.fromJson(Map<String, dynamic> json) {
+    return OfferModel(
       id: json['id'],
       category: json['category'],
       location: json['location'],
@@ -38,25 +38,21 @@ class Offer {
       coverPhoto: json['cover_photo'],
       profilePhoto: json['profile_photo'],
       imageUrl: json['image_url'],
-      discount: json['discount'] ?? 0,
-      hasDiscount: json['has_discount'] ?? false,
-      offerDetailsList:
-          json['offer_details_list']
-              .map<OfferDetail>((item) => OfferDetail.fromJson(item))
-              .toList() ??
-          [],
-      branchesList:
-          json['branches_list']
-              .map<Branch>((item) => Branch.fromJson(item))
-              .toList() ??
-          [],
+      discount: json['discount'],
+      hasDiscount: json['has_discount'],
+      offerDetailsList: (json['offer_details_list'] as List<dynamic>?)
+          ?.map((v) => OfferDetail.fromJson(v as Map<String, dynamic>))
+          .toList(),
+      branchesList: (json['branches_list'] as List<dynamic>?)
+          ?.map((v) => Branch.fromJson(v as Map<String, dynamic>))
+          .toList(),
     );
   }
 }
 
 class OfferDetail {
-  final String id;
-  final String title;
+  final String? id;
+  final String? title;
 
   OfferDetail({required this.id, required this.title});
 
@@ -66,8 +62,8 @@ class OfferDetail {
 }
 
 class Branch {
-  final String id;
-  final String location;
+  final String? id;
+  final String? location;
 
   Branch({required this.id, required this.location});
 

@@ -1,12 +1,14 @@
-import 'package:assignment/core/constants/app_constants.dart';
+import 'package:assignment/core/constants/app_assets.dart';
+import 'package:assignment/core/constants/app_icons.dart';
+import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-// translate-me-ignore-all-file
 class OfferCard extends StatelessWidget {
-  const OfferCard({super.key, required this.index});
+  const OfferCard({super.key, required this.index, required this.offer});
 
   final int index;
+  final OfferModel offer;
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +59,8 @@ class OfferCard extends StatelessWidget {
                       bottomRight: Radius.circular(16.0),
                     ),
                   ),
-                  child: const Text(
-                    "🔥 خصم 15%",
+                  child: Text(
+                    "🔥 خصم ${offer.discount}%",
                     style: TextStyle(
                       fontSize: 12.0,
                       fontWeight: FontWeight.w500,
@@ -76,7 +78,7 @@ class OfferCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'أبو شقرة',
+                  offer.title ?? '',
                   style: const TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w500,
@@ -84,7 +86,7 @@ class OfferCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 12.0),
                 Text(
-                  'استمتع بخضم 15% علي وجبات المطعم عند شرائك وجبة بقيمة 500 جنيه او اكثر.',
+                  offer.description ?? '',
                   style: const TextStyle(
                     fontSize: 12.0,
                     fontWeight: FontWeight.w400,
@@ -106,7 +108,7 @@ class OfferCard extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       SvgPicture.asset(
-                        AppAssets.locationFilter,
+                        AppIcons.locationFilter,
                         height: 14,
                         width: 14,
                         semanticsLabel: 'Filter Icon',
@@ -116,8 +118,8 @@ class OfferCard extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 8.0),
-                      const Text(
-                        'القاهرة',
+                      Text(
+                        offer.location ?? '',
                         style: TextStyle(
                           fontSize: 12.0,
                           fontWeight: FontWeight.w500,

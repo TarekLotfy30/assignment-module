@@ -1,4 +1,4 @@
-import 'package:assignment/core/routing/routes_name.dart';
+import 'package:assignment/core/routing/route_path.dart';
 import 'package:assignment/features/assignment/model/question_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,7 +31,7 @@ class AssignmentController extends GetxController {
       update(); // triggers GetBuilder rebuild
     } else {
       // assignment finished go to score screen
-      Get.offNamed(RoutesName.scorePage);
+      Get.offNamed(RoutePath.scorePage);
     }
   }
 

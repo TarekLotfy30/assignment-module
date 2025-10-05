@@ -1,5 +1,7 @@
-import 'package:assignment/core/constants/app_constants.dart';
-import 'package:auto_route/auto_route.dart';
+import 'package:assignment/core/constants/app_assets.dart';
+import 'package:assignment/features/offer/presentation/widgets/back_icon_button.dart';
+import 'package:assignment/features/offer/presentation/widgets/greeting_with_user_name.dart';
+import 'package:assignment/features/offer/presentation/widgets/zaker_only_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -19,25 +21,9 @@ class GreetingSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: 8,
               children: [
-                InkWell(
-                  onTap: () => context.router.pop(),
-                  child: SvgPicture.asset(
-                    AppAssets.arrowBack,
-                    semanticsLabel: 'Back Icon',
-                  ),
-                ),
-                Text(
-                  "اهلا بك محمد في العروض",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                ),
-                Text(
-                  "هذه العروض متاحة لطلاب ذاكر فقط.",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.grey[600],
-                  ),
-                ),
+                const BackIconButton(),
+                const GreetingWithUserName(),
+                const ZakerOnlyText(),
               ],
             ),
           ),

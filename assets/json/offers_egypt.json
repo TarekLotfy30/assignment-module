@@ -1,961 +1,1121 @@
 [
   {
-    "id": "c3cc2705-e493-4fdd-9f34-692f9123231e",
-    "category": "مطاعم",
-    "location": "القاهرة",
-    "title": "عرض خصم 20% على البيتزا",
-    "description": "استمتع بألذ بيتزا إيطالي مع خصم خاص لفترة محدودة.",
-    "coverPhoto": "https://example.com/images/0261d9_cover.jpg",
-    "profilePhoto": "https://example.com/images/3594f5_profile.jpg",
-    "imageUrl": "https://example.com/images/5f394f_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "3ff054d9-0281-40cf-880e-3c1836867ce2",
-        "title": "يشمل جميع أنواع البيتزا"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "c9df561b-5e98-4e53-8fb1-c31c125033dc",
-        "location": "12 شارع النصر - المعادي - القاهرة"
-      }
-    ]
-  },
-  {
-    "id": "a77802ff-5afd-41ef-87a0-8510d2584038",
-    "category": "مطاعم",
-    "location": "الإسكندرية",
-    "title": "بوفيه مفتوح بسعر خاص",
-    "description": "بوفيه عشاء فاخر يشمل المأكولات الشرقية والعالمية.",
-    "coverPhoto": "https://example.com/images/de2561_cover.jpg",
-    "profilePhoto": "https://example.com/images/e5ff99_profile.jpg",
-    "imageUrl": "https://example.com/images/190955_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "ff5b7162-9f44-4746-a542-8bb6592afa75",
-        "title": "يشمل المشروبات الغازية مجاناً"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "d4562898-cfc9-41b5-a1e9-71334da81a78",
-        "location": "45 شارع الثورة - مصر الجديدة - القاهرة"
-      }
-    ]
-  },
-  {
-    "id": "94dc006c-2a7e-474c-8ef8-b97caf6d23e9",
-    "category": "مطاعم",
-    "location": "الجيزة",
-    "title": "خصم على وجبات البرجر",
-    "description": "أفضل برجر مع خصم مميز لجميع الطلبات.",
-    "coverPhoto": "https://example.com/images/fd68d0_cover.jpg",
-    "profilePhoto": "https://example.com/images/a0f5ff_profile.jpg",
-    "imageUrl": "https://example.com/images/b5d52c_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "f854e30f-5647-46ac-8503-4746847b59ae",
-        "title": "يشمل جميع أنواع البرجر"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "3ea1bc39-1f04-4418-9503-fe309eb3c64d",
-        "location": "كورنيش الإسكندرية - الإسكندرية"
-      }
-    ]
-  },
-  {
-    "id": "c3d4398d-eee5-4ccf-afdd-135bd9c98042",
+    "id": "5a91be7d-8b2a-48b6-92e1-6d6662efb13b",
     "category": "مطاعم",
     "location": "المنصورة",
-    "title": "عرض وجبة عائلية",
-    "description": "احصل على وجبة عائلية كاملة بسعر مميز.",
-    "coverPhoto": "https://example.com/images/5a5c13_cover.jpg",
-    "profilePhoto": "https://example.com/images/356666_profile.jpg",
-    "imageUrl": "https://example.com/images/c6e516_offer.jpg",
+    "title": "كنتاكي",
+    "description": "استمتع بعرض خاص من كنتاكي مع خصومات تصل إلى 10٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?كنتاكي",
+    "image_url": "https://source.unsplash.com/random/1000x800?كنتاكي",
     "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "8775b73d-25ca-4af3-823c-61bf0f23c31f",
-        "title": "يشمل وجبة لعدد 4 أفراد"
+        "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "373cc543-6b17-492c-b015-7fc7c883c118",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "80e56b5b-584f-4256-9d11-704ca7c7923d",
-        "location": "شارع الهرم - الجيزة"
+        "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+        "location": "45 شارع النصر - المنصورة - مصر"
       }
     ]
   },
   {
-    "id": "bc7aa24b-8236-45b3-9929-ec85288827a2",
+    "id": "1ddd0d63-9461-495c-964c-65d32ab9839f",
     "category": "مطاعم",
-    "location": "طنطا",
-    "title": "خصم 25% على المأكولات البحرية",
-    "description": "تمتع بأفضل الأسماك الطازجة.",
-    "coverPhoto": "https://example.com/images/e8e732_cover.jpg",
-    "profilePhoto": "https://example.com/images/3d2285_profile.jpg",
-    "imageUrl": "https://example.com/images/fefab2_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "السويس",
+    "title": "ماكدونالدز",
+    "description": "استمتع بعرض خاص من ماكدونالدز مع خصومات تصل إلى 40٪ في جميع فروع السويس.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?ماكدونالدز",
+    "image_url": "https://source.unsplash.com/random/1000x800?ماكدونالدز",
+    "discount": 40,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "e52a91ea-a917-466e-9668-b53c47a278d3",
-        "title": "يشمل جميع المأكولات البحرية"
+        "id": "6705caea-60bf-42e0-8ddc-4f97a4928d67",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "5d2c8608-a2d3-4744-80f3-674f4ae6eab6",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "58bebf48-5244-43e1-bcfe-398e449e5d6c",
-        "location": "كورنيش البحر - بورسعيد"
+        "id": "6dda3d10-b448-40ae-811e-b98b57cb4aac",
+        "location": "88 شارع النصر - السويس - مصر"
       }
     ]
   },
   {
-    "id": "1dfcb8b7-098f-4ca7-b7f3-6cb52af39623",
+    "id": "a5b0644d-feea-4709-a699-2aa4afbe8c03",
     "category": "مطاعم",
     "location": "أسيوط",
-    "title": "بيتزا واحدة + الثانية مجاناً",
-    "description": "عرض خاص على جميع أنواع البيتزا.",
-    "coverPhoto": "https://example.com/images/a0967e_cover.jpg",
-    "profilePhoto": "https://example.com/images/3a43ee_profile.jpg",
-    "imageUrl": "https://example.com/images/6bae37_offer.jpg",
+    "title": "أبو شقرة",
+    "description": "استمتع بعرض خاص من أبو شقرة مع خصومات تصل إلى 10٪ في جميع فروع أسيوط.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?أبو شقرة",
+    "image_url": "https://source.unsplash.com/random/1000x800?أبو شقرة",
     "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "f57bcbf1-e986-4dda-b702-9aebf70e2fa5",
-        "title": "يشمل جميع الفروع"
+        "id": "7f065f20-27d7-44f2-a4ed-15f1d1f4ee85",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "faa0b2ca-9212-418e-adfb-9b869485c13f",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "0cdffff2-fc54-4272-81ec-872a7b2b52a8",
-        "location": "شارع الجمهورية - المنصورة"
+        "id": "b1db0c5d-cb6e-41cb-bf9e-3054149a1bc0",
+        "location": "95 شارع النصر - أسيوط - مصر"
       }
     ]
   },
   {
-    "id": "d5dc88d2-e76b-458a-9687-82bfd6caef9a",
+    "id": "7f757bb9-6e8d-4e3c-b60f-c80683006de7",
     "category": "مطاعم",
-    "location": "الزقازيق",
-    "title": "خصم على الفطور",
-    "description": "استمتع بأشهى فطور شرقي وغربي.",
-    "coverPhoto": "https://example.com/images/215add_cover.jpg",
-    "profilePhoto": "https://example.com/images/4875c2_profile.jpg",
-    "imageUrl": "https://example.com/images/ebc375_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "أسيوط",
+    "title": "البرنس",
+    "description": "استمتع بعرض خاص من البرنس مع خصومات تصل إلى 40٪ في جميع فروع أسيوط.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?البرنس",
+    "image_url": "https://source.unsplash.com/random/1000x800?البرنس",
+    "discount": 40,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "3c78e618-1b58-4699-9f74-33dae1a665b0",
-        "title": "يشمل السندوتشات والمشروبات"
+        "id": "07a28e7b-ca41-4766-af38-04537e26bf10",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "a7564c84-15b7-4a86-88f7-5cbd1a131882",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "49626d17-1542-4539-bf85-51cbc6b092b1",
-        "location": "ميدان العتبة - القاهرة"
+        "id": "5f43ffa2-759a-49db-93c7-34cbc23500ff",
+        "location": "46 شارع النصر - أسيوط - مصر"
       }
     ]
   },
   {
-    "id": "ddf16121-54b6-4372-ad6e-146d5cf75174",
+    "id": "0bc94c50-d362-4215-9ddd-30e23628300a",
     "category": "مطاعم",
-    "location": "الإسماعيلية",
-    "title": "عرض على الحلويات",
-    "description": "خصم خاص على الكنافة الشرقية.",
-    "coverPhoto": "https://example.com/images/1ea193_cover.jpg",
-    "profilePhoto": "https://example.com/images/835727_profile.jpg",
-    "imageUrl": "https://example.com/images/4a81db_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "الإسكندرية",
+    "title": "بازوكا",
+    "description": "استمتع بعرض خاص من بازوكا مع خصومات تصل إلى 15٪ في جميع فروع الإسكندرية.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?بازوكا",
+    "image_url": "https://source.unsplash.com/random/1000x800?بازوكا",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "f60a48a3-06b9-4624-ac97-1d01acfde4ad",
-        "title": "يشمل جميع أنواع الكنافة"
+        "id": "71ef7f86-fd8d-4350-8b30-96f5e346bbda",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "94308bf5-38bb-4273-b579-d1bfda084b22",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "f3580c90-fdfe-4867-bbde-f902c124ffce",
-        "location": "شارع الجيش - طنطا"
+        "id": "0acadf75-0a56-479d-9dcd-410f8513af04",
+        "location": "8 شارع النصر - الإسكندرية - مصر"
       }
     ]
   },
   {
-    "id": "4625d391-5722-4beb-81b6-ba91180e929f",
+    "id": "d13a5049-51f1-41f6-a44c-57b9f200f367",
     "category": "مطاعم",
-    "location": "سوهاج",
-    "title": "وجبة غداء عمل بسعر خاص",
-    "description": "بوفيه عمل يومي.",
-    "coverPhoto": "https://example.com/images/62b978_cover.jpg",
-    "profilePhoto": "https://example.com/images/04a548_profile.jpg",
-    "imageUrl": "https://example.com/images/4d1b65_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "الجيزة",
+    "title": "حاتي الحاتي",
+    "description": "استمتع بعرض خاص من حاتي الحاتي مع خصومات تصل إلى 40٪ في جميع فروع الجيزة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?حاتي الحاتي",
+    "image_url": "https://source.unsplash.com/random/1000x800?حاتي الحاتي",
+    "discount": 40,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "259ae674-b2e3-4b5e-bb81-e3eb9a177aff",
-        "title": "يشمل المقبلات والمشروبات"
+        "id": "c9823b5d-6504-4e74-9687-ba609f8111ef",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "f232f801-0ba1-4153-9371-c71569df5dbf",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "d562095d-f689-4755-9b78-dad93067fbf7",
-        "location": "شارع 23 يوليو - الإسماعيلية"
+        "id": "d91298db-1585-487a-85b5-ddfac43949d1",
+        "location": "2 شارع النصر - الجيزة - مصر"
       }
     ]
   },
   {
-    "id": "096b4e5b-ad88-4640-9e10-95f684a46028",
+    "id": "9856ec63-bb00-45e2-a7ac-54cafb4fa9fe",
+    "category": "مطاعم",
+    "location": "القاهرة",
+    "title": "جاد",
+    "description": "استمتع بعرض خاص من جاد مع خصومات تصل إلى 25٪ في جميع فروع القاهرة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?جاد",
+    "image_url": "https://source.unsplash.com/random/1000x800?جاد",
+    "discount": 25,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "17d304c5-c5ce-47d7-866e-7760fe023513",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "faa12d24-ba4d-477a-869b-d08c574f40c3",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "f1a6de0e-b5d2-458c-90c9-21e5c42c8e61",
+        "location": "73 شارع النصر - القاهرة - مصر"
+      }
+    ]
+  },
+  {
+    "id": "f0bbe314-e2e1-4247-86d5-aaa04aeea37a",
+    "category": "مطاعم",
+    "location": "أسوان",
+    "title": "تيبستون",
+    "description": "استمتع بعرض خاص من تيبستون مع خصومات تصل إلى 35٪ في جميع فروع أسوان.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?تيبستون",
+    "image_url": "https://source.unsplash.com/random/1000x800?تيبستون",
+    "discount": 35,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "0146cfcb-f25f-45d1-9148-15f34f33c654",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "1f6a3a75-5fb9-4348-ab37-940e4729959c",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "8c771484-3694-4f4e-abd5-dfdb6409e0cd",
+        "location": "89 شارع النصر - أسوان - مصر"
+      }
+    ]
+  },
+  {
+    "id": "d26cc4ac-55e7-4349-819a-35bfa777677d",
     "category": "مطاعم",
     "location": "بورسعيد",
-    "title": "خصم 30% على المشويات",
-    "description": "تمتع بأشهى المشويات المصرية.",
-    "coverPhoto": "https://example.com/images/b1f3f2_cover.jpg",
-    "profilePhoto": "https://example.com/images/3b0d3b_profile.jpg",
-    "imageUrl": "https://example.com/images/70dbbd_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "الدهان",
+    "description": "استمتع بعرض خاص من الدهان مع خصومات تصل إلى 30٪ في جميع فروع بورسعيد.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?الدهان",
+    "image_url": "https://source.unsplash.com/random/1000x800?الدهان",
+    "discount": 30,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "1e120a4f-8d36-4bc0-a5af-6cad9b6f15de",
-        "title": "يشمل جميع المشويات"
+        "id": "633ff77b-09f9-4199-98ac-22f0819b5015",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "a253b22f-16f8-490f-8da2-b5ed38e7e02d",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "ea768e28-459c-4de0-ad1b-7e1a75b8ba7e",
-        "location": "حي شرق - سوهاج"
+        "id": "4804d8a1-2487-4bcf-84d3-8ae8a4abb6a8",
+        "location": "19 شارع النصر - بورسعيد - مصر"
       }
     ]
   },
   {
-    "id": "7fd4120f-16d8-4d7f-b4a2-ffef64a94e99",
+    "id": "d315454c-f8b6-4335-8e62-4ea3c3bdc882",
+    "category": "مطاعم",
+    "location": "بورسعيد",
+    "title": "صب واي",
+    "description": "استمتع بعرض خاص من صب واي مع خصومات تصل إلى 50٪ في جميع فروع بورسعيد.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?صب واي",
+    "image_url": "https://source.unsplash.com/random/1000x800?صب واي",
+    "discount": 50,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "d2aa0bb9-817e-469d-a31b-7b3842f50e90",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "e741865d-1216-4f35-a884-3aac956a20cd",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "06b93ee1-8975-4a21-92b5-6595edd91424",
+        "location": "78 شارع النصر - بورسعيد - مصر"
+      }
+    ]
+  },
+  {
+    "id": "bcf713dd-d7b6-4f2c-a315-f41d98323d74",
     "category": "مكتبات",
-    "location": "القاهرة",
-    "title": "خصم 30% على جميع الكتب",
-    "description": "استمتع بتجربة قراءة ممتعة مع أفضل الكتب العربية والعالمية.",
-    "coverPhoto": "https://example.com/images/74e613_cover.jpg",
-    "profilePhoto": "https://example.com/images/05a616_profile.jpg",
-    "imageUrl": "https://example.com/images/6b0109_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "أسيوط",
+    "title": "مكتبة الشروق",
+    "description": "استمتع بعرض خاص من مكتبة الشروق مع خصومات تصل إلى 15٪ في جميع فروع أسيوط.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة الشروق",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة الشروق",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "d9857b70-b6ca-4d47-81a3-79316d7681a2",
-        "title": "يشمل الكتب الأدبية والعلمية"
+        "id": "5d559e3f-df0a-4397-9239-54a5db01d8e9",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "4dc56462-1cd6-49b9-98ac-4b72238ead4c",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "a2b6fa0f-01ef-4971-bfc0-ba93a1c787fe",
-        "location": "وسط البلد - القاهرة"
+        "id": "734f425b-3947-4830-9bd6-3e7e57930978",
+        "location": "31 شارع النصر - أسيوط - مصر"
       }
     ]
   },
   {
-    "id": "d50dcccd-9a88-416e-bf73-5614ed0b91ba",
-    "category": "مكتبات",
-    "location": "الإسكندرية",
-    "title": "عرض العودة للمدارس",
-    "description": "خصومات على الأدوات المدرسية.",
-    "coverPhoto": "https://example.com/images/688e62_cover.jpg",
-    "profilePhoto": "https://example.com/images/562bd2_profile.jpg",
-    "imageUrl": "https://example.com/images/5150c6_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "8a8a9c0c-312d-4d6b-84f8-298571c1cbbd",
-        "title": "يشمل جميع الأدوات المكتبية"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "adb29746-27c7-4648-989b-425940cbb94d",
-        "location": "طريق الحرية - الإسكندرية"
-      }
-    ]
-  },
-  {
-    "id": "d31b09e4-de9c-4803-9082-bc0288c39e7f",
-    "category": "مكتبات",
-    "location": "الجيزة",
-    "title": "خصم على الروايات",
-    "description": "أفضل الروايات العربية والعالمية بخصم خاص.",
-    "coverPhoto": "https://example.com/images/01b700_cover.jpg",
-    "profilePhoto": "https://example.com/images/7b4c69_profile.jpg",
-    "imageUrl": "https://example.com/images/07faca_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "06cd33a8-b4cb-4722-b4a7-f1e75f1673f0",
-        "title": "يشمل جميع الروايات"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "11caa745-3bb3-4bcc-8684-26febe921a97",
-        "location": "شارع الهرم - الجيزة"
-      }
-    ]
-  },
-  {
-    "id": "036807c4-b94a-4aa1-b90b-1bb4d2116012",
+    "id": "b1167581-dfb8-4a1f-86d9-d2d5634e35d4",
     "category": "مكتبات",
     "location": "المنصورة",
-    "title": "خصم على الكتب التعليمية",
-    "description": "خصم خاص للطلاب.",
-    "coverPhoto": "https://example.com/images/304ce3_cover.jpg",
-    "profilePhoto": "https://example.com/images/7afb63_profile.jpg",
-    "imageUrl": "https://example.com/images/5b02ea_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "مكتبة المستقبل",
+    "description": "استمتع بعرض خاص من مكتبة المستقبل مع خصومات تصل إلى 50٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة المستقبل",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة المستقبل",
+    "discount": 50,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "9d5c0bf4-ac90-4f24-897b-f2c92e67c14f",
-        "title": "يشمل الكتب الجامعية"
+        "id": "5901a406-a053-42c7-9f56-08a9751b4660",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "413d13c2-cd2b-4483-9bfa-b910eed0c2ca",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "7ab032a8-5f9a-4198-b504-b8c134796a6e",
-        "location": "ميدان التحرير - القاهرة"
+        "id": "b098eabe-6378-46c8-b792-b04597d26e64",
+        "location": "63 شارع النصر - المنصورة - مصر"
       }
     ]
   },
   {
-    "id": "18da13fc-8e19-4100-88aa-de1b53be2db0",
+    "id": "726fdf07-7285-428d-b294-a31eb1652bf1",
     "category": "مكتبات",
-    "location": "طنطا",
-    "title": "عرض على الأدوات الهندسية",
-    "description": "خصم للطلاب الجامعيين.",
-    "coverPhoto": "https://example.com/images/d6e937_cover.jpg",
-    "profilePhoto": "https://example.com/images/c9a8cf_profile.jpg",
-    "imageUrl": "https://example.com/images/b64b2b_offer.jpg",
+    "location": "القاهرة",
+    "title": "مكتبة الأهرام",
+    "description": "استمتع بعرض خاص من مكتبة الأهرام مع خصومات تصل إلى 10٪ في جميع فروع القاهرة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة الأهرام",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة الأهرام",
     "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "73ad2d4f-53cb-4d4c-8715-217ea910622c",
-        "title": "يشمل المساطر والآلات الحاسبة"
+        "id": "b7a9398c-90ff-41b4-98e5-0c1bbfa22ed0",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "4fb51882-a95f-4d78-88ac-a51030b241b7",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "62c6e9f1-67a2-4fb5-86b0-ea6de68e6b6e",
-        "location": "محطة الرمل - الإسكندرية"
+        "id": "cc658087-c879-4f1c-ba14-2981b33a53ae",
+        "location": "66 شارع النصر - القاهرة - مصر"
       }
     ]
   },
   {
-    "id": "c9aebfd3-8fac-45be-8d76-9b09e4b9f731",
+    "id": "c4ebd362-3204-4f40-b651-75f088b7208f",
     "category": "مكتبات",
-    "location": "أسيوط",
-    "title": "خصم 20% على كتب الأطفال",
-    "description": "أفضل كتب وقصص للأطفال.",
-    "coverPhoto": "https://example.com/images/ce7564_cover.jpg",
-    "profilePhoto": "https://example.com/images/a15731_profile.jpg",
-    "imageUrl": "https://example.com/images/6444c0_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "المنصورة",
+    "title": "مكتبة المعادي",
+    "description": "استمتع بعرض خاص من مكتبة المعادي مع خصومات تصل إلى 50٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة المعادي",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة المعادي",
+    "discount": 50,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "9e7c9106-4695-4f4e-9c8e-91f282c110b4",
-        "title": "يشمل جميع كتب الأطفال"
+        "id": "f85bf6d7-7bc0-4dd0-8ba5-449c45036c87",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "a9488c00-de9f-4b7b-a173-f2dcbeb6c448",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "68193691-8b36-40ed-ac04-4f956178b338",
-        "location": "حي الزهور - بورسعيد"
+        "id": "de859c1c-6e64-415c-966f-a28fc12d58dc",
+        "location": "52 شارع النصر - المنصورة - مصر"
       }
     ]
   },
   {
-    "id": "e5aad92a-1375-423c-96dd-ba76b5536661",
+    "id": "13abc4f7-ff86-485d-a011-7462fcaed163",
     "category": "مكتبات",
-    "location": "الزقازيق",
-    "title": "خصم على المجلات",
-    "description": "خصم خاص على اشتراكات المجلات.",
-    "coverPhoto": "https://example.com/images/e76cfd_cover.jpg",
-    "profilePhoto": "https://example.com/images/c4ffa4_profile.jpg",
-    "imageUrl": "https://example.com/images/857803_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "الأقصر",
+    "title": "مكتبة الفاروق",
+    "description": "استمتع بعرض خاص من مكتبة الفاروق مع خصومات تصل إلى 25٪ في جميع فروع الأقصر.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة الفاروق",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة الفاروق",
+    "discount": 25,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "55f4f2fc-6d2f-4734-ab48-ac85c9f8ce4b",
-        "title": "يشمل جميع الإصدارات"
+        "id": "a564a273-6459-496c-876d-0cb5a055606f",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "57ed453c-70a6-4d45-8f48-6a4470e11a7f",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "ff011562-32c3-4376-b097-95d83f587ddb",
-        "location": "شارع الكورنيش - المنصورة"
+        "id": "4ea14505-3c5b-49c2-9e0b-fbda60e7c3a7",
+        "location": "93 شارع النصر - الأقصر - مصر"
       }
     ]
   },
   {
-    "id": "bf0dc8cc-a116-4c14-afe3-1c96047a1e53",
+    "id": "b65f0f9e-0714-40c8-b2f7-bb2c644d0ea7",
     "category": "مكتبات",
-    "location": "الإسماعيلية",
-    "title": "عرض على القواميس",
-    "description": "خصومات على القواميس والمعاجم.",
-    "coverPhoto": "https://example.com/images/2f8486_cover.jpg",
-    "profilePhoto": "https://example.com/images/792c79_profile.jpg",
-    "imageUrl": "https://example.com/images/bb0d8e_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "الجيزة",
+    "title": "مكتبة الزهراء",
+    "description": "استمتع بعرض خاص من مكتبة الزهراء مع خصومات تصل إلى 25٪ في جميع فروع الجيزة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة الزهراء",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة الزهراء",
+    "discount": 25,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "47b809d6-076b-47f4-8a0d-3de4a2a1adec",
-        "title": "يشمل جميع اللغات"
+        "id": "cd4b92a6-8231-4906-b37c-d4ea006d8480",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "468c096f-8d33-4c49-addd-52f2b35d0bd5",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "9f20bdc3-9720-452a-aa99-a7669c6231e2",
-        "location": "حي الجامعة - أسيوط"
+        "id": "f389e613-94f7-449d-9369-5753a0fa2188",
+        "location": "34 شارع النصر - الجيزة - مصر"
       }
     ]
   },
   {
-    "id": "90cd7f14-d6a9-493d-9b38-ea29ebb401de",
-    "category": "مكتبات",
-    "location": "سوهاج",
-    "title": "خصم على كتب التنمية البشرية",
-    "description": "أفضل كتب التطوير الذاتي.",
-    "coverPhoto": "https://example.com/images/f0fce7_cover.jpg",
-    "profilePhoto": "https://example.com/images/7cb110_profile.jpg",
-    "imageUrl": "https://example.com/images/466f0a_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "358b91a9-5bec-492a-bf96-65dbed58c2ea",
-        "title": "يشمل جميع العناوين"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "e810b13f-4552-47e9-9dc1-009810c8b9e9",
-        "location": "حي ثاني - الزقازيق"
-      }
-    ]
-  },
-  {
-    "id": "970b20b9-bc0f-422c-9224-c99763e3358c",
+    "id": "eec3cc5c-0249-40b4-b9cf-a0602e560934",
     "category": "مكتبات",
     "location": "بورسعيد",
-    "title": "خصم على الكتب الجامعية",
-    "description": "عرض خاص للطلاب.",
-    "coverPhoto": "https://example.com/images/994882_cover.jpg",
-    "profilePhoto": "https://example.com/images/be41cc_profile.jpg",
-    "imageUrl": "https://example.com/images/1dbe43_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "مكتبة دار العلوم",
+    "description": "استمتع بعرض خاص من مكتبة دار العلوم مع خصومات تصل إلى 50٪ في جميع فروع بورسعيد.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة دار العلوم",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة دار العلوم",
+    "discount": 50,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "72080780-ce41-47c0-874a-e0badb3c22af",
-        "title": "يشمل جميع الكتب الجامعية"
+        "id": "e970036e-33c5-45a4-8004-e711beb659d4",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "f41b1009-f291-4812-83ef-5e02dcef44c3",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "35104de2-11aa-4cc9-a6ef-fc3d23db18d5",
-        "location": "شارع البحر - طنطا"
+        "id": "34747af2-73b5-4a36-a3ae-b5465724d80f",
+        "location": "98 شارع النصر - بورسعيد - مصر"
       }
     ]
   },
   {
-    "id": "ae9e15d4-6962-42ee-8cca-0a099f9a1b1e",
+    "id": "00a90257-38f8-4647-b90e-88ae88de02c3",
+    "category": "مكتبات",
+    "location": "طنطا",
+    "title": "مكتبة الأسرة",
+    "description": "استمتع بعرض خاص من مكتبة الأسرة مع خصومات تصل إلى 25٪ في جميع فروع طنطا.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة الأسرة",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة الأسرة",
+    "discount": 25,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "4ccd7cb3-bb29-48f0-8150-18cbc78a6b5c",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "79a2f8f5-46f2-41b0-9e58-70e26ea2fb5b",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "8af7f892-1c06-4db1-bb7e-dc873090f6d4",
+        "location": "42 شارع النصر - طنطا - مصر"
+      }
+    ]
+  },
+  {
+    "id": "a2781cdf-919a-4d6a-b98d-414edd261c5c",
+    "category": "مكتبات",
+    "location": "أسوان",
+    "title": "مكتبة الأندلس",
+    "description": "استمتع بعرض خاص من مكتبة الأندلس مع خصومات تصل إلى 10٪ في جميع فروع أسوان.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة الأندلس",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة الأندلس",
+    "discount": 10,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "a9943366-1ef7-4691-a136-9c312e407281",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "6a2cc25d-7003-4563-95b6-25c18e4895eb",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "16d7f0a4-f0e9-4fdd-a032-aa649c26d4ab",
+        "location": "37 شارع النصر - أسوان - مصر"
+      }
+    ]
+  },
+  {
+    "id": "1cc26fa0-d985-4927-ba41-a22d7b77f54f",
+    "category": "مكتبات",
+    "location": "أسيوط",
+    "title": "مكتبة سطور",
+    "description": "استمتع بعرض خاص من مكتبة سطور مع خصومات تصل إلى 15٪ في جميع فروع أسيوط.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مكتبات",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مكتبة سطور",
+    "image_url": "https://source.unsplash.com/random/1000x800?مكتبة سطور",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "421d6ad5-4417-4b8b-ba1f-a17d8966b9f0",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "254b3653-9dca-4a20-9264-9c2a6960f2a7",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "848c325c-01d8-4e62-ba4c-bce89b97c89a",
+        "location": "79 شارع النصر - أسيوط - مصر"
+      }
+    ]
+  },
+  {
+    "id": "cfa11c15-fed4-4521-9830-71031e9d8ef5",
     "category": "ترفيهي",
-    "location": "القاهرة",
-    "title": "تذكرة مدينة الملاهي بخصم 50%",
-    "description": "ادخل مدينة الألعاب الترفيهية بنصف السعر.",
-    "coverPhoto": "https://example.com/images/3eec1c_cover.jpg",
-    "profilePhoto": "https://example.com/images/4c8e9a_profile.jpg",
-    "imageUrl": "https://example.com/images/76f603_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "الأقصر",
+    "title": "سينما الزمالك",
+    "description": "استمتع بعرض خاص من سينما الزمالك مع خصومات تصل إلى 25٪ في جميع فروع الأقصر.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?سينما الزمالك",
+    "image_url": "https://source.unsplash.com/random/1000x800?سينما الزمالك",
+    "discount": 25,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "a7ebcb80-edfc-4557-bcbc-7c414b44213f",
-        "title": "يشمل جميع الألعاب"
+        "id": "84b7fb67-85e5-4eda-a550-02caec24da90",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "15770645-9005-4ec3-826d-99db595573eb",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "8702c939-0643-42d9-8ca9-5d0964a57ae1",
-        "location": "مدينة نصر - القاهرة"
+        "id": "8c6c3953-d940-4a70-bc0b-34ca9452411a",
+        "location": "63 شارع النصر - الأقصر - مصر"
       }
     ]
   },
   {
-    "id": "4b956eff-c6c1-4532-b7c9-f00bd647f218",
+    "id": "5e4d1727-39c7-46bd-82df-32875988958b",
+    "category": "ترفيهي",
+    "location": "السويس",
+    "title": "كيدزانيا",
+    "description": "استمتع بعرض خاص من كيدزانيا مع خصومات تصل إلى 15٪ في جميع فروع السويس.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?كيدزانيا",
+    "image_url": "https://source.unsplash.com/random/1000x800?كيدزانيا",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "5fd48ebd-c777-4ff7-8f77-5e1f1121c4e2",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "4181e997-cd08-4c34-8320-18d7c6af24ca",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "a68f67ef-ae91-4428-b726-31fb3b0ea213",
+        "location": "81 شارع النصر - السويس - مصر"
+      }
+    ]
+  },
+  {
+    "id": "3790b459-544d-4dea-9a0d-5fb81b179c22",
+    "category": "ترفيهي",
+    "location": "بورسعيد",
+    "title": "ماجيك لاند",
+    "description": "استمتع بعرض خاص من ماجيك لاند مع خصومات تصل إلى 35٪ في جميع فروع بورسعيد.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?ماجيك لاند",
+    "image_url": "https://source.unsplash.com/random/1000x800?ماجيك لاند",
+    "discount": 35,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "3b615399-63c8-4c9a-84da-2e8c4be35d34",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "71f81835-6262-425c-a36d-5f0f16de7bab",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "935feb50-5091-4b9c-a11b-23b15002562d",
+        "location": "62 شارع النصر - بورسعيد - مصر"
+      }
+    ]
+  },
+  {
+    "id": "c86766c9-7fd7-4ac4-8b91-33cfc24203ac",
+    "category": "ترفيهي",
+    "location": "السويس",
+    "title": "دريم بارك",
+    "description": "استمتع بعرض خاص من دريم بارك مع خصومات تصل إلى 10٪ في جميع فروع السويس.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?دريم بارك",
+    "image_url": "https://source.unsplash.com/random/1000x800?دريم بارك",
+    "discount": 10,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "1e052c50-3473-49b2-88e5-1ccd851e81e0",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "ef6ac61e-80da-47b3-aab8-d46a80fd3563",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "d74ef45a-aae4-46f4-850c-f9c7034a5d69",
+        "location": "94 شارع النصر - السويس - مصر"
+      }
+    ]
+  },
+  {
+    "id": "c3064f6a-245c-4727-bd3d-283b9085cb7c",
     "category": "ترفيهي",
     "location": "الإسكندرية",
-    "title": "خصم على السينما",
-    "description": "تذكرة بسعر مخفض.",
-    "coverPhoto": "https://example.com/images/f21b32_cover.jpg",
-    "profilePhoto": "https://example.com/images/7fb0ca_profile.jpg",
-    "imageUrl": "https://example.com/images/117c7d_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "الملاهى الجديدة",
+    "description": "استمتع بعرض خاص من الملاهى الجديدة مع خصومات تصل إلى 25٪ في جميع فروع الإسكندرية.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?الملاهى الجديدة",
+    "image_url": "https://source.unsplash.com/random/1000x800?الملاهى الجديدة",
+    "discount": 25,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "e1211026-3a9e-47b9-a8c3-cffcefd0642a",
-        "title": "يشمل جميع الأفلام"
+        "id": "2d6bf5ac-8680-4008-9ad7-3deea7a835d8",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "fb8edc6b-af1c-4bf8-8b73-bb39a5e13dfd",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "d327cb22-da07-4886-83d1-a75b65eabd7c",
-        "location": "مول طنطا - طنطا"
+        "id": "39b4a005-8756-4731-bef6-3b0e4bd95b66",
+        "location": "32 شارع النصر - الإسكندرية - مصر"
       }
     ]
   },
   {
-    "id": "ec4e155d-59c2-42f5-95a1-9c40da65308b",
+    "id": "d60bafdd-4b1a-4f43-9013-6372c3433612",
     "category": "ترفيهي",
-    "location": "الجيزة",
-    "title": "خصم على الكارتينج",
-    "description": "استمتع بسباق السيارات.",
-    "coverPhoto": "https://example.com/images/0ee408_cover.jpg",
-    "profilePhoto": "https://example.com/images/0d10f1_profile.jpg",
-    "imageUrl": "https://example.com/images/b176a2_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "القاهرة",
+    "title": "بلو أوشن",
+    "description": "استمتع بعرض خاص من بلو أوشن مع خصومات تصل إلى 15٪ في جميع فروع القاهرة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?بلو أوشن",
+    "image_url": "https://source.unsplash.com/random/1000x800?بلو أوشن",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "6842fcd7-a594-47ca-beaa-3a7c2066817b",
-        "title": "يشمل جميع الجلسات"
+        "id": "a260fefa-4396-4d82-ab77-044f6f584e3c",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "b4eb6aa5-2c1f-46b3-a6b5-ac9c0a1efde9",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "26af38a4-8b9c-4bf4-9776-2da7e070ba60",
-        "location": "كورنيش الإسكندرية - الإسكندرية"
+        "id": "0a6b8772-526c-49bc-a78b-ee87847df55c",
+        "location": "65 شارع النصر - القاهرة - مصر"
       }
     ]
   },
   {
-    "id": "01775568-db76-442d-a1d8-77d60f0247b2",
+    "id": "8066456c-a9d0-4219-89d7-74a802aa90ce",
     "category": "ترفيهي",
     "location": "المنصورة",
-    "title": "عرض خاص على التزلج",
-    "description": "تذكرة تزلج بسعر مميز.",
-    "coverPhoto": "https://example.com/images/2d0b1c_cover.jpg",
-    "profilePhoto": "https://example.com/images/205764_profile.jpg",
-    "imageUrl": "https://example.com/images/111d08_offer.jpg",
+    "title": "جرين بارك",
+    "description": "استمتع بعرض خاص من جرين بارك مع خصومات تصل إلى 10٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?جرين بارك",
+    "image_url": "https://source.unsplash.com/random/1000x800?جرين بارك",
     "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "b77addcb-93cc-406c-bfba-1bebe3444948",
-        "title": "يشمل جميع الأعمار"
+        "id": "a3e5d22f-88da-4a50-bc6f-0b80ebd51489",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "28fac908-76ab-4f4a-b08e-e03e7001a8f2",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "4f4e7427-5773-4a3d-abcf-3569e7265276",
-        "location": "مركز الترفيه - الجيزة"
+        "id": "095de737-e83b-429e-a411-11932d3efe2e",
+        "location": "28 شارع النصر - المنصورة - مصر"
       }
     ]
   },
   {
-    "id": "0cc75cca-6396-4540-86a7-1bf4edeedaee",
+    "id": "3ad039d3-d577-4e05-954d-18ad30e21990",
+    "category": "ترفيهي",
+    "location": "السويس",
+    "title": "هابي لاند",
+    "description": "استمتع بعرض خاص من هابي لاند مع خصومات تصل إلى 45٪ في جميع فروع السويس.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?هابي لاند",
+    "image_url": "https://source.unsplash.com/random/1000x800?هابي لاند",
+    "discount": 45,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "1c498fb4-1774-4b65-b657-02142b2128c8",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "a472ccb7-9453-4df2-97a6-7030b7aa2107",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "14f6a5d8-227b-463c-8619-c49174a49e04",
+        "location": "15 شارع النصر - السويس - مصر"
+      }
+    ]
+  },
+  {
+    "id": "07d5c42b-46de-423c-84a9-9a1e4f4e6cab",
     "category": "ترفيهي",
     "location": "طنطا",
-    "title": "خصم على حفلات الصيف",
-    "description": "استمتع بأفضل الحفلات الموسيقية.",
-    "coverPhoto": "https://example.com/images/0780d3_cover.jpg",
-    "profilePhoto": "https://example.com/images/647452_profile.jpg",
-    "imageUrl": "https://example.com/images/e6b455_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "بلاي ستيشن كافيه",
+    "description": "استمتع بعرض خاص من بلاي ستيشن كافيه مع خصومات تصل إلى 35٪ في جميع فروع طنطا.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?بلاي ستيشن كافيه",
+    "image_url": "https://source.unsplash.com/random/1000x800?بلاي ستيشن كافيه",
+    "discount": 35,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "8ef858f8-b9f1-44bf-af2c-b15883b4d28d",
-        "title": "يشمل جميع الفعاليات"
+        "id": "2d9c87c5-1f21-427a-a724-84779ee04bcf",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "4d65f5a1-4944-497e-a656-a695f1a9425b",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "68e2272d-8b3e-4189-8785-05543a4036f7",
-        "location": "كورنيش البحر - بورسعيد"
+        "id": "70566063-5b44-4d3c-a5a3-1c10cf641ab0",
+        "location": "8 شارع النصر - طنطا - مصر"
       }
     ]
   },
   {
-    "id": "517cd9b7-84eb-493f-80a5-6f69d0905b8e",
+    "id": "7cfb3ff0-2a26-4d1a-9df4-c12071dcd36c",
     "category": "ترفيهي",
     "location": "أسيوط",
-    "title": "خصم على البولينج",
-    "description": "لعب بولينج بسعر خاص.",
-    "coverPhoto": "https://example.com/images/b6b09b_cover.jpg",
-    "profilePhoto": "https://example.com/images/0d5a06_profile.jpg",
-    "imageUrl": "https://example.com/images/a56086_offer.jpg",
+    "title": "أكوا بارك",
+    "description": "استمتع بعرض خاص من أكوا بارك مع خصومات تصل إلى 10٪ في جميع فروع أسيوط.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "profile_photo": "https://source.unsplash.com/random/300x300?أكوا بارك",
+    "image_url": "https://source.unsplash.com/random/1000x800?أكوا بارك",
     "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "991c27ea-c8a4-464a-8eaa-771830125e15",
-        "title": "يشمل جميع الأيام"
+        "id": "d11faf6e-26c4-4f0a-a4be-c7d8d8348e9b",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "939da3ab-8400-4e16-9d61-d4e7467ba05f",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "b9690360-ed51-4f3b-9b10-bb92eb888666",
-        "location": "مول الجامعة - المنصورة"
+        "id": "bcf4e4fc-1589-4b8a-a791-713a21fa4f5d",
+        "location": "57 شارع النصر - أسيوط - مصر"
       }
     ]
   },
   {
-    "id": "c224d5d0-96c5-430a-a2b4-46b2d0b06014",
-    "category": "ترفيهي",
-    "location": "الزقازيق",
-    "title": "عرض على السينما",
-    "description": "تذكرة مجانية عند شراء تذكرة.",
-    "coverPhoto": "https://example.com/images/6bae64_cover.jpg",
-    "profilePhoto": "https://example.com/images/710d1e_profile.jpg",
-    "imageUrl": "https://example.com/images/e90ecf_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "4ab58cda-8f0e-4d98-8d4f-bb588f7c0cd5",
-        "title": "يشمل جميع الأفلام"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "f86d0e3d-a62c-43f3-90f7-4dbeea1178a2",
-        "location": "حي شرق - سوهاج"
-      }
-    ]
-  },
-  {
-    "id": "5fcb03ff-7483-4dbc-928d-ee13d48340e1",
-    "category": "ترفيهي",
-    "location": "الإسماعيلية",
-    "title": "خصم على ألعاب الفيديو",
-    "description": "استمتع بوقتك في صالة الألعاب.",
-    "coverPhoto": "https://example.com/images/455c4a_cover.jpg",
-    "profilePhoto": "https://example.com/images/f31ddd_profile.jpg",
-    "imageUrl": "https://example.com/images/6a8e15_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "73f1a2aa-e397-41fd-a3c6-f47ea7032436",
-        "title": "يشمل جميع الأجهزة"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "e400200d-b226-42e9-9b55-c2f6fe41ebd2",
-        "location": "مول أسيوط - أسيوط"
-      }
-    ]
-  },
-  {
-    "id": "7a1b4a2a-cd5b-4c94-947b-7e59ac12055e",
-    "category": "ترفيهي",
-    "location": "سوهاج",
-    "title": "عرض على المسرحيات",
-    "description": "تذاكر مسرحية بسعر خاص.",
-    "coverPhoto": "https://example.com/images/ad2a99_cover.jpg",
-    "profilePhoto": "https://example.com/images/4cd120_profile.jpg",
-    "imageUrl": "https://example.com/images/a97aff_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "d2224e11-d76e-425f-a55e-ef1108cadbb4",
-        "title": "يشمل جميع العروض"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "d07d6636-e744-479c-94e1-e1cceddb4071",
-        "location": "مسرح قصر الثقافة - الزقازيق"
-      }
-    ]
-  },
-  {
-    "id": "c47321fa-b0d5-4c6e-953f-6eb5a5031b2e",
-    "category": "ترفيهي",
-    "location": "بورسعيد",
-    "title": "خصم على حفلات الغناء",
-    "description": "تذاكر حفلات بخصم مميز.",
-    "coverPhoto": "https://example.com/images/ade61c_cover.jpg",
-    "profilePhoto": "https://example.com/images/a816fb_profile.jpg",
-    "imageUrl": "https://example.com/images/0d8ba8_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "c472e9d6-bc66-4e04-a5df-63e79d5a6b0d",
-        "title": "يشمل الحفلات الصيفية"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "c9330179-11ee-4237-8a60-ee4df58ec00f",
-        "location": "قاعة المؤتمرات - القاهرة"
-      }
-    ]
-  },
-  {
-    "id": "d2741a41-fae4-4b83-99c7-5fe1d6fea010",
+    "id": "9838ec2f-4b54-4382-9c3b-0de82a94fad3",
     "category": "ماركت",
-    "location": "القاهرة",
-    "title": "خصم 10% على المشتريات اليومية",
-    "description": "تسوق جميع احتياجاتك اليومية بأسعار مميزة.",
-    "coverPhoto": "https://example.com/images/eb51e4_cover.jpg",
-    "profilePhoto": "https://example.com/images/227aaf_profile.jpg",
-    "imageUrl": "https://example.com/images/786a6c_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "location": "المنصورة",
+    "title": "كارفور",
+    "description": "استمتع بعرض خاص من كارفور مع خصومات تصل إلى 20٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?كارفور",
+    "image_url": "https://source.unsplash.com/random/1000x800?كارفور",
+    "discount": 20,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "a23a1a6b-a5c4-4105-ab8d-d0804479dfa8",
-        "title": "يشمل السلع الغذائية فقط"
+        "id": "2126d357-f249-43ec-b4a4-bb3a9af71d19",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "2cd18cdf-081a-4d88-9a12-c46e6c80a162",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "80907d15-a3d1-47fc-bfdc-6f9a28a14c35",
-        "location": "مدينة نصر - القاهرة"
+        "id": "a935f0e2-94be-4f8d-822e-9bf6e18630ee",
+        "location": "68 شارع النصر - المنصورة - مصر"
       }
     ]
   },
   {
-    "id": "6e64c7ac-7405-4160-be08-683463dfc576",
+    "id": "e2736539-2bb3-4535-9a17-15639e3bad97",
+    "category": "ماركت",
+    "location": "أسوان",
+    "title": "مترو ماركت",
+    "description": "استمتع بعرض خاص من مترو ماركت مع خصومات تصل إلى 15٪ في جميع فروع أسوان.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?مترو ماركت",
+    "image_url": "https://source.unsplash.com/random/1000x800?مترو ماركت",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "87a2c227-31fe-4f86-bfca-895e21d1ab85",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "18d084c8-a65f-4579-8159-30b327f40013",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "bb6b01bb-fe33-419b-aae9-af419143cc8f",
+        "location": "30 شارع النصر - أسوان - مصر"
+      }
+    ]
+  },
+  {
+    "id": "06b273e5-1809-479f-a465-f9b8765ede38",
     "category": "ماركت",
     "location": "الإسكندرية",
-    "title": "عرض خاص على الفواكه",
-    "description": "خصم على الفواكه الطازجة.",
-    "coverPhoto": "https://example.com/images/d3e0ae_cover.jpg",
-    "profilePhoto": "https://example.com/images/14f435_profile.jpg",
-    "imageUrl": "https://example.com/images/989343_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "خير زمان",
+    "description": "استمتع بعرض خاص من خير زمان مع خصومات تصل إلى 45٪ في جميع فروع الإسكندرية.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?خير زمان",
+    "image_url": "https://source.unsplash.com/random/1000x800?خير زمان",
+    "discount": 45,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "74a11332-1c74-4f5c-897c-1d576b3479e3",
-        "title": "يشمل جميع الأنواع"
+        "id": "ea1bb1a3-2a2e-4d3b-8ec0-87245f52d18c",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "6f013aa2-bf14-41a9-8394-2dc0f0d740e9",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "d624f5d4-3fbd-46dc-b287-b540e2bcc555",
-        "location": "حي ثاني - الزقازيق"
+        "id": "5f449f3c-cfbf-4e5b-b16d-c9fbe0e55dd4",
+        "location": "16 شارع النصر - الإسكندرية - مصر"
       }
     ]
   },
   {
-    "id": "ee6b42fa-95d1-45f3-83c9-b050a4364be7",
-    "category": "ماركت",
-    "location": "الجيزة",
-    "title": "خصم على منتجات التنظيف",
-    "description": "استمتع بنظافة بيتك بأقل الأسعار.",
-    "coverPhoto": "https://example.com/images/e4b1bf_cover.jpg",
-    "profilePhoto": "https://example.com/images/bba077_profile.jpg",
-    "imageUrl": "https://example.com/images/34f6ac_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "334f500c-3e33-46d2-892b-bdeb93d7ca55",
-        "title": "يشمل المنظفات فقط"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "f4b4649e-5baf-4069-9bc3-e98d4e96b8c8",
-        "location": "حي الجامعة - أسيوط"
-      }
-    ]
-  },
-  {
-    "id": "2caaef6f-bef9-4427-ae42-b4e6794cbbcc",
-    "category": "ماركت",
-    "location": "المنصورة",
-    "title": "خصم على منتجات الألبان",
-    "description": "عروض على الأجبان والألبان.",
-    "coverPhoto": "https://example.com/images/99b19b_cover.jpg",
-    "profilePhoto": "https://example.com/images/e1d127_profile.jpg",
-    "imageUrl": "https://example.com/images/0669c2_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "1d0b226b-0158-421b-a3cd-aac13203a846",
-        "title": "يشمل جميع الأنواع"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "5cc1e7e0-37b4-4c32-bff1-61396b97f45b",
-        "location": "سيدي بشر - الإسكندرية"
-      }
-    ]
-  },
-  {
-    "id": "cb555326-82eb-439f-93e6-b33997a147d9",
-    "category": "ماركت",
-    "location": "طنطا",
-    "title": "عرض على الخضار",
-    "description": "خضار طازج يومياً.",
-    "coverPhoto": "https://example.com/images/62c571_cover.jpg",
-    "profilePhoto": "https://example.com/images/f80d09_profile.jpg",
-    "imageUrl": "https://example.com/images/420ab6_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "641f8982-acd1-49c6-9ead-7e756058c0e7",
-        "title": "يشمل جميع الخضار"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "df3da446-deb7-4785-96c1-9489006793e3",
-        "location": "حي شرق - سوهاج"
-      }
-    ]
-  },
-  {
-    "id": "bac838a9-370c-4363-ad0d-efb11c955d9d",
-    "category": "ماركت",
-    "location": "أسيوط",
-    "title": "خصم على السلع الرمضانية",
-    "description": "عروض خاصة بمناسبة رمضان.",
-    "coverPhoto": "https://example.com/images/15fa02_cover.jpg",
-    "profilePhoto": "https://example.com/images/b59af6_profile.jpg",
-    "imageUrl": "https://example.com/images/95285b_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "8a8e4993-8b45-478c-aa86-0c4f298d4581",
-        "title": "يشمل التمور والعصائر"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "b503c2d9-831b-4cc9-b1f8-26129e5d9e55",
-        "location": "شارع البحر - طنطا"
-      }
-    ]
-  },
-  {
-    "id": "0d4c3fe4-a97c-43da-9134-026bee167870",
-    "category": "ماركت",
-    "location": "الزقازيق",
-    "title": "عرض على المشروبات",
-    "description": "خصم خاص على العصائر والمياه الغازية.",
-    "coverPhoto": "https://example.com/images/6309f8_cover.jpg",
-    "profilePhoto": "https://example.com/images/bfbc3b_profile.jpg",
-    "imageUrl": "https://example.com/images/eb86f7_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "1fb891c4-f90a-4165-8489-555c6793818b",
-        "title": "يشمل جميع المشروبات"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "6f1c4b45-f430-44d5-894b-17bd1b1d193c",
-        "location": "حي الزهور - بورسعيد"
-      }
-    ]
-  },
-  {
-    "id": "0868061a-2b38-402a-bc7c-17d8ffbeb3cb",
-    "category": "ماركت",
-    "location": "الإسماعيلية",
-    "title": "خصم على اللحوم",
-    "description": "لحوم طازجة يومياً.",
-    "coverPhoto": "https://example.com/images/0361cc_cover.jpg",
-    "profilePhoto": "https://example.com/images/e57a0d_profile.jpg",
-    "imageUrl": "https://example.com/images/500145_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "9488a257-f27c-4d3a-a358-b03bcb690d97",
-        "title": "يشمل جميع الأنواع"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "6633ff74-d209-4e12-bddf-703bd98809da",
-        "location": "شارع الجمهورية - المنصورة"
-      }
-    ]
-  },
-  {
-    "id": "b367dbde-1bea-46a1-9daf-d3de95c74410",
-    "category": "ماركت",
-    "location": "سوهاج",
-    "title": "عرض على المنتجات المجمدة",
-    "description": "خصومات على جميع المنتجات المجمدة.",
-    "coverPhoto": "https://example.com/images/43b2e5_cover.jpg",
-    "profilePhoto": "https://example.com/images/c2f030_profile.jpg",
-    "imageUrl": "https://example.com/images/08abce_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
-      {
-        "id": "6cce916b-42cd-4dd4-bc27-24ea2d729c22",
-        "title": "يشمل جميع الأنواع"
-      }
-    ],
-    "branchesList": [
-      {
-        "id": "8e7e7b32-f976-4ce6-a47e-363166bcde95",
-        "location": "حي شرق - الجيزة"
-      }
-    ]
-  },
-  {
-    "id": "debd58ef-60fb-45a8-8014-f3e2b76edf94",
+    "id": "75741039-792c-4303-8594-5dc4f9e48c07",
     "category": "ماركت",
     "location": "بورسعيد",
-    "title": "خصم على الزيت والسكر",
-    "description": "عروض على المواد الأساسية.",
-    "coverPhoto": "https://example.com/images/d400a0_cover.jpg",
-    "profilePhoto": "https://example.com/images/998837_profile.jpg",
-    "imageUrl": "https://example.com/images/48d30e_offer.jpg",
-    "discount": 10,
-    "hasDiscount": true,
-    "offerDetailsList": [
+    "title": "هايبر وان",
+    "description": "استمتع بعرض خاص من هايبر وان مع خصومات تصل إلى 50٪ في جميع فروع بورسعيد.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?هايبر وان",
+    "image_url": "https://source.unsplash.com/random/1000x800?هايبر وان",
+    "discount": 50,
+    "has_discount": true,
+    "offer_details_list": [
       {
-        "id": "260e237b-5ffc-4418-b12e-c1d53cd0836e",
-        "title": "يشمل الزيت والسكر"
+        "id": "bf977901-7391-4b01-acfb-a0c0bcb72efe",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "5229c27d-2bf9-4cba-836e-08e7f9fb0ebd",
+        "title": "ساري حتى نهاية الشهر"
       }
     ],
-    "branchesList": [
+    "branches_list": [
       {
-        "id": "ccf0e361-56c8-4641-8ab8-50f3615e9453",
-        "location": "حي أول - الإسماعيلية"
+        "id": "91ed466e-59de-47e2-afa9-f944550a7e48",
+        "location": "60 شارع النصر - بورسعيد - مصر"
+      }
+    ]
+  },
+  {
+    "id": "62db9f11-83d6-4674-9d41-6a7591c88746",
+    "category": "ماركت",
+    "location": "الجيزة",
+    "title": "سبينيس",
+    "description": "استمتع بعرض خاص من سبينيس مع خصومات تصل إلى 50٪ في جميع فروع الجيزة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?سبينيس",
+    "image_url": "https://source.unsplash.com/random/1000x800?سبينيس",
+    "discount": 50,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "a3d74fec-1e56-4f5b-b91b-95ba1123840c",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "181306f9-ec37-4c92-9278-bce302d088b1",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "7eb31968-1df4-4749-90b2-14c07b2baf29",
+        "location": "70 شارع النصر - الجيزة - مصر"
+      }
+    ]
+  },
+  {
+    "id": "e31d0c16-80e4-41bf-a841-913628cf0e1e",
+    "category": "ماركت",
+    "location": "الإسكندرية",
+    "title": "السلام ماركت",
+    "description": "استمتع بعرض خاص من السلام ماركت مع خصومات تصل إلى 35٪ في جميع فروع الإسكندرية.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?السلام ماركت",
+    "image_url": "https://source.unsplash.com/random/1000x800?السلام ماركت",
+    "discount": 35,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "25fac9e2-c22b-4333-86e8-b2647bab74b2",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "c88188c3-0f20-46b0-a7ca-b54a1254ae34",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "5581bc31-3e7d-44df-bfc4-23975f304d22",
+        "location": "8 شارع النصر - الإسكندرية - مصر"
+      }
+    ]
+  },
+  {
+    "id": "bb998b87-8878-4428-aba1-0fe159b4be0f",
+    "category": "ماركت",
+    "location": "المنصورة",
+    "title": "البركة ماركت",
+    "description": "استمتع بعرض خاص من البركة ماركت مع خصومات تصل إلى 10٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?البركة ماركت",
+    "image_url": "https://source.unsplash.com/random/1000x800?البركة ماركت",
+    "discount": 10,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "39b31663-a2f0-4df7-b6c4-de92f432b729",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "d3c60ef2-b690-4001-b584-4860056b5496",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "3c600347-cbaf-4042-80f0-dcaa347fcc2a",
+        "location": "29 شارع النصر - المنصورة - مصر"
+      }
+    ]
+  },
+  {
+    "id": "d7a1d4b1-1e7b-4432-a15e-c3d23cc50212",
+    "category": "ماركت",
+    "location": "المنصورة",
+    "title": "أبو عمار ماركت",
+    "description": "استمتع بعرض خاص من أبو عمار ماركت مع خصومات تصل إلى 30٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?أبو عمار ماركت",
+    "image_url": "https://source.unsplash.com/random/1000x800?أبو عمار ماركت",
+    "discount": 30,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "bce671a6-a5a7-41b4-93f5-6a3a2152967c",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "05d2753c-8b98-4758-8cdf-81c17fe66f30",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "3b824fdc-2ec9-4116-a319-716ec9ed6baf",
+        "location": "97 شارع النصر - المنصورة - مصر"
+      }
+    ]
+  },
+  {
+    "id": "609ac520-58a5-4f53-b1b6-97d317f35fc7",
+    "category": "ماركت",
+    "location": "السويس",
+    "title": "اللولو هايبر",
+    "description": "استمتع بعرض خاص من اللولو هايبر مع خصومات تصل إلى 35٪ في جميع فروع السويس.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?اللولو هايبر",
+    "image_url": "https://source.unsplash.com/random/1000x800?اللولو هايبر",
+    "discount": 35,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "4240dc59-868c-4007-bcd2-e69f31b97a0d",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "3d494c76-3b42-4454-b540-077acb3af779",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "c1c77624-d8e7-4fcf-89e6-469f36536525",
+        "location": "15 شارع النصر - السويس - مصر"
+      }
+    ]
+  },
+  {
+    "id": "3f457e9a-3560-4be2-9040-fe6f86e50647",
+    "category": "ماركت",
+    "location": "أسيوط",
+    "title": "ألفا ماركت",
+    "description": "استمتع بعرض خاص من ألفا ماركت مع خصومات تصل إلى 15٪ في جميع فروع أسيوط.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ماركت",
+    "profile_photo": "https://source.unsplash.com/random/300x300?ألفا ماركت",
+    "image_url": "https://source.unsplash.com/random/1000x800?ألفا ماركت",
+    "discount": 15,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "4491d534-25c6-4009-8e25-218282941d89",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "fc38d79d-81d5-49a1-8aaf-b175deb16d3a",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "c4f51a68-4524-4a3a-957f-48be5d421071",
+        "location": "31 شارع النصر - أسيوط - مصر"
       }
     ]
   }
