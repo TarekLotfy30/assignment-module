@@ -11,8 +11,8 @@ class OfferController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    getAllOffersByLocation('القاهرة');
-    //getAllOffers(); 
+    getAllOffersByLocation('المنصورة');
+    //getAllOffers();
   }
 
   void changeIndex(int index) {
@@ -35,4 +35,22 @@ class OfferController extends GetxController {
       update();
     });
   }
+
+  // void getByCategory() {
+  //   switch (selectedIndex) {
+  //     case 1:
+  //       offerRepo.getAllOffers().then((value) {
+  //         value
+  //             .where(
+  //               (element) =>
+  //                   element.category ==
+  //                   AppConstant.offersTypes[selectedIndex].title,
+  //             )
+  //             .forEach((element) {
+  //               selectedOffers.add(element);
+  //             });
+  //         update();
+  //       });
+  //   }
+  // }
 }

@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:assignment/core/routing/app_router.dart';
+import 'package:assignment/features/assignment/controller/assignment_controller.dart';
 import 'package:get_it/get_it.dart';
 
 //final di = GetIt.instance;
@@ -12,6 +13,8 @@ Future<void> setupServiceLocator() async {
     log('Registering AppRouter', name: 'ServiceLocator');
     getIt.registerLazySingleton<AppRouter>(() => AppRouter());
     log('AppRouter registered', name: 'ServiceLocator');
+
+    getIt.registerSingleton<AssignmentController>(AssignmentController());
 
     // Dio and DioHelper
     log('Setting up Dio instance', name: 'ServiceLocator');

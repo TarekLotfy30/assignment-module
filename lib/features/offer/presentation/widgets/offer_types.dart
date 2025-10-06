@@ -1,4 +1,4 @@
-import 'package:assignment/core/constants/app_constant.dart';
+import 'package:assignment/core/enum/offer_types.dart';
 import 'package:assignment/features/offer/presentation/widgets/offer_type_chip.dart';
 import 'package:flutter/material.dart';
 
@@ -11,8 +11,8 @@ class OfferTypes extends StatelessWidget {
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: AppConstant.offersTypes
-            .map(((e) => OfferTypeChip(AppConstant.offersTypes.indexOf(e))))
+        children: OfferTypesEnum.values
+            .map(((element) => OfferTypeChip(type: element)))
             .toList(),
       ),
     );

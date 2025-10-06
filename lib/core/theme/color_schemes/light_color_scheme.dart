@@ -32,12 +32,12 @@ abstract final class LightColorScheme {
 
     // ========== SURFACE COLORS ==========
     // → Background and surface layers.
-    surface: AppColors.surface,
+    surface: AppColors.background,
     onSurface: AppColors.textPrimary,
     surfaceContainerHighest: AppColors.gray100,
     surfaceContainerHigh: AppColors.gray50,
     surfaceContainer: AppColors.surface,
-    surfaceContainerLow: AppColors.background,
+    surfaceContainerLow: AppColors.surface,
     surfaceContainerLowest: AppColors.white,
     onSurfaceVariant: AppColors.textSecondary,
 

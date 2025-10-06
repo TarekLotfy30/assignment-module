@@ -8,15 +8,12 @@ abstract final class AppChipTheme {
   AppChipTheme._();
   static ChipThemeData chipTheme(ColorScheme colorScheme) {
     return ChipThemeData(
-      //backgroundColor: colorScheme.surface,
-      //selectedColor: colorScheme.primary.withOpacity(0.12),
-      //labelStyle: AppTypography.lightTextTheme.labelMedium,
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppPadding.padding12,
-        vertical: AppPadding.padding8,
-      ),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppCorners.dialogBorderRadius.r),
+        borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius.r),
+      ),
+      labelPadding: EdgeInsets.symmetric(
+        horizontal: AppPadding.padding16.w,
+        vertical: AppPadding.padding10.h,
       ),
     );
   }

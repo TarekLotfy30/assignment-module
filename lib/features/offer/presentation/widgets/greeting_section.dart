@@ -1,11 +1,9 @@
 import 'package:assignment/core/constants/app_assets.dart';
-import 'package:assignment/core/constants/app_icon.dart';
 import 'package:assignment/core/constants/app_padding.dart';
 import 'package:assignment/core/constants/app_spacing.dart';
+import 'package:assignment/core/helpers/extensions/theme_extension.dart';
 import 'package:assignment/core/widgets/build_optimized_svg.dart';
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 // translate-me-ignore-all-file
 class GreetingSection extends StatelessWidget {
@@ -23,18 +21,19 @@ class GreetingSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: AppSpacing.spacing8,
               children: [
-                InkWell(
-                  onTap: () => context.router.pop(),
-                  child: BuildOptimizedSvg(AppIcons.backArrow),
-                ),
+                const BackButton(),
                 Text(
                   "اهلا بك محمد في العروض",
-                  style: context.textTheme.displayMedium,
+                  style: context.textTheme.displayMedium?.copyWith(
+                    color: context.colorScheme.primary,
+                  ),
                 ),
                 // 14 400
                 Text(
                   "هذه العروض متاحة لطلاب ذاكر فقط.",
-                  style: context.textTheme.titleSmall,
+                  style: context.textTheme.titleSmall?.copyWith(
+                    color: context.colorScheme.tertiary,
+                  ),
                 ),
               ],
             ),

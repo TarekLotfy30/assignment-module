@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:flutter/services.dart';
 
@@ -14,6 +13,7 @@ class OfferRepo {
     final List<OfferModel> offers = data
         .map((element) => OfferModel.fromJson(element))
         .toList();
+    //log(offers[1].category!.label);
     return offers;
   }
 }

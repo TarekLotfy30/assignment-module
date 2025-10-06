@@ -15,7 +15,7 @@ class AssignmentApp extends StatelessWidget {
       designSize: AppScreenUtil.designSize,
       splitScreenMode: true,
       minTextAdapt: true,
-      builder: (context, child) => MaterialApp.router(
+      builder: (context, _) => MaterialApp.router(
         debugShowCheckedModeBanner: false,
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,

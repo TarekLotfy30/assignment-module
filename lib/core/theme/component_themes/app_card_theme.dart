@@ -15,8 +15,7 @@ abstract final class AppCardTheme {
         borderRadius: BorderRadius.circular(AppCorners.buttonBorderRadius.r),
       ),
       shadowColor: colorScheme.shadow,
-      color: colorScheme.surface,
-      surfaceTintColor: colorScheme.primary,
+      surfaceTintColor: colorScheme.onPrimary,
       margin: EdgeInsets.only(bottom: AppPadding.padding24.h),
     );
   }

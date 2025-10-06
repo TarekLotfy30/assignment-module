@@ -15,7 +15,7 @@ Future<void> main() async {
       path: 'assets/translations',
       fallbackLocale: Locale('ar'),
       startLocale: Locale('ar'),
-      child: AssignmentApp(),
+      child: const AssignmentApp(),
     ),
   );
 }
