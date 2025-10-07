@@ -6,7 +6,7 @@ class AppColors {
   // ========== PRIMARY BLUE PALETTE ==========
   static const Color blue50 = Color(0xFFE8F0FA);
   static const Color blue100 = Color(0xFFC5DAF3);
-  static const Color blue200 = Color(0xFF9EC2EB);
+  static const Color blue200 = Color(0xFF9EC2EB); 
   static const Color blue300 = Color(0xFF77AAE3);
   static const Color blue400 = Color(0xFF5A97DD);
   static const Color blue500 = Color(0xFF064698); // Main primary

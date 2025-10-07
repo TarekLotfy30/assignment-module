@@ -5,8 +5,13 @@ import 'package:assignment/core/constants/app_icon.dart';
 import 'package:assignment/core/constants/app_padding.dart';
 import 'package:assignment/core/constants/app_spacing.dart';
 import 'package:assignment/core/helpers/extensions/theme_extension.dart';
+import 'package:assignment/core/helpers/functions/app_model_bottom_sheet.dart';
 import 'package:assignment/core/widgets/build_optimized_svg.dart';
+import 'package:assignment/features/offer/controller/offer_controller.dart';
+import 'package:assignment/features/offer/presentation/widgets/egypt_cities_scrollable_sheet.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 // translate-me-ignore-all-file
 class SearchAndLocationSection extends StatelessWidget {
@@ -48,28 +53,38 @@ class SearchAndLocationSection extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: Container(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppPadding.padding16,
-              vertical: AppPadding.padding12,
+          child: GestureDetector(
+            onTap: () => openModalBottomSheet(
+              context: context,
+              builder: (context) => EgyptCitiesScrollableSheet(),
             ),
-            decoration: BoxDecoration(
-              color: context.colorScheme.primary,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Row(
-              children: [
-                BuildOptimizedSvg(AppIcons.locationFilter),
-                Expanded(
-                  child: Text(
-                    'القاهرة',
-                    textAlign: TextAlign.center,
-                    style: context.textTheme.headlineMedium?.copyWith(
-                      color: context.colorScheme.onPrimary,
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppPadding.padding16,
+                vertical: AppPadding.padding12,
+              ),
+              decoration: BoxDecoration(
+                color: context.colorScheme.primary,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Row(
+                children: [
+                  BuildOptimizedSvg(AppIcons.locationFilter),
+                  SizedBox(width: AppSpacing.spacing8.w),
+                  Expanded(
+                    child: GetBuilder<OfferController>(
+                      init: OfferController(),
+                      builder: (controller) => Text(
+                        OfferController.to.selectedRadio,
+                        maxLines: 1,
+                        style: context.textTheme.headlineMedium?.copyWith(
+                          color: context.colorScheme.onPrimary,
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

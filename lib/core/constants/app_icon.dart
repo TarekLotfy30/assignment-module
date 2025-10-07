@@ -6,9 +6,10 @@ abstract final class AppIcons {
   static const IconData success = Icons.check_circle_outline;
   static const IconData warning = Icons.warning_amber_outlined;
   static const IconData info = Icons.info_outline;
-  
+
   // If using custom SVG or PNG icons
   static final String backArrow = 'assets/icons/arrow_right.svg';
   static final String locationFilter = 'assets/icons/location_target_icon.svg';
   static final String search = 'assets/icons/search.svg';
+  static final String close = 'assets/icons/close.svg';
 }

@@ -10,7 +10,7 @@ extension ThemeExtension on BuildContext {
   ColorScheme get colorScheme => appTheme.colorScheme;
 
   /// Gets the current text theme.
-  TextTheme get textTheme => appTheme.textTheme;
+  TextTheme get textThemeCustom => appTheme.textTheme;
 
   /// Checks if device is in dark mode.
   bool get isDarkMode => appTheme.brightness == Brightness.dark;

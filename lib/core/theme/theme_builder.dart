@@ -1,3 +1,5 @@
+import 'package:assignment/core/theme/component_themes/app_bottom_sheet_theme.dart';
+import 'package:assignment/core/theme/component_themes/app_radio_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/styles/app_fonts_family.dart';
@@ -52,6 +54,8 @@ abstract final class ThemeBuilder {
         isDark: isDark,
       ),
       switchTheme: AppSwitchTheme.switchTheme(colorScheme),
+      bottomSheetTheme: AppBottomSheetTheme.bottomSheetTheme(colorScheme),
+      radioTheme: AppRadioTheme.radioTheme(colorScheme),
     );
   }
 }

@@ -1,6 +1,5 @@
-import 'package:assignment/core/constants/app_padding.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
 import 'package:assignment/features/offer/data/models/offer_model.dart';
+import 'package:assignment/features/offer_details/presentation/widgets/offer_details_page_body.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
@@ -13,33 +12,6 @@ class OfferDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: AppPadding.padding24,
-            horizontal: AppPadding.padding16,
-          ),
-          child: Column(
-            children: [
-              const BackButton(),
-              Text(
-                "تفاصيل العرض",
-                style: context.textTheme.displayMedium?.copyWith(
-                  color: context.colorScheme.primary,
-                ),
-              ),
-              Text(
-                "تفاصيل العرض",
-                style: context.textTheme.displayMedium?.copyWith(
-                  color: context.colorScheme.primary,
-                ),
-              ),
-              OfferDetailsPage(offer: offer),
-            ],
-          ),
-        ),
-      ),
-    );
+    return Scaffold(body: OfferDetailsPageBody(offer: offer));
   }
 }

@@ -1,56 +1,56 @@
+import 'package:assignment/core/enum/egypt_cities.dart';
+import 'package:assignment/core/enum/offer_types.dart';
 import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:assignment/features/offer/data/repo/offer_repo.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
+import 'package:get/get.dart';
 
 class OfferController extends GetxController {
   OfferRepo offerRepo = OfferRepo();
-  int selectedIndex = 0;
-  List<OfferModel> allOffers = [];
   List<OfferModel> selectedOffers = [];
-
+  static OfferController get to => Get.find();
   @override
   void onInit() {
     super.onInit();
-    getAllOffersByLocation('المنصورة');
-    //getAllOffers();
+    getOffersBySectionAndLocation(type, selectedRadio);
   }
 
+  int selectedIndex = 0;
   void changeIndex(int index) {
     selectedIndex = index;
     update();
   }
 
-  void getAllOffers() {
-    offerRepo.getAllOffers().then((value) {
-      allOffers = value;
-      update();
-    });
+  String selectedRadio = EgyptCities.giza.getArabicName();
+  OfferTypesEnum type = OfferTypesEnum.values.first;
+
+  void selectedRadioButton(String value) {
+    selectedRadio = value;
+    update();
   }
 
-  void getAllOffersByLocation(String location) {
-    offerRepo.getAllOffers().then((value) {
-      value.where((element) => element.location == location).forEach((element) {
-        selectedOffers.add(element);
-      });
-      update();
-    });
-  }
-
-  // void getByCategory() {
-  //   switch (selectedIndex) {
-  //     case 1:
-  //       offerRepo.getAllOffers().then((value) {
-  //         value
-  //             .where(
-  //               (element) =>
-  //                   element.category ==
-  //                   AppConstant.offersTypes[selectedIndex].title,
-  //             )
-  //             .forEach((element) {
-  //               selectedOffers.add(element);
-  //             });
-  //         update();
-  //       });
-  //   }
+  // void getAllOffersByLocation(String location) {
+  //   offerRepo.getAllOffers().then((value) {
+  //     value.where((element) => element.location == location).forEach((element) {
+  //       selectedOffers.add(element);
+  //     });
+  //     update();
+  //   });
+  //   selectedOffers = [];
   // }
+
+  void getOffersBySectionAndLocation(OfferTypesEnum type, String location) {
+    selectedOffers = [];
+    offerRepo.getAllOffers().then((value) {
+      value
+          .where((element) {
+            return element.location == location &&
+                element.categoryType.getArabicName() == type.getArabicName();
+          })
+          .forEach((element) {
+            selectedOffers.add(element);
+          });
+
+      update();
+    });
+  }
 }

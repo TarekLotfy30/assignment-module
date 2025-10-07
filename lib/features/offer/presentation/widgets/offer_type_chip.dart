@@ -25,7 +25,10 @@ class OfferTypeChip extends StatelessWidget {
             controller.changeIndex(type.index);
             log('index: $type.index');
             log('controller.selectedIndex: ${controller.selectedIndex}');
-            //controller.getByCategory();
+            controller.getOffersBySectionAndLocation(
+              type,
+              controller.selectedRadio,
+            );
           },
           child: Chip(
             backgroundColor: controller.selectedIndex == type.index
@@ -34,10 +37,10 @@ class OfferTypeChip extends StatelessWidget {
             label: Text(
               type.getArabicName(),
               style: controller.selectedIndex == type.index
-                  ? context.textTheme.headlineMedium?.copyWith(
+                  ? context.textThemeCustom.headlineMedium?.copyWith(
                       color: context.colorScheme.onPrimary,
                     )
-                  : context.textTheme.headlineSmall?.copyWith(
+                  : context.textThemeCustom.headlineSmall?.copyWith(
                       color: context.colorScheme.tertiary,
                     ),
             ),

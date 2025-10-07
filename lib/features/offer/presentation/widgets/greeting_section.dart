@@ -2,6 +2,7 @@ import 'package:assignment/core/constants/app_assets.dart';
 import 'package:assignment/core/constants/app_padding.dart';
 import 'package:assignment/core/constants/app_spacing.dart';
 import 'package:assignment/core/helpers/extensions/theme_extension.dart';
+import 'package:assignment/core/widgets/build_back_button.dart';
 import 'package:assignment/core/widgets/build_optimized_svg.dart';
 import 'package:flutter/material.dart';
 
@@ -21,17 +22,17 @@ class GreetingSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: AppSpacing.spacing8,
               children: [
-                const BackButton(),
+                const BuildBackIcon(),
                 Text(
                   "اهلا بك محمد في العروض",
-                  style: context.textTheme.displayMedium?.copyWith(
+                  style: context.textThemeCustom.displayMedium?.copyWith(
                     color: context.colorScheme.primary,
                   ),
                 ),
                 // 14 400
                 Text(
                   "هذه العروض متاحة لطلاب ذاكر فقط.",
-                  style: context.textTheme.titleSmall?.copyWith(
+                  style: context.textThemeCustom.titleSmall?.copyWith(
                     color: context.colorScheme.tertiary,
                   ),
                 ),

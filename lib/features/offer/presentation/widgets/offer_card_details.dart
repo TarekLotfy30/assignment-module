@@ -64,7 +64,7 @@ class OfferCardDetails extends StatelessWidget {
                   ),
                   child: Text(
                     "🔥 خصم ${offer.discount}%",
-                    style: context.textTheme.titleMedium?.copyWith(
+                    style: context.textThemeCustom.titleMedium?.copyWith(
                       color: context.colorScheme.secondary,
                     ),
                   ),
@@ -82,14 +82,14 @@ class OfferCardDetails extends StatelessWidget {
               children: [
                 Text(
                   offer.title,
-                  style: context.textTheme.headlineMedium?.copyWith(
+                  style: context.textThemeCustom.headlineMedium?.copyWith(
                     color: context.colorScheme.primary,
                   ),
                 ),
                 SizedBox(height: AppSpacing.spacing12.h),
                 Text(
                   offer.description,
-                  style: context.textTheme.labelMedium?.copyWith(
+                  style: context.textThemeCustom.labelMedium?.copyWith(
                     color: context.colorScheme.tertiary,
                   ),
                 ),
@@ -119,7 +119,7 @@ class OfferCardDetails extends StatelessWidget {
                       const SizedBox(width: 8.0),
                       Text(
                         offer.location,
-                        style: context.textTheme.labelMedium?.copyWith(
+                        style: context.textThemeCustom.labelMedium?.copyWith(
                           color: context.colorScheme.primary,
                         ),
                       ),

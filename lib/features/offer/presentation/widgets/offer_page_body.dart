@@ -25,7 +25,7 @@ class OfferPageBody extends StatelessWidget {
         SliverToBoxAdapter(
           child: Text(
             "الأنواع",
-            style: context.textTheme.displayMedium?.copyWith(
+            style: context.textThemeCustom.displayMedium?.copyWith(
               color: context.colorScheme.primary,
             ),
           ),

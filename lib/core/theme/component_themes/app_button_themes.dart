@@ -31,13 +31,11 @@ abstract final class AppButtonThemes {
         overlayColor: colorScheme.primary.withValues(alpha: 0.12),
         alignment: Alignment.center,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(
-            AppCorners.buttonBorderRadius.r, //16
-          ),
+          borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius.r),
         ),
-        padding: EdgeInsets.symmetric(vertical: AppPadding.padding12.h),
-        minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h), //48
-        textStyle: AppTextThemes.textTheme.titleLarge?.copyWith(
+        padding: EdgeInsets.symmetric(vertical: AppPadding.padding14.h),
+        minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h),
+        textStyle: AppTextThemes.textTheme.headlineLarge?.copyWith(
           fontFamily: AppFontFamily.teshrin,
         ),
       ),
