@@ -6,7 +6,7 @@ import '../../../../core/constants/app_icon.dart';
 import '../../../../core/constants/app_padding.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import '../../../../core/helpers/functions/app_dialog.dart';
+import '../../../../core/widgets/app_dialog.dart';
 import '../../../../core/widgets/build_back_button.dart';
 import '../../../offer/data/models/offer_model.dart';
 import '../../../offer/presentation/widgets/offer_card_details.dart';

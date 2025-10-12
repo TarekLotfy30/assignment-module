@@ -8,7 +8,7 @@ import '../../../../core/constants/app_icon.dart';
 import '../../../../core/constants/app_padding.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import '../../../../core/helpers/functions/app_model_bottom_sheet.dart';
+import '../../../../core/widgets/app_model_bottom_sheet.dart';
 import '../../../../core/widgets/build_optimized_svg.dart';
 import '../../controller/offer_controller.dart';
 import 'egypt_cities_scrollable_sheet.dart';

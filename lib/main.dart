@@ -7,7 +7,7 @@ import 'core/helpers/functions/init_services.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  configureSystemUI();
+  await configureSystemUI();
   await initializeServices();
 
   runApp(

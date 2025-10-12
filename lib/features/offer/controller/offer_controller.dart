@@ -7,6 +7,8 @@ import '../data/models/offer_model.dart';
 import '../data/repo/offer_repo.dart';
 
 class OfferController extends GetxController {
+  //late Shared sh;
+
   OfferRepo offerRepo = OfferRepo();
   TextEditingController searchController = TextEditingController();
   List<OfferModel> offersItems = [];

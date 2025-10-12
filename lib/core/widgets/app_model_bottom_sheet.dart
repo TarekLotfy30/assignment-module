@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/app_animation.dart';
-import '../extensions/theme_extension.dart';
+import '../constants/app_animation.dart';
+import '../helpers/extensions/theme_extension.dart';
 
 Future<void> openModalBottomSheet({
   required BuildContext context,

@@ -16,7 +16,6 @@ class TypeChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<OfferController>(
-      init: OfferController(),
       builder: (controller) {
         final isSelected = controller.selectedType.index == type.index;
         final colorScheme = context.colorScheme;

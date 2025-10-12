@@ -3,11 +3,11 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../constants/app_elevation.dart';
-import '../../constants/app_padding.dart';
-import '../../constants/app_spacing.dart';
-import '../../widgets/build_optimized_svg.dart';
-import '../extensions/theme_extension.dart';
+import '../constants/app_elevation.dart';
+import '../constants/app_padding.dart';
+import '../constants/app_spacing.dart';
+import '../helpers/extensions/theme_extension.dart';
+import 'build_optimized_svg.dart';
 
 abstract class BaseDialog extends StatelessWidget {
   const BaseDialog({super.key});

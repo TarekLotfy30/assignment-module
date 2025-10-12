@@ -30,3 +30,9 @@ class _OfferPageState extends State<OfferPage> {
     );
   }
 }
+
+// class Shared {
+//       final ColorScheme colorScheme ;
+//     final Text textScheme
+    
+//      }

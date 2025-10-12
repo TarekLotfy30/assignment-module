@@ -3,17 +3,20 @@ import 'package:auto_route/auto_route.dart';
 import 'app_router.gr.dart';
 import 'route_path.dart';
 
-@AutoRouterConfig()
+// translate-me-ignore-all-file
+@AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
 class AppRouter extends RootStackRouter {
   @override
   RouteType get defaultRouteType => const RouteType.adaptive();
 
   @override
   List<AutoRoute> get routes => [
-    AutoRoute(page: HomeRoute.page, path: RoutePath.homePage, initial: true),
-    AutoRoute(page: AssignmentRoute.page, path: RoutePath.assignmentPage),
-    AutoRoute(page: ScoreRoute.page, path: RoutePath.scorePage),
-    AutoRoute(page: OfferRoute.page, path: RoutePath.offerPage),
-    AutoRoute(page: OfferDetailsRoute.page, path: RoutePath.offerDetailsPage),
+    RedirectRoute(path: '/', redirectTo: RoutePath.home),
+
+    AutoRoute(page: HomeRoute.page, path: RoutePath.home),
+    AutoRoute(page: AssignmentRoute.page, path: RoutePath.assignment),
+    AutoRoute(page: ScoreRoute.page, path: RoutePath.score),
+    AutoRoute(page: OfferRoute.page, path: RoutePath.offer),
+    AutoRoute(page: OfferDetailsRoute.page, path: RoutePath.offerDetails),
   ];
 }
