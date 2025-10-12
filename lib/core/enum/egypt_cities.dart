@@ -1,4 +1,4 @@
-enum EgyptCities {
+enum EgyptCitiesEnum {
   cairo,
   giza,
   portsaid,
@@ -8,17 +8,17 @@ enum EgyptCities {
 
   String getArabicName() {
     switch (this) {
-      case EgyptCities.cairo:
+      case EgyptCitiesEnum.cairo:
         return 'القاهرة';
-      case EgyptCities.giza:
+      case EgyptCitiesEnum.giza:
         return 'الجيزة';
-      case EgyptCities.portsaid:
+      case EgyptCitiesEnum.portsaid:
         return 'بورسعيد';
-      case EgyptCities.assuit:
+      case EgyptCitiesEnum.assuit:
         return 'أسيوط';
-      case EgyptCities.mansoura:
+      case EgyptCitiesEnum.mansoura:
         return 'المنصورة';
-      case EgyptCities.luxor:
+      case EgyptCitiesEnum.luxor:
         return "الأقصر";
     }
   }

@@ -9,52 +9,52 @@ class OfferController extends GetxController {
   OfferRepo offerRepo = OfferRepo();
   List<OfferModel> selectedOffers = [];
 
-  @override
-  Future<void> onInit() async {
-    super.onInit();
-    await getOffersBySectionAndLocation(type, selectedRadio);
-  }
+  EgyptCitiesEnum selectedRadio = EgyptCitiesEnum.values.first;
+  OfferTypesEnum selectedType = OfferTypesEnum.values.first;
 
-  int selectedIndex = 0;
-  void changeIndex(int index) {
-    selectedIndex = index;
+  void changeValue(OfferTypesEnum value) {
+    selectedType = value;
     update();
   }
 
-  String selectedRadio = EgyptCities.values.first.getArabicName(); //Enum this
-  OfferTypesEnum type = OfferTypesEnum.values.first;
-
-  void selectedRadioButton(String value) {
+  void selectedRadioButton(EgyptCitiesEnum value) {
     selectedRadio = value;
     update();
   }
 
-  // void getAllOffersByLocation(String location) {
-  //   offerRepo.getAllOffers().then((value) {
-  //     value.where((element) => element.location == location).forEach(
-  //(element) {
-  //       selectedOffers.add(element);
-  //     });
-  //     update();
-  //   });
-  //   selectedOffers = [];
-  // }
-
-  Future<void> getOffersBySectionAndLocation(
-    OfferTypesEnum type,
-    String location,
-  ) async {
+  Future<void> getOffers(OfferTypesEnum type, EgyptCitiesEnum location) async {
     selectedOffers = [];
-    await offerRepo.getAllOffers().then((value) {
+    if (type.index == 0) {
+      await _getAllOffersByLocation(location);
+    } else {
+      await _getCategoryOffers(location, type);
+    }
+  }
+
+  Future<void> _getAllOffersByLocation(EgyptCitiesEnum location) async {
+    await offerRepo.getOffers().then((value) {
+      value
+          .where((element) => element.location == location.getArabicName())
+          .forEach((element) {
+            selectedOffers.add(element);
+          });
+      update();
+    });
+  }
+
+  Future<void> _getCategoryOffers(
+    EgyptCitiesEnum location,
+    OfferTypesEnum type,
+  ) async {
+    await offerRepo.getOffers().then((value) {
       value
           .where((element) {
-            return element.location == location &&
+            return element.location == location.getArabicName() &&
                 element.categoryType.getArabicName() == type.getArabicName();
           })
           .forEach((element) {
             selectedOffers.add(element);
           });
-
       update();
     });
   }

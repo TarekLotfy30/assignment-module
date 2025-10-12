@@ -7,7 +7,7 @@ import '../models/offer_model.dart';
 class OfferRepo {
   OfferRepo();
 
-  Future<List<OfferModel>> getAllOffers() async {
+  Future<List<OfferModel>> getOffers() async {
     final String response = await rootBundle.loadString(
       'assets/json/offers_egypt.json',
     );

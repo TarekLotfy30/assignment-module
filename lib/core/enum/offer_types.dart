@@ -1,4 +1,5 @@
 enum OfferTypesEnum {
+  all,
   restaurants,
   libraries,
   entertainments,
@@ -6,6 +7,8 @@ enum OfferTypesEnum {
 
   String getArabicName() {
     switch (this) {
+      case all:
+        return 'الكل';
       case restaurants:
         return 'مطاعم';
       case libraries:

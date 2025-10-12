@@ -62,7 +62,8 @@ class SearchAndLocationSection extends StatelessWidget {
                         fit: BoxFit.scaleDown,
                         alignment: AlignmentDirectional.centerStart,
                         child: Text(
-                          Get.find<OfferController>().selectedRadio,
+                          Get.find<OfferController>().selectedRadio
+                              .getArabicName(),
                           maxLines: 1,
                           textAlign: TextAlign.center,
                           style: context.textTheme.headlineMedium?.copyWith(

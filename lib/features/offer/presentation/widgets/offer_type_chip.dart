@@ -18,7 +18,7 @@ class OfferTypeChip extends StatelessWidget {
     return GetBuilder<OfferController>(
       init: OfferController(),
       builder: (controller) {
-        final isSelected = controller.selectedIndex == type.index;
+        final isSelected = controller.selectedType.index == type.index;
         final colorScheme = context.colorScheme;
         final textThemeCustom = context.textThemeCustom;
         return Padding(
@@ -26,12 +26,9 @@ class OfferTypeChip extends StatelessWidget {
               ? EdgeInsets.zero
               : EdgeInsets.only(right: AppPadding.padding8.w),
           child: GestureDetector(
-            onTap: () {
-              controller.changeIndex(type.index);
-              controller.getOffersBySectionAndLocation(
-                type,
-                controller.selectedRadio,
-              );
+            onTap: () async {
+              controller.changeValue(type);
+              await controller.getOffers(type, controller.selectedRadio);
             },
             child: Chip(
               backgroundColor: isSelected

@@ -17,11 +17,10 @@ class EgyptCitiesList extends StatelessWidget {
     return Padding(
       padding: const EdgeInsetsGeometry.only(bottom: 12, left: 25),
       child: GetBuilder<OfferController>(
-        init: OfferController(),
         builder: (controller) => RadioListTile(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           title: Text(
-            EgyptCities.values[index].getArabicName(),
+            EgyptCitiesEnum.values[index].getArabicName(),
             style: context.textThemeCustom.headlineSmall?.copyWith(
               color: context.colorScheme.primary,
             ),
@@ -30,11 +29,11 @@ class EgyptCitiesList extends StatelessWidget {
             horizontal: AppPadding.padding12.w,
             vertical: AppPadding.padding14.h,
           ),
-          value: EgyptCities.values[index].getArabicName(),
+          value: EgyptCitiesEnum.values[index],
+          groupValue: controller.selectedRadio,
           onChanged: (value) {
             controller.selectedRadioButton(value!);
           },
-          groupValue: controller.selectedRadio,
           activeColor: context.colorScheme.primary,
           dense: true,
           radioScaleFactor: 1.2,

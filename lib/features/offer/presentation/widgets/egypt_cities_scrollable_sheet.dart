@@ -16,13 +16,14 @@ class EgyptCitiesScrollableSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<OfferController>();
     return DraggableScrollableSheet(
       initialChildSize: 1,
       builder: (context, scrollController) {
         return Container(
           padding: EdgeInsets.symmetric(
             horizontal: AppPadding.padding16.w,
-            //vertical: AppPadding.padding18.h,
+            vertical: AppPadding.padding16.h,
           ),
           child: Stack(
             alignment: AlignmentDirectional.bottomCenter,
@@ -40,22 +41,22 @@ class EgyptCitiesScrollableSheet extends StatelessWidget {
                       ),
                       const SizedBox(height: AppSpacing.spacing12),
                       ...List.generate(
-                        EgyptCities.values.length,
+                        EgyptCitiesEnum.values.length,
                         (index) => EgyptCitiesList(index: index),
                       ),
-                      SizedBox(height: AppSpacing.spacing14.h),
+                      SizedBox(height: AppSpacing.spacing24.h),
                     ],
                   ),
                 ),
               ),
+              SizedBox(height: AppSpacing.spacing24.h),
               ElevatedButton(
                 onPressed: () async {
-                  await Get.find<OfferController>()
-                      .getOffersBySectionAndLocation(
-                        Get.find<OfferController>().type,
-                        Get.find<OfferController>().selectedRadio,
-                      );
-                  Get.find<OfferController>().changeIndex(0);
+                  await controller.getOffers(
+                    controller.selectedType,
+                    controller.selectedRadio,
+                  );
+                  controller.changeValue(controller.selectedType);
                   if (context.mounted) {
                     context.router.pop();
                   }
