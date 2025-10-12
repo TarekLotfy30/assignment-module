@@ -8,8 +8,8 @@ import '../../../../core/helpers/extensions/theme_extension.dart';
 import '../../controller/offer_controller.dart';
 
 // translate-me-ignore-all-file
-class OfferTypeChip extends StatelessWidget {
-  const OfferTypeChip({super.key, required this.type});
+class TypeChip extends StatelessWidget {
+  const TypeChip({super.key, required this.type});
 
   final OfferTypesEnum type;
 

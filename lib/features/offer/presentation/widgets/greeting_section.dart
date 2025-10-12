@@ -14,6 +14,8 @@ class GreetingSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = context.colorScheme;
+    final textScheme = context.textThemeCustom;
     return Row(
       children: [
         Expanded(
@@ -27,14 +29,14 @@ class GreetingSection extends StatelessWidget {
                 const BuildBackIcon(),
                 Text(
                   'اهلا بك محمد في العروض',
-                  style: context.textThemeCustom.displayLarge?.copyWith(
-                    color: context.colorScheme.primary,
+                  style: textScheme.displayLarge?.copyWith(
+                    color: colorScheme.primary,
                   ),
                 ),
                 Text(
                   'هذه العروض متاحة لطلاب ذاكر فقط.',
-                  style: context.textThemeCustom.titleSmall?.copyWith(
-                    color: context.colorScheme.primaryContainer,
+                  style: textScheme.titleSmall?.copyWith(
+                    color: colorScheme.primaryContainer,
                   ),
                 ),
               ],

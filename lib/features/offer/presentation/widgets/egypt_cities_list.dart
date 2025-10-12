@@ -14,6 +14,7 @@ class EgyptCitiesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = context.colorScheme;
     return Padding(
       padding: const EdgeInsetsGeometry.only(bottom: 12, left: 25),
       child: GetBuilder<OfferController>(
@@ -22,7 +23,7 @@ class EgyptCitiesList extends StatelessWidget {
           title: Text(
             EgyptCitiesEnum.values[index].getArabicName(),
             style: context.textThemeCustom.headlineSmall?.copyWith(
-              color: context.colorScheme.primary,
+              color: colorScheme.primary,
             ),
           ),
           contentPadding: EdgeInsets.symmetric(
@@ -39,8 +40,8 @@ class EgyptCitiesList extends StatelessWidget {
           radioScaleFactor: 1.2,
           controlAffinity: ListTileControlAffinity.trailing,
           visualDensity: VisualDensity.adaptivePlatformDensity,
-          tileColor: context.colorScheme.surfaceContainer,
-          selectedTileColor: context.colorScheme.surfaceContainer,
+          tileColor: colorScheme.surfaceContainer,
+          selectedTileColor: colorScheme.surfaceContainer,
         ),
       ),
     );

@@ -7,7 +7,6 @@ import '../../../../core/routing/app_router.gr.dart';
 import '../../data/models/offer_model.dart';
 import 'offer_card_details.dart';
 
-
 // translate-me-ignore-all-file
 class OfferCard extends StatelessWidget {
   const OfferCard({super.key, required this.offer});

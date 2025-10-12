@@ -1,3 +1,4 @@
+import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -25,14 +26,23 @@ class SearchAndLocationSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<OfferController>();
     return Row(
       spacing: AppSpacing.spacing12.w,
       children: [
-        const Expanded(
+        Expanded(
           flex: 2,
           child: SearchBar(
-            leading: BuildOptimizedSvg(AppIcon.search),
-            hintText: 'ابحث بالنوع',
+            leading: const BuildOptimizedSvg(AppIcon.search),
+            hintText: 'ابحث بالأسم',
+            controller: controller.searchController,
+            onChanged: (query) {
+              EasyDebounce.debounce(
+                "search_debounce",
+                const Duration(milliseconds: 500),
+                () => controller.onSearchChanged(query),
+              );
+            },
           ),
         ),
         Expanded(
@@ -57,12 +67,12 @@ class SearchAndLocationSection extends StatelessWidget {
                   const SizedBox(width: AppSpacing.spacing8),
                   Flexible(
                     child: GetBuilder<OfferController>(
-                      init: Get.find<OfferController>(),
+                      init: controller,
                       builder: (controller) => FittedBox(
                         fit: BoxFit.scaleDown,
                         alignment: AlignmentDirectional.centerStart,
                         child: Text(
-                          Get.find<OfferController>().selectedRadio
+                          controller.selectedRadio
                               .getArabicName(),
                           maxLines: 1,
                           textAlign: TextAlign.center,

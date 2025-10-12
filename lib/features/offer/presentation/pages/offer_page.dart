@@ -24,6 +24,9 @@ class _OfferPageState extends State<OfferPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: SafeArea(child: OfferPageBody()));
+    return const Scaffold(
+      resizeToAvoidBottomInset: true,
+      body: SafeArea(child: OfferPageBody()),
+    );
   }
 }

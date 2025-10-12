@@ -3,7 +3,6 @@ import 'dart:developer';
 import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../features/assignment/controller/assignment_controller.dart';
 import '../../features/offer/controller/offer_controller.dart';
 import '../routing/app_router.dart';
 
@@ -16,7 +15,7 @@ Future<void> setupServiceLocator() async {
     getIt.registerLazySingleton<AppRouter>(AppRouter.new);
     log('AppRouter registered', name: 'ServiceLocator');
 
-    getIt.registerSingleton<AssignmentController>(AssignmentController());
+    //getIt.registerSingleton<AssignmentController>(AssignmentController());
     //getIt.registerSingleton<OfferController>(OfferController());
 
     Get.put(OfferController());
@@ -55,7 +54,7 @@ Future<void> setupServiceLocator() async {
     // );
 
     // Register repositories
-    //di.registerLazySingleton<UserRepository>(() => UserRepository(di(), di()));
+    //di.registerLazySingleton<UserRepository>(() => UserRepository(di(), di()))
 
     // Register Cubits
     //di.registerFactory<UserCubit>(() => UserCubit(di()));

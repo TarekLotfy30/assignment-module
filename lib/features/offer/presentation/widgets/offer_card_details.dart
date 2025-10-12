@@ -17,6 +17,8 @@ class OfferCardDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = context.colorScheme;
+    final textScheme = context.textThemeCustom;
     return Card(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,15 +52,15 @@ class OfferCardDetails extends StatelessWidget {
               children: [
                 Text(
                   offer.title,
-                  style: context.textThemeCustom.headlineMedium?.copyWith(
-                    color: context.colorScheme.primary,
+                  style: textScheme.headlineMedium?.copyWith(
+                    color: colorScheme.primary,
                   ),
                 ),
                 SizedBox(height: AppSpacing.spacing12.h),
                 Text(
                   offer.description,
-                  style: context.textThemeCustom.labelMedium?.copyWith(
-                    color: context.colorScheme.tertiary,
+                  style: textScheme.labelMedium?.copyWith(
+                    color: colorScheme.tertiary,
                   ),
                 ),
                 SizedBox(height: AppSpacing.spacing16.h),

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../core/enum/egypt_cities.dart';
@@ -7,10 +8,24 @@ import '../data/repo/offer_repo.dart';
 
 class OfferController extends GetxController {
   OfferRepo offerRepo = OfferRepo();
-  List<OfferModel> selectedOffers = [];
-
+  TextEditingController searchController = TextEditingController();
+  List<OfferModel> offersItems = [];
+  List<OfferModel> filteredItems = [];
+  bool isQueryEmpty = true;
   EgyptCitiesEnum selectedRadio = EgyptCitiesEnum.values.first;
   OfferTypesEnum selectedType = OfferTypesEnum.values.first;
+
+  void onSearchChanged(String query) {
+    if (query.isNotEmpty) {
+      isQueryEmpty = false;
+      filteredItems = offersItems
+          .where((item) => item.title.contains(query))
+          .toList();
+    } else {
+      isQueryEmpty = true;
+    }
+    update();
+  }
 
   void changeValue(OfferTypesEnum value) {
     selectedType = value;
@@ -23,7 +38,7 @@ class OfferController extends GetxController {
   }
 
   Future<void> getOffers(OfferTypesEnum type, EgyptCitiesEnum location) async {
-    selectedOffers = [];
+    offersItems = [];
     if (type.index == 0) {
       await _getAllOffersByLocation(location);
     } else {
@@ -36,7 +51,7 @@ class OfferController extends GetxController {
       value
           .where((element) => element.location == location.getArabicName())
           .forEach((element) {
-            selectedOffers.add(element);
+            offersItems.add(element);
           });
       update();
     });
@@ -53,9 +68,15 @@ class OfferController extends GetxController {
                 element.categoryType.getArabicName() == type.getArabicName();
           })
           .forEach((element) {
-            selectedOffers.add(element);
+            offersItems.add(element);
           });
       update();
     });
+  }
+
+  @override
+  void onClose() {
+    searchController.dispose();
+    super.onClose();
   }
 }

@@ -12,12 +12,13 @@ class OfferCardDiscount extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = context.colorScheme;
     return Align(
       alignment: Alignment.topLeft,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: context.colorScheme.secondaryContainer,
+          color: colorScheme.secondaryContainer,
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(AppCorners.buttonBorderRadius),
             bottomRight: Radius.circular(AppCorners.buttonBorderRadius),
@@ -26,7 +27,7 @@ class OfferCardDiscount extends StatelessWidget {
         child: Text(
           '🔥 خصم ${offer.discount}%',
           style: context.textThemeCustom.titleMedium?.copyWith(
-            color: context.colorScheme.secondary,
+            color: colorScheme.secondary,
           ),
         ),
       ),
