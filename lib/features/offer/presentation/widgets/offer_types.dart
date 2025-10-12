@@ -1,6 +1,7 @@
-import 'package:assignment/core/enum/offer_types.dart';
-import 'package:assignment/features/offer/presentation/widgets/offer_type_chip.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/enum/offer_types.dart';
+import 'offer_type_chip.dart';
 
 class OfferTypes extends StatelessWidget {
   const OfferTypes({super.key});
@@ -12,7 +13,7 @@ class OfferTypes extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: OfferTypesEnum.values
-            .map(((element) => OfferTypeChip(type: element)))
+            .map((value) => OfferTypeChip(type: value))
             .toList(),
       ),
     );

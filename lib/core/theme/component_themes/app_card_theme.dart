@@ -1,9 +1,9 @@
-import 'package:assignment/core/constants/app_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../constants/app_corners.dart';
 import '../../constants/app_elevation.dart';
+import '../../constants/app_padding.dart';
 
 abstract final class AppCardTheme {
   AppCardTheme._();

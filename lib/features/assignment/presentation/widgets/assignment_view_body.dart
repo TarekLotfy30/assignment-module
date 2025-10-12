@@ -1,12 +1,13 @@
 // translate-me-ignore-all-file
 import 'dart:developer';
 
-import 'package:assignment/core/di/service_locator.dart';
-import 'package:assignment/features/assignment/controller/assignment_controller.dart';
-import 'package:assignment/features/assignment/model/question_model.dart';
-import 'package:assignment/features/assignment/presentation/widgets/card_option.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../../core/di/service_locator.dart';
+import '../../controller/assignment_controller.dart';
+import '../../model/question_model.dart';
+import 'card_option.dart';
 
 class AssignmentViewBody extends StatelessWidget {
   const AssignmentViewBody({super.key});
@@ -22,9 +23,9 @@ class AssignmentViewBody extends StatelessWidget {
           GetBuilder<AssignmentController>(
             init: getIt<AssignmentController>(),
             builder: (controller) {
-              log("rebuilt the question text widget");
+              log('rebuilt the question text widget');
               return Text(
-                "Question ${controller.currentQuestionIndex + 1} of ${questions.length}",
+                'Question ${controller.currentQuestionIndex + 1} of ${questions.length}',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
@@ -37,7 +38,7 @@ class AssignmentViewBody extends StatelessWidget {
           //Options
           GetBuilder<AssignmentController>(
             builder: (controller) {
-              log("rebuilt the options widget");
+              log('rebuilt the options widget');
               return Column(
                 children: List.generate(
                   questions[controller.currentQuestionIndex].options.length,
@@ -53,7 +54,7 @@ class AssignmentViewBody extends StatelessWidget {
           // Next button
           GetBuilder<AssignmentController>(
             builder: (controller) {
-              log("rebuilt the next button widget");
+              log('rebuilt the next button widget');
               return Align(
                 alignment: Alignment.centerRight,
                 child: ElevatedButton(
@@ -62,8 +63,8 @@ class AssignmentViewBody extends StatelessWidget {
                       : null,
                   child: Text(
                     controller.currentQuestionIndex == questions.length - 1
-                        ? "Finish"
-                        : "Next",
+                        ? 'Finish'
+                        : 'Next',
                   ),
                 ),
               );

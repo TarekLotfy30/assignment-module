@@ -1,10 +1,11 @@
-import 'package:assignment/core/di/service_locator.dart';
-import 'package:assignment/core/responsive/app_screen_util.dart';
-import 'package:assignment/core/routing/app_router.dart';
-import 'package:assignment/core/theme/app_theme.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../core/di/service_locator.dart';
+import '../core/responsive/app_screen_util.dart';
+import '../core/routing/app_router.dart';
+import '../core/theme/app_theme.dart';
 
 class AssignmentApp extends StatelessWidget {
   const AssignmentApp({super.key});

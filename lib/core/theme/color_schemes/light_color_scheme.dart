@@ -5,7 +5,7 @@ import '../../utils/colors/app_colors.dart';
 
 /// Light theme color scheme using AppColors
 /// Built according to Material 3 color system
-abstract final class LightColorScheme {
+class LightColorScheme {
   static const ColorScheme colorScheme = ColorScheme(
     brightness: Brightness.light,
 
@@ -13,7 +13,7 @@ abstract final class LightColorScheme {
     // → Main brand color used for ElevatedButtons, FABs, sliders, etc.
     primary: AppColors.primary, // blue500
     onPrimary: AppColors.textOnPrimary,
-    primaryContainer: AppColors.blue100,
+    primaryContainer: AppColors.blue400,
     onPrimaryContainer: AppColors.blue900,
 
     // ========== SECONDARY COLORS ==========
@@ -42,7 +42,7 @@ abstract final class LightColorScheme {
     onSurfaceVariant: AppColors.textSecondary,
 
     // ========== OUTLINE COLORS ==========
-    outline: AppColors.border,
+    outline: AppColors.blue200,
     outlineVariant: AppColors.divider,
 
     // ========== UTILITY COLORS ==========

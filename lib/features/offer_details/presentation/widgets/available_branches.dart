@@ -1,11 +1,12 @@
-import 'package:assignment/core/constants/app_icon.dart';
-import 'package:assignment/core/constants/app_spacing.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
-import 'package:assignment/core/widgets/build_optimized_svg.dart';
-import 'package:assignment/core/widgets/build_white_background_card.dart';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/constants/app_icon.dart';
+import '../../../../core/constants/app_spacing.dart';
+import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../../../core/widgets/build_optimized_svg.dart';
+import '../../../../core/widgets/build_white_background_card.dart';
+import '../../../offer/data/models/offer_model.dart';
 
 // translate-me-ignore-all-file
 class AvailableBranches extends StatelessWidget {
@@ -19,7 +20,7 @@ class AvailableBranches extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "الفروع المتاحة",
+          'الفروع المتاحة',
           style: context.textThemeCustom.displayMedium?.copyWith(
             color: context.colorScheme.primary,
           ),
@@ -32,7 +33,7 @@ class AvailableBranches extends StatelessWidget {
               (index) => Row(
                 children: [
                   BuildOptimizedSvg(
-                    AppIcons.locationFilter,
+                    AppIcon.locationFilter,
                     colorFilter: ColorFilter.mode(
                       context.colorScheme.primary,
                       BlendMode.srcIn,

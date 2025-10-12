@@ -1,6 +1,7 @@
-import 'package:assignment/features/assignment/controller/assignment_controller.dart';
-import 'package:assignment/features/assignment/model/question_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../controller/assignment_controller.dart';
+import '../../model/question_model.dart';
 
 class CardOption extends StatelessWidget {
   const CardOption({super.key, required this.index, required this.controller});

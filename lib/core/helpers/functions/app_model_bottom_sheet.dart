@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../../constants/app_animation.dart';
 import '../extensions/theme_extension.dart';
 
 Future<void> openModalBottomSheet({
@@ -12,11 +14,9 @@ Future<void> openModalBottomSheet({
     enableDrag: true,
     isScrollControlled: false,
     useSafeArea: true,
-    sheetAnimationStyle: AnimationStyle(
-      curve: Curves.easeIn,
-      reverseCurve: Curves.easeInOut,
-      duration: const Duration(milliseconds: 400),
-      reverseDuration: const Duration(milliseconds: 200),
+    sheetAnimationStyle: const AnimationStyle(
+      curve: AppAnimations.entranceAnimationCurve,
+      reverseCurve: AppAnimations.exitAnimationCurve,
     ),
     backgroundColor: context.colorScheme.surfaceContainerHigh,
     clipBehavior: Clip.antiAliasWithSaveLayer,

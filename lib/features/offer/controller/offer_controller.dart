@@ -1,17 +1,18 @@
-import 'package:assignment/core/enum/egypt_cities.dart';
-import 'package:assignment/core/enum/offer_types.dart';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
-import 'package:assignment/features/offer/data/repo/offer_repo.dart';
 import 'package:get/get.dart';
+
+import '../../../core/enum/egypt_cities.dart';
+import '../../../core/enum/offer_types.dart';
+import '../data/models/offer_model.dart';
+import '../data/repo/offer_repo.dart';
 
 class OfferController extends GetxController {
   OfferRepo offerRepo = OfferRepo();
   List<OfferModel> selectedOffers = [];
-  static OfferController get to => Get.find();
+
   @override
-  void onInit() {
+  Future<void> onInit() async {
     super.onInit();
-    getOffersBySectionAndLocation(type, selectedRadio);
+    await getOffersBySectionAndLocation(type, selectedRadio);
   }
 
   int selectedIndex = 0;
@@ -20,7 +21,7 @@ class OfferController extends GetxController {
     update();
   }
 
-  String selectedRadio = EgyptCities.giza.getArabicName();
+  String selectedRadio = EgyptCities.values.first.getArabicName(); //Enum this
   OfferTypesEnum type = OfferTypesEnum.values.first;
 
   void selectedRadioButton(String value) {
@@ -30,7 +31,8 @@ class OfferController extends GetxController {
 
   // void getAllOffersByLocation(String location) {
   //   offerRepo.getAllOffers().then((value) {
-  //     value.where((element) => element.location == location).forEach((element) {
+  //     value.where((element) => element.location == location).forEach(
+  //(element) {
   //       selectedOffers.add(element);
   //     });
   //     update();
@@ -38,9 +40,12 @@ class OfferController extends GetxController {
   //   selectedOffers = [];
   // }
 
-  void getOffersBySectionAndLocation(OfferTypesEnum type, String location) {
+  Future<void> getOffersBySectionAndLocation(
+    OfferTypesEnum type,
+    String location,
+  ) async {
     selectedOffers = [];
-    offerRepo.getAllOffers().then((value) {
+    await offerRepo.getAllOffers().then((value) {
       value
           .where((element) {
             return element.location == location &&

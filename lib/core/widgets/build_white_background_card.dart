@@ -1,7 +1,9 @@
-import 'package:assignment/core/constants/app_padding.dart';
-import 'package:assignment/core/constants/app_spacing.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../constants/app_padding.dart';
+import '../constants/app_spacing.dart';
+import '../helpers/extensions/theme_extension.dart';
 
 class BuildWhiteBackgroundCard extends StatelessWidget {
   const BuildWhiteBackgroundCard({super.key, required this.children});
@@ -12,10 +14,10 @@ class BuildWhiteBackgroundCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(
-        AppPadding.padding48,
-        AppPadding.padding16,
-        AppPadding.padding16,
-        AppPadding.padding16,
+        AppPadding.padding48.w,
+        AppPadding.padding16.h,
+        AppPadding.padding16.w,
+        AppPadding.padding16.r,
       ),
       decoration: BoxDecoration(
         color: context.colorScheme.onPrimary,

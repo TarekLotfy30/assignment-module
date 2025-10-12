@@ -1,22 +1,25 @@
 enum EgyptCities {
-  mansoura,
-  suez,
+  cairo,
+  giza,
+  portsaid,
   assuit,
-  alex,
-  giza;
+  mansoura,
+  luxor;
 
   String getArabicName() {
     switch (this) {
-      case mansoura:
-        return "المنصورة";
-      case suez:
-        return "السويس";
-      case assuit:
-        return "أسيوط";
-      case alex:
-        return "الإسكندرية";
-      case giza:
-        return "الجيزة";
+      case EgyptCities.cairo:
+        return 'القاهرة';
+      case EgyptCities.giza:
+        return 'الجيزة';
+      case EgyptCities.portsaid:
+        return 'بورسعيد';
+      case EgyptCities.assuit:
+        return 'أسيوط';
+      case EgyptCities.mansoura:
+        return 'المنصورة';
+      case EgyptCities.luxor:
+        return "الأقصر";
     }
   }
 }

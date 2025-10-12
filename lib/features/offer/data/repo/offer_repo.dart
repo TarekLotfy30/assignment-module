@@ -1,6 +1,8 @@
 import 'dart:convert';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
+
 import 'package:flutter/services.dart';
+
+import '../models/offer_model.dart';
 
 class OfferRepo {
   OfferRepo();

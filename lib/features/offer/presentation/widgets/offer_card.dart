@@ -1,10 +1,12 @@
-import 'package:assignment/core/constants/app_corners.dart';
-import 'package:assignment/core/routing/app_router.gr.dart';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
-import 'package:assignment/features/offer/presentation/widgets/offer_card_details.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/constants/app_corners.dart';
+import '../../../../core/routing/app_router.gr.dart';
+import '../../data/models/offer_model.dart';
+import 'offer_card_details.dart';
+
 
 // translate-me-ignore-all-file
 class OfferCard extends StatelessWidget {
@@ -21,3 +23,12 @@ class OfferCard extends StatelessWidget {
     );
   }
 }
+
+
+  // Get.put(AuthController()); // Needed globally (immediate)
+  // Get.lazyPut(() => HomeController()); // Needed later
+
+
+  // class HomePage extends StatelessWidget {
+  // final homeController = Get.find<HomeController>(); // will be created now
+  // final authController = Get.find<AuthController>(); // already exists

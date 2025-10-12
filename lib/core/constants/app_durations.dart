@@ -1,6 +1,6 @@
 /// Duration constants for consistent timing throughout the app
 ///
-abstract final class AppDurations {
+class AppDurations {
   /// Standard animation duration for UI transitions
   static const Duration standardAnimationDuration = Duration(milliseconds: 300);
 

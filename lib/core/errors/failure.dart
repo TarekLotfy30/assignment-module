@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'api_error_messages.dart';
 
 class Failure implements Exception {
-  final String errorMessage;
   const Failure({required this.errorMessage});
 
   factory Failure.fromException(Exception exception) {
@@ -65,6 +64,7 @@ class Failure implements Exception {
         responseData['error'] ?? responseData['message'] ?? fallbackMessage;
     return Failure(errorMessage: errorMessage);
   }
+  final String errorMessage;
 }
 
 // usage :

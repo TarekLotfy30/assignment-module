@@ -1,6 +1,7 @@
-import 'package:assignment/core/routing/app_router.gr.dart';
-import 'package:assignment/core/routing/route_path.dart';
 import 'package:auto_route/auto_route.dart';
+
+import 'app_router.gr.dart';
+import 'route_path.dart';
 
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {

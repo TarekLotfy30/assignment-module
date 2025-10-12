@@ -9,6 +9,7 @@ abstract final class AppChipTheme {
   static ChipThemeData chipTheme(ColorScheme colorScheme) {
     return ChipThemeData(
       shape: RoundedRectangleBorder(
+        side: const BorderSide(color: Colors.transparent),
         borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius.r),
       ),
       labelPadding: EdgeInsets.symmetric(

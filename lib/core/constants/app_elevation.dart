@@ -1,4 +1,4 @@
-abstract final class AppElevation {
+class AppElevation {
   /// Elevation for card components
   /// Creates subtle shadow for content separation
   static const double xSmallElevation = 2;

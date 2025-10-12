@@ -7,13 +7,13 @@ enum OfferTypesEnum {
   String getArabicName() {
     switch (this) {
       case restaurants:
-        return "مطاعم";
+        return 'مطاعم';
       case libraries:
-        return "مكتبات";
+        return 'مكتبات';
       case entertainments:
-        return "ترفيهى";
+        return 'ترفيهى';
       case market:
-        return "ماركت";
+        return 'ماركت';
     }
   }
 }

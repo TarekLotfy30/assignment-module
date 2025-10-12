@@ -4,18 +4,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../constants/app_border_width.dart';
 import '../../constants/app_corners.dart';
 import '../../constants/app_elevation.dart';
-import '../../constants/app_padding.dart';
 import '../../constants/app_heights.dart';
+import '../../constants/app_padding.dart';
 import '../../utils/styles/app_fonts_family.dart';
 import '../text_themes/app_text_themes.dart';
 
-/// Button theme configurations for consistent button styling.
-///
-/// Provides theme builders for all button types used in the application:
-/// - ElevatedButton: Primary actions (uses primary color)
-/// - OutlinedButton: Secondary actions (uses secondary color)
-/// - FloatingActionButton: Main action button (uses tertiary color for the bright green)
-/// - TextButton: Tertiary actions
+
 
 abstract final class AppButtonThemes {
   const AppButtonThemes._();

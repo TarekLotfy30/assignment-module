@@ -1,9 +1,10 @@
-import 'package:assignment/core/constants/app_spacing.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
-import 'package:assignment/core/widgets/build_white_background_card.dart';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/constants/app_spacing.dart';
+import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../../../core/widgets/build_white_background_card.dart';
+import '../../../offer/data/models/offer_model.dart';
 
 // translate-me-ignore-all-file
 class DetailsOfTheOffer extends StatelessWidget {
@@ -17,7 +18,7 @@ class DetailsOfTheOffer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "تفاصيل العرض",
+          'تفاصيل العرض',
           style: context.textThemeCustom.displayMedium?.copyWith(
             color: context.colorScheme.primary,
           ),
@@ -34,7 +35,7 @@ class DetailsOfTheOffer extends StatelessWidget {
                     width: 8.w,
                     decoration: BoxDecoration(
                       color: context.colorScheme.inversePrimary,
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                      borderRadius: const BorderRadius.all(Radius.circular(8)),
                     ),
                   ),
                   SizedBox(width: AppSpacing.spacing8.w),

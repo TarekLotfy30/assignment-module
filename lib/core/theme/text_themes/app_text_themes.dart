@@ -23,12 +23,12 @@ abstract final class AppTextThemes {
 
     // Label styles (11pt) - Labels, captions
     //labelLarge: AppTypography.textStyle11Bold,
-    labelMedium: AppTypography.textStyle11SemiBold,
-    //labelSmall: AppTypography.textStyle13regular,
+    //labelMedium: AppTypography.textStyle14Regular,
+    labelSmall: AppTypography.textStyle14Regular,
 
     // Body styles (11pt) - Body text
     //bodyLarge: AppTypography.bodyLarge,
-    //bodyMedium: AppTypography.textStyle11SemiBold,
+    bodyMedium: AppTypography.textStyle11SemiBold,
     //bodySmall: AppTypography.bodySmall
   );
 }

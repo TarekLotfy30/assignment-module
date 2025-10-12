@@ -55,7 +55,7 @@ class AppInterceptors extends Interceptor {
     return null;
   }
 
-// Request logging (disable in production)
+  // Request logging (disable in production)
   void _logRequest(RequestOptions options) {
     log('🚀 REQUEST: ${options.method} ${options.uri}', name: _logger);
     log('📋 Headers: ${options.headers}', name: _logger);

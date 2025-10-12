@@ -1,12 +1,13 @@
 import 'dart:ui';
 
-import 'package:assignment/core/constants/app_elevation.dart';
-import 'package:assignment/core/constants/app_padding.dart';
-import 'package:assignment/core/constants/app_spacing.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
-import 'package:assignment/core/widgets/build_optimized_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../constants/app_elevation.dart';
+import '../../constants/app_padding.dart';
+import '../../constants/app_spacing.dart';
+import '../../widgets/build_optimized_svg.dart';
+import '../extensions/theme_extension.dart';
 
 abstract class BaseDialog extends StatelessWidget {
   const BaseDialog({super.key});
@@ -17,7 +18,7 @@ abstract class BaseDialog extends StatelessWidget {
   ///
   /// @param context The BuildContext where the dialog should appear
   /// @param pageBuilder Builder function to create the dialog content
-  /// @param [barrierDismissible] Whether tapping outside the dialog dismisses it
+  /// @param [barrierDismissible] Whether tapping outside the dialog dismisses
   /// @param [transitionDuration] Duration for the dialog animation
   /// @param [blurAmount] The amount of blur effect (sigmaX and sigmaY)
   /// @return A Future that completes when the dialog is closed,
@@ -113,8 +114,8 @@ class SimpleDialogBox extends BaseDialog {
   Widget build(BuildContext context) {
     return SimpleDialog(
       contentPadding: EdgeInsetsGeometry.symmetric(
-        horizontal: AppPadding.padding32,
-        vertical: AppPadding.padding24,
+        horizontal: AppPadding.padding32.w,
+        vertical: AppPadding.padding24.h,
       ),
       constraints: BoxConstraints(maxHeight: 272.h, maxWidth: 358.w),
       elevation: AppElevation.dialogElevation,
@@ -173,5 +174,5 @@ class SimpleDialogBox extends BaseDialog {
 
 // AlertDialogBox(
 //                   title: 'Action Required',
-//                   content: 'Please confirm this important action before proceeding.',
+//         content: 'Please confirm this important action before proceeding.',
 //                 ).show(context);

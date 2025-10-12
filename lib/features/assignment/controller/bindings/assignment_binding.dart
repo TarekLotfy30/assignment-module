@@ -1,5 +1,6 @@
-import 'package:assignment/features/assignment/controller/assignment_controller.dart';
 import 'package:get/get.dart';
+
+import '../assignment_controller.dart';
 
 class AssignmentBinding extends Bindings {
   @override

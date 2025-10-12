@@ -1,6 +1,7 @@
-import 'package:assignment/features/assignment/presentation/widgets/assignment_view_body.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/assignment_view_body.dart';
 
 // translate-me-ignore-all-file
 @RoutePage()

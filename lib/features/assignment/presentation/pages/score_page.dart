@@ -1,7 +1,8 @@
-import 'package:assignment/core/di/service_locator.dart';
-import 'package:assignment/features/assignment/controller/assignment_controller.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/di/service_locator.dart';
+import '../../controller/assignment_controller.dart';
 
 // translate-me-ignore-all-file
 @RoutePage()
@@ -19,7 +20,7 @@ class ScorePage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "You scored ${controller.score} out of ${controller.total} 🎉",
+          'You scored ${controller.score} out of ${controller.total} 🎉',
           style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),

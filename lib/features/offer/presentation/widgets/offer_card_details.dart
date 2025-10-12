@@ -1,15 +1,15 @@
-import 'package:assignment/core/constants/app_assets.dart';
-import 'package:assignment/core/constants/app_corners.dart';
-import 'package:assignment/core/constants/app_icon.dart';
-import 'package:assignment/core/constants/app_padding.dart';
-import 'package:assignment/core/constants/app_spacing.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
-import 'package:assignment/core/widgets/build_optimized_svg.dart';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-// translate-me-ignore-all-file
+import '../../../../core/constants/app_assets.dart';
+import '../../../../core/constants/app_corners.dart';
+import '../../../../core/constants/app_spacing.dart';
+import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../data/models/offer_model.dart';
+import 'offer_card_cover.dart';
+import 'offer_card_discount.dart';
+import 'offer_card_location.dart';
+
 class OfferCardDetails extends StatelessWidget {
   const OfferCardDetails({super.key, required this.offer});
 
@@ -24,19 +24,10 @@ class OfferCardDetails extends StatelessWidget {
           Stack(
             clipBehavior: Clip.none,
             children: [
-              AspectRatio(
-                aspectRatio: 358 / 170,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(AppCorners.buttonBorderRadius),
-                    topRight: Radius.circular(AppCorners.buttonBorderRadius),
-                  ),
-                  child: Image.asset(AppAssets.cover, fit: BoxFit.cover),
-                ),
-              ),
+              const OfferCardCover(),
               Positioned(
-                right: 16.0,
-                bottom: -30.0,
+                right: 16,
+                bottom: -30,
                 child: CircleAvatar(
                   radius: 30,
                   backgroundImage: Image.asset(
@@ -46,35 +37,12 @@ class OfferCardDetails extends StatelessWidget {
                   backgroundColor: Colors.transparent,
                 ),
               ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12.0,
-                    vertical: 8.0,
-                  ),
-                  decoration: BoxDecoration(
-                    color: const Color(0xffE9FFEE),
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(AppCorners.buttonBorderRadius),
-                      bottomRight: Radius.circular(
-                        AppCorners.buttonBorderRadius,
-                      ),
-                    ),
-                  ),
-                  child: Text(
-                    "🔥 خصم ${offer.discount}%",
-                    style: context.textThemeCustom.titleMedium?.copyWith(
-                      color: context.colorScheme.secondary,
-                    ),
-                  ),
-                ),
-              ),
+              OfferCardDiscount(offer: offer),
             ],
           ),
           SizedBox(height: AppSpacing.spacing40.h),
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
               horizontal: AppCorners.buttonBorderRadius,
             ),
             child: Column(
@@ -94,38 +62,7 @@ class OfferCardDetails extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: AppSpacing.spacing16.h),
-                Container(
-                  margin: EdgeInsets.only(bottom: AppPadding.padding16.h),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppPadding.padding8,
-                    vertical: AppPadding.padding4,
-                  ),
-                  decoration: BoxDecoration(
-                    color: const Color(0xffECF0FA),
-                    borderRadius: BorderRadius.circular(
-                      AppCorners.smallBorderRadius,
-                    ),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      BuildOptimizedSvg(
-                        AppIcons.locationFilter,
-                        colorFilter: ColorFilter.mode(
-                          const Color(0xff064698),
-                          BlendMode.srcIn,
-                        ),
-                      ),
-                      const SizedBox(width: 8.0),
-                      Text(
-                        offer.location,
-                        style: context.textThemeCustom.labelMedium?.copyWith(
-                          color: context.colorScheme.primary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                OfferCardLocation(offer: offer),
               ],
             ),
           ),

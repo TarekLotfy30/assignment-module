@@ -1,16 +1,17 @@
-import 'package:assignment/core/constants/app_assets.dart';
-import 'package:assignment/core/constants/app_icon.dart';
-import 'package:assignment/core/constants/app_padding.dart';
-import 'package:assignment/core/constants/app_spacing.dart';
-import 'package:assignment/core/helpers/extensions/theme_extension.dart';
-import 'package:assignment/core/helpers/functions/app_dialog.dart';
-import 'package:assignment/core/widgets/build_back_button.dart';
-import 'package:assignment/features/offer/data/models/offer_model.dart';
-import 'package:assignment/features/offer/presentation/widgets/offer_card_details.dart';
-import 'package:assignment/features/offer_details/presentation/widgets/available_branches.dart';
-import 'package:assignment/features/offer_details/presentation/widgets/details_of_the_offer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/constants/app_assets.dart';
+import '../../../../core/constants/app_icon.dart';
+import '../../../../core/constants/app_padding.dart';
+import '../../../../core/constants/app_spacing.dart';
+import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../../../core/helpers/functions/app_dialog.dart';
+import '../../../../core/widgets/build_back_button.dart';
+import '../../../offer/data/models/offer_model.dart';
+import '../../../offer/presentation/widgets/offer_card_details.dart';
+import 'available_branches.dart';
+import 'details_of_the_offer.dart';
 
 // translate-me-ignore-all-file
 class OfferDetailsPageBody extends StatelessWidget {
@@ -23,21 +24,21 @@ class OfferDetailsPageBody extends StatelessWidget {
     return SafeArea(
       child: Padding(
         padding: EdgeInsets.symmetric(
-          vertical: AppPadding.padding20,
-          horizontal: AppPadding.padding16,
+          vertical: AppPadding.padding20.w,
+          horizontal: AppPadding.padding16.h,
         ),
         child: Column(
           children: [
             Expanded(
               child: SingleChildScrollView(
-                physics: BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const BuildBackIcon(),
                     SizedBox(height: AppSpacing.spacing8.h),
                     Text(
-                      "تفاصيل العروض",
+                      'تفاصيل العروض',
                       style: context.textThemeCustom.displayMedium?.copyWith(
                         color: context.colorScheme.primary,
                       ),
@@ -54,18 +55,18 @@ class OfferDetailsPageBody extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () async {
-                SimpleDialogBox(
-                  topAssetPath: AppIcons.close,
+                const SimpleDialogBox(
+                  topAssetPath: AppIcon.close,
                   contentAssetPath: AppAssets.openedGift,
                   titleOne: 'مبروك لقد حصلت علي خصم ',
-                  titleTwo: "15%",
+                  titleTwo: '15%',
                   contentOne: 'أظهر هذا الكود',
                   contentTwo: ' AMSA14378 ',
                   contentThree:
                       'عند زيارتك احدي فروع مكتبات سمير و علي و استفيد بالعرض',
                 ).show(context);
               },
-              child: Text("احصل على الهدية"),
+              child: const Text('احصل على الهدية'),
             ),
           ],
         ),

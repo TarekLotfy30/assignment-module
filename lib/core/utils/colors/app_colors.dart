@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   const AppColors._();
-
+  //
   // ========== PRIMARY BLUE PALETTE ==========
   static const Color blue50 = Color(0xFFE8F0FA);
   static const Color blue100 = Color(0xFFC5DAF3);
-  static const Color blue200 = Color(0xFF9EC2EB); 
+  static const Color blue200 = Color(0xFFBBC9ED);
   static const Color blue300 = Color(0xFF77AAE3);
-  static const Color blue400 = Color(0xFF5A97DD);
+  static const Color blue400 = Color(0xFF507CB5);
   static const Color blue500 = Color(0xFF064698); // Main primary
   static const Color blue600 = Color(0xFF053E88);
   static const Color blue700 = Color(0xFF043571);
@@ -17,7 +17,7 @@ class AppColors {
 
   // ========== TEAL/TURQUOISE PALETTE ==========
   static const Color teal50 = Color(0xFFE6F9F5);
-  static const Color teal100 = Color(0xFFBFF0E6);
+  static const Color teal100 = Color(0xffE9FFEE);
   static const Color teal200 = Color(0xFF94E6D5);
   static const Color teal300 = Color(0xFF69DCC4);
   static const Color teal400 = Color(0xFF48D5B7);
@@ -45,7 +45,7 @@ class AppColors {
   static const Color azure200 = Color(0xFF93D5EF);
   static const Color azure300 = Color(0xFF67C4E9);
   static const Color azure400 = Color(0xFF47B7E4);
-  static const Color azure500 = Color(0xFF007BB2); // Main azure
+  static const Color azure500 = Color(0xFF507CB5); // Main azure
   static const Color azure600 = Color(0xFF006FA0);
   static const Color azure700 = Color(0xFF005F89);
   static const Color azure800 = Color(0xFF004F72);

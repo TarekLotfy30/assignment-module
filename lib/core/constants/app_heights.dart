@@ -1,16 +1,20 @@
-abstract final class AppHeights {
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class AppHeights {
+  AppHeights._();
+
   /// Standard button height
-  static const double buttonHeight = 48;
+  static final double buttonHeight = 48.h;
 
   /// Small button height
-  static const double smallButtonHeight = 32;
+  static final double smallButtonHeight = 32.h;
 
   /// Large button height
-  static const double largeButtonHeight = 56;
+  static final double largeButtonHeight = 56.h;
 
   /// App bar height
-  static const double appBarHeight = 56;
+  static final double appBarHeight = 56.h;
 
   /// Bottom navigation height
-  static const double bottomNavigationHeight = 80;
+  static final double bottomNavigationHeight = 80.h;
 }

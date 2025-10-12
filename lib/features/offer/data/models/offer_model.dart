@@ -1,19 +1,7 @@
 // translate-me-ignore-all-file
-import 'package:assignment/core/enum/offer_types.dart';
+import '../../../../core/enum/offer_types.dart';
 
 class OfferModel {
-  final String id;
-  final String _category;
-  final String location;
-  final String title;
-  final String description;
-  final String coverPhoto;
-  final String profilePhoto;
-  final String imageUrl;
-  final int discount;
-  final bool hasDiscount;
-  final List<OfferDetail> offerDetailsList;
-  final List<Branch> branchesList;
 
   OfferModel({
     required this.id,
@@ -33,7 +21,7 @@ class OfferModel {
   factory OfferModel.fromJson(Map<String, dynamic> json) {
     return OfferModel(
       id: json['id'] ?? '',
-      category: json["category"] ?? '',
+      category: json['category'] ?? '',
       location: json['location'] ?? '',
       title: json['title'] ?? '',
       description: json['description'] ?? '',
@@ -54,6 +42,18 @@ class OfferModel {
           [],
     );
   }
+  final String id;
+  final String _category;
+  final String location;
+  final String title;
+  final String description;
+  final String coverPhoto;
+  final String profilePhoto;
+  final String imageUrl;
+  final int discount;
+  final bool hasDiscount;
+  final List<OfferDetail> offerDetailsList;
+  final List<Branch> branchesList;
 
   OfferTypesEnum get categoryType => OfferTypesEnum.values.firstWhere(
     (e) => e.getArabicName() == _category,
@@ -62,23 +62,23 @@ class OfferModel {
 }
 
 class OfferDetail {
-  final String id;
-  final String title;
 
   OfferDetail({required this.id, required this.title});
 
   factory OfferDetail.fromJson(Map<String, dynamic> json) {
-    return OfferDetail(id: json['id'] ?? "", title: json['title'] ?? "");
+    return OfferDetail(id: json['id'] ?? '', title: json['title'] ?? '');
   }
+  final String id;
+  final String title;
 }
 
 class Branch {
-  final String id;
-  final String location;
 
   Branch({required this.id, required this.location});
 
   factory Branch.fromJson(Map<String, dynamic> json) {
-    return Branch(id: json['id'] ?? "", location: json['location'] ?? "");
+    return Branch(id: json['id'] ?? '', location: json['location'] ?? '');
   }
+  final String id;
+  final String location;
 }
