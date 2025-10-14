@@ -21,7 +21,7 @@ class AssignmentViewBody extends StatelessWidget {
         children: [
           // Question text
           GetBuilder<AssignmentController>(
-            init: getIt<AssignmentController>(),
+            init: serviceLocator<AssignmentController>(),
             builder: (controller) {
               log('rebuilt the question text widget');
               return Text(

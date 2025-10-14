@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "id": "5a91be7d-8b2a-48b6-92e1-6d6662efb13b",
+      "category": "مطاعم",
+      "location": "المنصورة",
+      "title": "كنتاكي",
+      "description": "استمتع بعرض خاص من كنتاكي مع خصومات تصل إلى 10٪ في جميع فروع المنصورة.",
+      "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+      "profile_photo": "https://source.unsplash.com/random/300x300?كنتاكي",
+      "image_url": "https://source.unsplash.com/random/1000x800?كنتاكي",
+      "discount": 10,
+      "has_discount": true,
+      "offer_details_list": [
+        {
+          "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+          "title": "خصم إضافي على الطلبات أونلاين"
+        },
+        {
+          "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+          "title": "خصم إضافي على الطلبات أونلاين"
+        },
+        {
+          "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+          "title": "خصم إضافي على الطلبات أونلاين"
+        },
+        {
+          "id": "373cc543-6b17-492c-b015-7fc7c883c118",
+          "title": "ساري حتى نهاية الشهر"
+        }
+      ],
+      "branches_list": [
+        {
+          "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+          "location": "45 شارع النصر - المنصورة - مصر"
+        },
+        {
+          "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+          "location": "45 شارع النصر - المنصورة - مصر"
+        },
+        {
+          "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+          "location": "45 شارع النصر - المنصورة - مصر"
+        },
+        {
+          "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+          "location": "45 شارع النصر - المنصورة - مصر"
+        }
+      ]
+    },
+    {
+      "id": "1ddd0d63-9461-495c-964c-65d32ab9839f",
+      "category": "مطاعم",
+      "location": "السويس",
+      "title": "ماكدونالدز",
+      "description": "استمتع بعرض خاص من ماكدونالدز مع خصومات تصل إلى 40٪ في جميع فروع السويس.",
+      "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+      "profile_photo": "https://source.unsplash.com/random/300x300?ماكدونالدز",
+      "image_url": "https://source.unsplash.com/random/1000x800?ماكدونالدز",
+      "discount": 40,
+      "has_discount": true,
+      "offer_details_list": [
+        {
+          "id": "6705caea-60bf-42e0-8ddc-4f97a4928d67",
+          "title": "خصم إضافي على الطلبات أونلاين"
+        },
+        {
+          "id": "5d2c8608-a2d3-4744-80f3-674f4ae6eab6",
+          "title": "ساري حتى نهاية الشهر"
+        }
+      ],
+      "branches_list": [
+        {
+          "id": "6dda3d10-b448-40ae-811e-b98b57cb4aac",
+          "location": "88 شارع النصر - السويس - مصر"
+        }
+      ]
+    },
+    {
+      "id": "a5b0644d-feea-4709-a699-2aa4afbe8c03",
+      "category": "مطاعم",
+      "location": "أسيوط",
+      "title": "أبو شقرة",
+      "description": "استمتع بعرض خاص من أبو شقرة مع خصومات تصل إلى 10٪ في جميع فروع أسيوط.",
+      "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+      "profile_photo": "https://source.unsplash.com/random/300x300?أبو شقرة",
+      "image_url": "https://source.unsplash.com/random/1000x800?أبو شقرة",
+      "discount": 10,
+      "has_discount": true,
+      "offer_details_list": [
+        {
+          "id": "7f065f20-27d7-44f2-a4ed-15f1d1f4ee85",
+          "title": "خصم إضافي على الطلبات أونلاين"
+        },
+        {
+          "id": "faa0b2ca-9212-418e-adfb-9b869485c13f",
+          "title": "ساري حتى نهاية الشهر"
+        }
+      ],
+      "branches_list": [
+        {
+          "id": "b1db0c5d-cb6e-41cb-bf9e-3054149a1bc0",
+          "location": "95 شارع النصر - أسيوط - مصر"
+        }
+      ]
+    }
+  ],
+  "currentPage": 1,
+  "nextPage": 2,
+  "totalCount": 3,
+  "count": 3
+}

@@ -1,9 +1,25 @@
 // translate-me-ignore-all-file
+import 'package:equatable/equatable.dart';
+
 import '../../../../core/enum/offer_types.dart';
+import 'branch_model.dart';
+import 'offer_detail.dart';
 
-class OfferModel {
+class OfferModel extends Equatable {
+  final String id;
+  final String _category;
+  final String location;
+  final String title;
+  final String description;
+  final String coverPhoto;
+  final String profilePhoto;
+  final String imageUrl;
+  final int discount;
+  final bool hasDiscount;
+  final List<OfferDetail> offerDetailsList;
+  final List<Branch> branchesList;
 
-  OfferModel({
+  const OfferModel({
     required this.id,
     required String category,
     required this.location,
@@ -32,53 +48,34 @@ class OfferModel {
       hasDiscount: json['has_discount'] ?? false,
       offerDetailsList:
           (json['offer_details_list'] as List<dynamic>?)
-              ?.map((v) => OfferDetail.fromJson(v as Map<String, dynamic>))
+              ?.map((item) => OfferDetail.fromJson(item))
               .toList() ??
           [],
       branchesList:
           (json['branches_list'] as List<dynamic>?)
-              ?.map((v) => Branch.fromJson(v as Map<String, dynamic>))
+              ?.map((item) => Branch.fromJson(item))
               .toList() ??
           [],
     );
   }
-  final String id;
-  final String _category;
-  final String location;
-  final String title;
-  final String description;
-  final String coverPhoto;
-  final String profilePhoto;
-  final String imageUrl;
-  final int discount;
-  final bool hasDiscount;
-  final List<OfferDetail> offerDetailsList;
-  final List<Branch> branchesList;
 
   OfferTypesEnum get categoryType => OfferTypesEnum.values.firstWhere(
     (e) => e.getArabicName() == _category,
     orElse: () => OfferTypesEnum.values.first, //default
   );
-}
 
-class OfferDetail {
-
-  OfferDetail({required this.id, required this.title});
-
-  factory OfferDetail.fromJson(Map<String, dynamic> json) {
-    return OfferDetail(id: json['id'] ?? '', title: json['title'] ?? '');
-  }
-  final String id;
-  final String title;
-}
-
-class Branch {
-
-  Branch({required this.id, required this.location});
-
-  factory Branch.fromJson(Map<String, dynamic> json) {
-    return Branch(id: json['id'] ?? '', location: json['location'] ?? '');
-  }
-  final String id;
-  final String location;
+  @override
+  List<Object?> get props => [
+    id,
+    location,
+    title,
+    description,
+    coverPhoto,
+    profilePhoto,
+    imageUrl,
+    discount,
+    hasDiscount,
+    offerDetailsList,
+    branchesList,
+  ];
 }

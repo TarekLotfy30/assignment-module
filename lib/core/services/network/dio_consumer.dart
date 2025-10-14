@@ -1,52 +1,48 @@
+// ignore_for_file: sort_constructors_first
+
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
 import 'api_consumer.dart';
-//import 'app_interceptors.dart';
+import 'app_interceptors.dart';
 import 'end_points.dart';
 
 // translate-me-ignore-all-file
 class DioConsumer implements ApiConsumer {
-  DioConsumer._();
   final String _logger = 'DioHelper';
   late final Dio _client;
 
-  void initialize() {
-    log(
-      'Initializing DioConsumer with baseUrl: ${EndPoints.baseUrl}',
-      name: _logger,
-    );
+  DioConsumer() {
+    _initializeDioClient();
+    _attachInterceptors();
+  }
+
+  void _initializeDioClient() {
     _client = Dio(
       BaseOptions(
         baseUrl: EndPoints.baseUrl,
-        // Connection timeouts - balanced for most use cases
-        connectTimeout: const Duration(seconds: 15), // Connection establishment
-        sendTimeout: const Duration(seconds: 30), // Sending request data
-        receiveTimeout: const Duration(seconds: 30), // Receiving response data
-        // Response handling
-        responseType: ResponseType.json, // Auto-parse JSON responses
-        receiveDataWhenStatusError: true, // Get error response body
-        // Headers configuration
+        connectTimeout: const Duration(seconds: 15),
+        sendTimeout: const Duration(seconds: 30),
+        receiveTimeout: const Duration(seconds: 30),
+        responseType: ResponseType.json,
+        receiveDataWhenStatusError: true,
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
-          'User-Agent': 'YourApp/1.0.0', // Replace with your app info
         },
-        preserveHeaderCase: false, // Standard lowercase headers
-        // Redirect handling
+        preserveHeaderCase: false,
         followRedirects: true,
         maxRedirects: 5,
-        // Connection settings
-        persistentConnection: true, // Reuse connections for better performance
-        // Collection format for query parameters
-        listFormat: ListFormat.multi, // Standard format: param=val1&param=val2
-        // Status validation
+        persistentConnection: true,
+        listFormat: ListFormat.multi,
         validateStatus: (status) => status! < 500,
       ),
     );
+  }
 
+  void _attachInterceptors() {
     if (kDebugMode) {
       _client.interceptors.add(
         LogInterceptor(
@@ -60,52 +56,41 @@ class DioConsumer implements ApiConsumer {
         ),
       );
     }
-  }
-
-  // Method to add custom headers
-  void addHeader(String key, String value) {
-    _client.options.headers[key] = value;
-  }
-
-  // Method to remove headers
-  void removeHeader(String key) {
-    _client.options.headers.remove(key);
+    _client.interceptors.add(AppInterceptors());
   }
 
   @override
-  Future delete({
+  Future get({
     required String endPoint,
-    Map<String, dynamic>? queryParameters,
+    Map<String, dynamic>? params,
+    Map<String, dynamic>? body,
+    Map<String, dynamic>? headers,
+    bool overrideDefaultHeaders = false,
   }) async {
-    final response = await _client.delete(
+    final effectiveHeaders = _mergeHeaders(headers, overrideDefaultHeaders);
+    final Response<dynamic> response = await _client.get(
       endPoint,
-      queryParameters: queryParameters,
+      queryParameters: params,
+      options: Options(headers: effectiveHeaders),
     );
-    return response.data;
-  }
-
-  /// Performs a GET request to the specified endpoint.
-  ///
-  /// [endPoint] The endpoint path (required).
-  /// [params] Optional query parameters.
-  ///
-  /// Returns a [Future] containing the server response.
-  @override
-  Future get({required String endPoint, Map<String, dynamic>? params}) async {
-    final response = await _client.get(endPoint, queryParameters: params);
     return response.data;
   }
 
   @override
   Future post({
     required String endPoint,
+    Map<String, dynamic>? params,
     Map<String, dynamic>? body,
-    Map<String, dynamic>? queryParameters,
+    Map<String, dynamic>? headers,
+    bool overrideDefaultHeaders = false,
   }) async {
-    final response = await _client.post(
+    final effectiveHeaders = _mergeHeaders(headers, overrideDefaultHeaders);
+
+    final Response<dynamic> response = await _client.post(
       endPoint,
       data: body,
-      queryParameters: queryParameters,
+      queryParameters: params,
+      options: Options(headers: effectiveHeaders),
     );
     return response.data;
   }
@@ -113,14 +98,49 @@ class DioConsumer implements ApiConsumer {
   @override
   Future put({
     required String endPoint,
+    Map<String, dynamic>? params,
     Map<String, dynamic>? body,
-    Map<String, dynamic>? queryParameters,
+    Map<String, dynamic>? headers,
+    bool overrideDefaultHeaders = false,
   }) async {
-    final response = await _client.put(
+    final effectiveHeaders = _mergeHeaders(headers, overrideDefaultHeaders);
+    final Response<dynamic> response = await _client.put(
       endPoint,
       data: body,
-      queryParameters: queryParameters,
+      queryParameters: params,
+      options: Options(headers: effectiveHeaders),
+    );
+
+    return response.data;
+  }
+
+  @override
+  Future delete({
+    required String endPoint,
+    Map<String, dynamic>? params,
+    Map<String, dynamic>? body,
+    Map<String, dynamic>? headers,
+    bool overrideDefaultHeaders = false,
+  }) async {
+    final effectiveHeaders = _mergeHeaders(headers, overrideDefaultHeaders);
+    final Response<dynamic> response = await _client.delete(
+      endPoint,
+      queryParameters: params,
+      options: Options(headers: effectiveHeaders),
     );
     return response.data;
+  }
+
+  Map<String, dynamic>? _mergeHeaders(
+    Map<String, dynamic>? customHeaders,
+    bool overrideDefaultHeaders,
+  ) {
+    final mergedHeaders = {
+      ..._client.options.headers,
+      if (customHeaders != null) ...customHeaders,
+    };
+    return overrideDefaultHeaders
+        ? customHeaders // Only use these headers for this request
+        : mergedHeaders; // merge with defaults
   }
 }

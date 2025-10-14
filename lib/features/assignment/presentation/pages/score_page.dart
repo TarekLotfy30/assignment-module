@@ -11,7 +11,8 @@ class ScorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AssignmentController controller = getIt<AssignmentController>();
+    final AssignmentController controller =
+        serviceLocator<AssignmentController>();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Score', style: TextStyle(color: Colors.white)),

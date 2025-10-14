@@ -1,70 +1,66 @@
 import 'package:dio/dio.dart';
 import 'api_error_messages.dart';
+import 'api_error_model.dart';
 
-class Failure implements Exception {
-  const Failure({required this.errorMessage});
-
-  factory Failure.fromException(Exception exception) {
-    return Failure(errorMessage: exception.toString());
-  }
-
-  factory Failure.fromDioError(DioException dioError) {
+class ApiErrorHandler {
+  ApiErrorModel fromDioError(DioException dioError) {
     switch (dioError.type) {
       case DioExceptionType.connectionTimeout:
-        return const Failure(errorMessage: ApiErrorMessages.connectionTimeout);
+        return const ApiErrorModel(message: ApiErrorMessages.connectionTimeout);
 
       case DioExceptionType.sendTimeout:
-        return const Failure(errorMessage: ApiErrorMessages.sendTimeout);
+        return const ApiErrorModel(message: ApiErrorMessages.sendTimeout);
 
       case DioExceptionType.receiveTimeout:
-        return const Failure(errorMessage: ApiErrorMessages.receiveTimeout);
+        return const ApiErrorModel(message: ApiErrorMessages.receiveTimeout);
 
       case DioExceptionType.cancel:
-        return const Failure(errorMessage: ApiErrorMessages.requestCancelled);
+        return const ApiErrorModel(message: ApiErrorMessages.requestCancelled);
 
       case DioExceptionType.badCertificate:
-        return const Failure(errorMessage: ApiErrorMessages.badCertificate);
-
-      case DioExceptionType.badResponse:
-        if (dioError.response != null) {
-          return Failure.fromResponse(
-            dioError.response!.statusCode,
-            dioError.response!.data,
-          );
-        }
-        return const Failure(errorMessage: ApiErrorMessages.nullResponse);
+        return const ApiErrorModel(message: ApiErrorMessages.badCertificate);
 
       case DioExceptionType.connectionError:
         final errorMessage = dioError.message?.toLowerCase() ?? '';
         if (errorMessage.contains('socketexception') ||
             errorMessage.contains('network is unreachable') ||
             errorMessage.contains('no address associated with hostname')) {
-          return const Failure(errorMessage: ApiErrorMessages.noInternet);
+          return const ApiErrorModel(message: ApiErrorMessages.noInternet);
         }
-        return const Failure(errorMessage: ApiErrorMessages.connectionError);
+        return const ApiErrorModel(message: ApiErrorMessages.connectionError);
 
       case DioExceptionType.unknown:
         final errorMessage = dioError.message?.toLowerCase() ?? '';
         if (errorMessage.contains('socketexception') ||
             errorMessage.contains('network')) {
-          return const Failure(errorMessage: ApiErrorMessages.noInternet);
+          return const ApiErrorModel(message: ApiErrorMessages.noInternet);
         }
-        return const Failure(errorMessage: ApiErrorMessages.unexpectedError);
+        return const ApiErrorModel(message: ApiErrorMessages.unexpectedError);
+
+      case DioExceptionType.badResponse:
+        if (dioError.response != null) {
+          return fromResponse(
+            statusCode: dioError.response!.statusCode,
+            data: dioError.response!.data,
+          );
+        }
+        return const ApiErrorModel(message: ApiErrorMessages.nullResponse);
     }
   }
 
-  factory Failure.fromResponse(
-    int? statusCode,
-    Map<String, dynamic> responseData,
-  ) {
-    final fallbackMessage = statusCode != null
-        ? ApiErrorMessages.getHttpStatusMessage(statusCode)
-        : ApiErrorMessages.genericError;
-    final errorMessage =
-        responseData['error'] ?? responseData['message'] ?? fallbackMessage;
-    return Failure(errorMessage: errorMessage);
+  ApiErrorModel fromResponse({
+    required int? statusCode,
+    required Map<String, dynamic> data,
+  }) {
+    final fallbackMessage = statusCode == null
+        ? ApiErrorMessages.genericError
+        : ApiErrorMessages.getHttpStatusMessage(statusCode);
+    return ApiErrorModel(
+      message: data['message'] ?? fallbackMessage,
+      code: data["status"],
+      errors: data["data"],
+    );
   }
-  final String errorMessage;
 }
 
 // usage :

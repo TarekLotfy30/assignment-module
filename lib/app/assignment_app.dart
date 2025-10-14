@@ -24,7 +24,7 @@ class AssignmentApp extends StatelessWidget {
         theme: AppTheme.lightMode,
         darkTheme: AppTheme.darkMode,
         themeMode: ThemeMode.light,
-        routerConfig: getIt<AppRouter>().config(),
+        routerConfig: serviceLocator<AppRouter>().config(),
       ),
     );
   }

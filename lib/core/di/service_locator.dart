@@ -5,65 +5,28 @@ import 'package:get_it/get_it.dart';
 
 import '../../features/offer/controller/offer_controller.dart';
 import '../routing/app_router.dart';
+import '../services/network/dio_consumer.dart';
 
-final getIt = GetIt.instance;
+final serviceLocator = GetIt.instance;
 
 Future<void> setupServiceLocator() async {
+  const logger = "ServiceLocator";
   try {
     // AppRouter
-    log('Registering AppRouter', name: 'ServiceLocator');
-    getIt.registerLazySingleton<AppRouter>(AppRouter.new);
-    log('AppRouter registered', name: 'ServiceLocator');
+    log('Registering AppRouter', name: logger);
+    serviceLocator.registerLazySingleton<AppRouter>(AppRouter.new);
+    log('AppRouter registered', name: logger);
 
-    //getIt.registerSingleton<AssignmentController>(AssignmentController());
-    //getIt.registerSingleton<OfferController>(OfferController());
-
+    // OfferController Binding
     Get.put(OfferController());
 
     // Dio and DioHelper
-    log('Setting up Dio instance', name: 'ServiceLocator');
-    //final dio = Dio();
-    //getIt.registerSingleton<Dio>(dio);
-    //getIt.registerLazySingleton<Dio>(() => Dio());
-    log('Dio instance registered', name: 'ServiceLocator');
-    log('Setting up DioHelper', name: 'ServiceLocator');
-    //final dioHelper = DioHelper(getIt<Dio>());
-    //getIt.registerSingleton<DioHelper>(dioHelper);
-    log('DioHelper registered', name: 'ServiceLocator');
+    log('Setting up Dio dependencies...', name: logger);
+    final DioConsumer dioConsumer = DioConsumer();
+    serviceLocator.registerSingleton<DioConsumer>(dioConsumer);
+    log('DioConsumer registered as singleton', name: logger);
 
-    // SharedPreferences
-    log('Initializing SharedPreferences', name: 'ServiceLocator');
-    // Initialize async dependencies
-    //final sharedPreferences = await SharedPreferences.getInstance();
-    // Register as singleton since it's already awaited
-    // getIt.registerSingleton<SharedPreferences>(sharedPreferences);
-    //log('SharedPreferences registered', name: 'ServiceLocator');
-    //log('Creating LocalHelper', name: 'ServiceLocator');
-    //final localHelper = LocalHelper(sharedPreferences);
-    // Register your custom helper that depends on SharedPreferences
-    //getIt.registerSingleton<LocalHelper>(localHelper);
-    //log('LocalHelper registered', name: 'ServiceLocator');
-
-    // SharedPreferences hwa hwa ely fo2
-    // final sharedPrefs = await SharedPreferences.getInstance();
-    // getIt.registerSingleton<SharedPreferences>(sharedPrefs);
-    //getIt.registerSingleton<LocalHelper>(LocalHelper(sharedPrefs));
-
-    //getIt.registerSingleton<LoginRepoImpl>(
-    //  LoginRepoImpl(dio: getIt<DioHelper>(), local: getIt<LocalHelper>()),
-    // );
-
-    // Register repositories
-    //di.registerLazySingleton<UserRepository>(() => UserRepository(di(), di()))
-
-    // Register Cubits
-    //di.registerFactory<UserCubit>(() => UserCubit(di()));
-
-    // getIt.registerSingleton<HomeRepoImpl>(
-    //  HomeRepoImpl(getIt.get<ApiService>()),
-    //);
-
-    log('Service Locator setup complete', name: 'ServiceLocator');
+    log('Service Locator setup complete', name: logger);
   } catch (e, stackTrace) {
     log(
       '❌ Failed to initialize service locator: $e',
