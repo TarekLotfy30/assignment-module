@@ -1,6 +1,5 @@
 // translate-me-ignore-all-file
 class QuestionModel {
-
   QuestionModel({
     required this.questionText,
     required this.options,

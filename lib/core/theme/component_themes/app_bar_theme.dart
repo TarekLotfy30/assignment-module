@@ -27,7 +27,7 @@ abstract final class AppBarThemes {
       ),
       toolbarTextStyle: AppTextThemes.textTheme.titleLarge?.copyWith(
         color: colorScheme.onSurface,
-        fontFamily:AppFontFamily.teshrin,
+        fontFamily: AppFontFamily.teshrin,
       ),
       actionsIconTheme: IconThemeData(color: colorScheme.onSurface),
       iconTheme: IconThemeData(color: colorScheme.onSurface),

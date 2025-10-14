@@ -7,9 +7,7 @@ import '../data/models/offer_model.dart';
 import '../data/repo/offer_repo.dart';
 
 class OfferController extends GetxController {
-  //late Shared sh;
-
-  OfferRepo offerRepo = OfferRepo();
+  OfferRepo offerRepo = const OfferRepo();
   TextEditingController searchController = TextEditingController();
   List<OfferModel> offersItems = [];
   List<OfferModel> filteredItems = [];
@@ -21,7 +19,7 @@ class OfferController extends GetxController {
     if (query.isNotEmpty) {
       isQueryEmpty = false;
       filteredItems = offersItems
-          .where((item) => item.title.contains(query))
+          .where((item) => item.title!.contains(query))
           .toList();
     } else {
       isQueryEmpty = true;
@@ -50,7 +48,7 @@ class OfferController extends GetxController {
 
   Future<void> _getAllOffersByLocation(EgyptCitiesEnum location) async {
     await offerRepo.getOffers().then((value) {
-      value
+      value.data
           .where((element) => element.location == location.getArabicName())
           .forEach((element) {
             offersItems.add(element);
@@ -64,7 +62,7 @@ class OfferController extends GetxController {
     OfferTypesEnum type,
   ) async {
     await offerRepo.getOffers().then((value) {
-      value
+      value.data
           .where((element) {
             return element.location == location.getArabicName() &&
                 element.categoryType.getArabicName() == type.getArabicName();

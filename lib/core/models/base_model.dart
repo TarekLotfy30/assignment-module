@@ -1,5 +1,7 @@
-// an abstract contract for all DTOs
-abstract class BaseModel<T> {
+abstract class BaseModel {
   Map<String, dynamic> toJson();
-  T fromJson(Map<String, dynamic> json);
+
+  factory BaseModel.fromJson(Map<String, dynamic> json) {
+    throw UnimplementedError("Not implemented $json");
+  }
 }

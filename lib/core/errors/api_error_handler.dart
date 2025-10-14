@@ -74,7 +74,6 @@ class ApiErrorHandler {
   }
 }*/
 
-
 // void fetchUserData() async {
 //   try {
 //     final result = await userRepository.getUser();
@@ -87,8 +86,6 @@ class ApiErrorHandler {
 //     print("Unexpected error: $e");
 //   }
 // }
-
-
 
 // In your Repository
 // try {

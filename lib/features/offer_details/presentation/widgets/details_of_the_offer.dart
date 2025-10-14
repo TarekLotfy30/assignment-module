@@ -41,7 +41,7 @@ class DetailsOfTheOffer extends StatelessWidget {
                   SizedBox(width: AppSpacing.spacing8.w),
                   Expanded(
                     child: Text(
-                      offer.offerDetailsList[index].title,
+                      offer.offerDetailsList[index].title ?? '',
                       style: context.textThemeCustom.titleSmall?.copyWith(
                         color: context.colorScheme.tertiary,
                       ),

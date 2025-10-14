@@ -42,7 +42,7 @@ class AvailableBranches extends StatelessWidget {
                   SizedBox(width: AppSpacing.spacing8.w),
                   Expanded(
                     child: Text(
-                      offer.branchesList[index].location,
+                      offer.branchesList[index].location ?? '',
                       style: context.textThemeCustom.titleSmall?.copyWith(
                         color: context.colorScheme.tertiary,
                         decoration: TextDecoration.underline,

@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 
 import 'base_model.dart';
 
-class ResponseModel<T extends BaseModel<T>> extends Equatable {
+class ResponseModel<T extends BaseModel> extends Equatable {
   final List<T> data;
   final int currentPage;
   final int nextPage;
@@ -30,16 +30,6 @@ class ResponseModel<T extends BaseModel<T>> extends Equatable {
       totalCount: json["totalCount"],
       count: json["count"],
     );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'data': data.map((item) => item.toJson()).toList(),
-      'currentPage': currentPage,
-      'nextPage': nextPage,
-      'totalCount': totalCount,
-      'count': count,
-    };
   }
 
   @override

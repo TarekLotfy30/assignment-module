@@ -51,17 +51,16 @@ class OfferPageBody extends StatelessWidget {
           GetBuilder<OfferController>(
             builder: (controller) => Visibility(
               visible: controller.isQueryEmpty,
-              replacement:SliverList(
+              replacement: SliverList(
                 delegate: SliverChildBuilderDelegate(
                   (_, index) =>
                       OfferCard(offer: controller.filteredItems[index]),
                   childCount: controller.filteredItems.length,
                 ),
-              ), 
+              ),
               child: SliverList(
                 delegate: SliverChildBuilderDelegate(
-                  (_, index) =>
-                      OfferCard(offer: controller.offersItems[index]),
+                  (_, index) => OfferCard(offer: controller.offersItems[index]),
                   childCount: controller.offersItems.length,
                 ),
               ),

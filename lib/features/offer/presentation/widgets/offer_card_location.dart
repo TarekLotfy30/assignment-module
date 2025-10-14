@@ -34,7 +34,7 @@ class OfferCardLocation extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           Text(
-            offer.location,
+            offer.location ?? '',
             style: context.textThemeCustom.labelMedium?.copyWith(
               color: context.colorScheme.primary,
             ),

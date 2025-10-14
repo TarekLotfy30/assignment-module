@@ -51,14 +51,14 @@ class OfferCardDetails extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  offer.title,
+                  offer.title ?? '',
                   style: textScheme.headlineMedium?.copyWith(
                     color: colorScheme.primary,
                   ),
                 ),
                 SizedBox(height: AppSpacing.spacing12.h),
                 Text(
-                  offer.description,
+                  offer.description ?? '',
                   style: textScheme.labelMedium?.copyWith(
                     color: colorScheme.tertiary,
                   ),

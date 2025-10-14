@@ -1,4 +1,5 @@
-[
+{
+  "data": [
   {
     "id": "5a91be7d-8b2a-48b6-92e1-6d6662efb13b",
     "category": "مطاعم",
@@ -1139,4 +1140,9 @@
       }
     ]
   }
-]
+  ],
+  "currentPage": 1,
+  "nextPage": 2,
+  "totalCount": 3,
+  "count": 3
+}

@@ -23,11 +23,9 @@ class OfferCard extends StatelessWidget {
   }
 }
 
+// Get.put(AuthController()); // Needed globally (immediate)
+// Get.lazyPut(() => HomeController()); // Needed later
 
-  // Get.put(AuthController()); // Needed globally (immediate)
-  // Get.lazyPut(() => HomeController()); // Needed later
-
-
-  // class HomePage extends StatelessWidget {
-  // final homeController = Get.find<HomeController>(); // will be created now
-  // final authController = Get.find<AuthController>(); // already exists
+// class HomePage extends StatelessWidget {
+// final homeController = Get.find<HomeController>(); // will be created now
+// final authController = Get.find<AuthController>(); // already exists

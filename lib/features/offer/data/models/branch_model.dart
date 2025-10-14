@@ -1,19 +1,21 @@
-import 'package:equatable/equatable.dart';
+import '../../../../core/models/base_model.dart';
 
-class Branch extends Equatable {
-  final String id;
-  final String location;
+class Branch implements BaseModel {
+  final String? id;
+  final String? location;
 
   const Branch({required this.id, required this.location});
 
+  @override
   factory Branch.fromJson(Map<String, dynamic> json) {
-    return Branch(id: json['id'] ?? '', location: json['location'] ?? '');
-  }
-
-  Map<String, dynamic> toJson() {
-    return {"id": id, "location": location};
+    return Branch(
+      id: json['id'] as String?,
+      location: json['location'] as String?,
+    );
   }
 
   @override
-  List<Object?> get props => [id, location];
+  Map<String, dynamic> toJson() {
+    return {"id": id, "location": location};
+  }
 }

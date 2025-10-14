@@ -1,21 +1,22 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:flutter/services.dart';
 
+import '../../../../core/models/response_model.dart';
 import '../models/offer_model.dart';
 
 class OfferRepo {
-  OfferRepo();
+  const OfferRepo();
 
-  Future<List<OfferModel>> getOffers() async {
+  Future<ResponseModel<OfferModel>> getOffers() async {
     final String response = await rootBundle.loadString(
       'assets/json/offers_egypt.json',
     );
-    final List<dynamic> data = jsonDecode(response);
-    final List<OfferModel> offers = data
-        .map((element) => OfferModel.fromJson(element))
-        .toList();
-    //log(offers[1].category!.label);
-    return offers;
+
+    final Map<String, dynamic> jsonData = jsonDecode(response);
+
+    log(jsonData.toString());
+    return ResponseModel.fromJson(jsonData, OfferModel.fromJson);
   }
 }

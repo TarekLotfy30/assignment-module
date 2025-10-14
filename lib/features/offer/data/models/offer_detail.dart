@@ -1,19 +1,21 @@
-import 'package:equatable/equatable.dart';
+import '../../../../core/models/base_model.dart';
 
-class OfferDetail extends Equatable {
-  final String id;
-  final String title;
+class OfferDetail implements BaseModel {
+  final String? id;
+  final String? title;
 
   const OfferDetail({required this.id, required this.title});
 
+  @override
   factory OfferDetail.fromJson(Map<String, dynamic> json) {
-    return OfferDetail(id: json['id'] ?? '', title: json['title'] ?? '');
-  }
-
-  Map<String, dynamic> toJson() {
-    return {"id": id, "title": title};
+    return OfferDetail(
+      id: json['id'] as String?,
+      title: json['title'] as String?,
+    );
   }
 
   @override
-  List<Object?> get props => [id, title];
+  Map<String, dynamic> toJson() {
+    return {"id": id, "title": title};
+  }
 }

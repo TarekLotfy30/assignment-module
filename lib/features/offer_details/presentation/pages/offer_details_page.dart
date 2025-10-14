@@ -12,7 +12,6 @@ class OfferDetailsPage extends StatelessWidget {
   final OfferModel offer;
 
   @override
-
   Widget build(BuildContext context) {
     return Scaffold(body: OfferDetailsPageBody(offer: offer));
   }

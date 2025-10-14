@@ -38,15 +38,12 @@ Future<void> setupServiceLocator() async {
   }
 }
 
-
-
 // //  try {
 // //       await _setupCoreDependencies();
 // //       await _setupHelpers();
 // //       await _setupRepositories();
 // //       await _setupStateManagement();
 // //       log('✅ Service locator initialized successfully');
-
 
 //   /// Registers network-related dependencies (Dio, DioHelper).
 //   static Future<void> _setupCoreDependencies() async {
@@ -70,10 +67,7 @@ Future<void> setupServiceLocator() async {
 //   );
 //   log('DioHelper registered', name: 'ServiceLocator');
 
-
 //   }
-
-
 
 //   /// Registers storage-related dependencies (SharedPreferences, LocalHelper).
 // Future<void> _registerStorageDependencies() async {
@@ -99,7 +93,6 @@ Future<void> setupServiceLocator() async {
 //   );
 //   log('LocalHelper registered', name: 'ServiceLocator');
 // }
-
 
 // /// Registers repository dependencies (LoginRepoImpl).
 // void _registerRepositories() {
@@ -144,37 +137,21 @@ Future<void> setupServiceLocator() async {
 //     );
 //   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //   // get => betrag3ly haga ana ansha2tha
 //   // <T> => fe el makan da ba7ded el haga ely ana asnh2tha w 3ayzha terg3ly
 
 // /*
 
-
 // /// Usage in main.dart:
-// /// 
+// ///
 // /// void main() async {
 // ///   WidgetsFlutterBinding.ensureInitialized();
 // ///   await ServiceLocator.initialize();
 // ///   runApp(MyApp());
 // /// }
-// /// 
+// ///
 // /// Usage in other files:
-// /// 
+// ///
 // /// final dioHelper = ServiceLocator.get<DioHelper>();
 // /// final userCubit = ServiceLocator.get<UserCubit>();
 
@@ -190,7 +167,6 @@ Future<void> setupServiceLocator() async {
 //   print(singleton1 == singleton2); // true
 // }
 // }*/
-
 
 // /*
 // in main () {
