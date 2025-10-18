@@ -80,3 +80,25 @@ class OfferController extends GetxController {
     super.onClose();
   }
 }
+
+
+
+
+
+// aOfferController extends ChangeNotifier {
+//   final OfferRepository _repo;
+//   List<Offer> offers = [];
+//   bool isLoading = false;
+
+//   OfferController(this._repo);
+
+//   Future<void> loadOffers() async {
+//     isLoading = true;
+//     notifyListeners();
+
+//     offers = await _repo.fetchOffers();
+
+//     isLoading = false;
+//     notifyListeners();  
+//   }
+// }
