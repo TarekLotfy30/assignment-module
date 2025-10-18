@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   const AppColors._();
-  //
+  
   // ========== PRIMARY BLUE PALETTE ==========
   static const Color blue50 = Color(0xFFE8F0FA);
   static const Color blue100 = Color(0xFFC5DAF3);

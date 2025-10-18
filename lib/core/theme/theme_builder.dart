@@ -60,16 +60,16 @@ abstract final class ThemeBuilder {
         textTheme,
       ),
       scrollbarTheme: ScrollbarThemeData(
-        thumbColor: MaterialStateProperty.all<Color>(const Color(0xFF9AAFE4)),
+        thumbColor: WidgetStateProperty.all<Color>(const Color(0xFF9AAFE4)),
         mainAxisMargin: 30,
         minThumbLength: 0.5,
         interactive: false,
-        thumbVisibility: MaterialStateProperty.all<bool>(true),
-        trackVisibility: MaterialStateProperty.all<bool>(true),
-        thickness: MaterialStateProperty.all<double>(8),
+        thumbVisibility: WidgetStateProperty.all<bool>(true),
+        trackVisibility: WidgetStateProperty.all<bool>(true),
+        thickness: WidgetStateProperty.all<double>(8),
         radius: const Radius.circular(6),
-        trackColor: MaterialStateProperty.all<Color>(const Color(0xFFEBEFF9)),
-        trackBorderColor: MaterialStateProperty.all<Color>(Colors.transparent),
+        trackColor: WidgetStateProperty.all<Color>(const Color(0xFFEBEFF9)),
+        trackBorderColor: WidgetStateProperty.all<Color>(Colors.transparent),
       ),
     );
   }

@@ -5,36 +5,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_shared_keys.dart';
 
 class LocalHelper {
-  LocalHelper(this._pref) {
-    log('SharedPreferences initialized successfully.', name: 'LocalHelper');
-  }
+  const LocalHelper(this._pref);
 
   final SharedPreferences _pref;
 
-  /// Retrieves the string representation of an [AppSharedKey].
-  ///
-  /// Parameters:
-  ///   - key: The [AppSharedKey] enum value.
-  /// Returns:
-  ///   - A [String] representing the key name.
   String _getKeyString(AppSharedKey key) {
     final keyString = key.toString().split('.').last;
     return keyString;
   }
 
-  // static Future<void> init() async {
-  //   _pref = await SharedPreferences.getInstance();
-  //   debugPrint('SharedPreferences initialized successfully.');
-  // }
-
-  /// Stores a value in shared preferences using the specified key.
-  /// Supports [String], [bool], [int], [double], and [List<String>] types.
-  ///
-  /// Parameters:
-  ///   - key: The [AppSharedKey] to store the value under.
-  ///   - value: The value to store (must match supported types).
-  /// Returns:
-  ///   - A [Future<bool>] indicating success (true) or failure (false).
   Future<bool> setValue({
     required AppSharedKey key,
     required dynamic value,
@@ -71,11 +50,6 @@ class LocalHelper {
     }
   }
 
-  /// Retrieves a value from shared preferences using the specified key.
-  ///
-  /// Parameters:
-  ///   - key: The [AppSharedKey] to retrieve.
-  ///   - defaultValue: The value to return if the key is not found.
   dynamic getValue({required AppSharedKey key}) {
     final keyString = _getKeyString(key);
     final value = _pref.get(keyString);
@@ -83,12 +57,6 @@ class LocalHelper {
     return value;
   }
 
-  /// Removes a value from shared preferences.
-  ///
-  /// Parameters:
-  ///   - key: The [AppSharedKey] to remove.
-  /// Returns:
-  ///   - A [Future<bool>] indicating success (true) or failure (false).
   Future<bool> removeValue({required AppSharedKey key}) async {
     try {
       final keyString = _getKeyString(key);
@@ -104,10 +72,6 @@ class LocalHelper {
     }
   }
 
-  /// Clears all shared preferences.
-  ///
-  /// Returns:
-  ///   - A [Future<bool>] indicating success (true) or failure (false).
   Future<bool> clearAll() async {
     try {
       final result = await _pref.clear();
@@ -141,14 +105,53 @@ class LocalHelper {
 
 */
 
-// /// The global instance of GetIt for dependency injection.
+// The global instance of GetIt for dependency injection.
 // final getIt = GetIt.instance;
 //
 // Future<void> setupServiceLocator() async {
 //   try {
-//     // SharedPreferences
+    // SharedPreferences
 
 //     final sharedPrefs = await SharedPreferences.getInstance();
 //     getIt.registerSingleton<SharedPreferences>(sharedPrefs);
 //     getIt.registerSingleton<LocalHelper>(LocalHelper(sharedPrefs));
 //     );
+
+// abstract class CacheDataHandler<T> {
+//   T? getValue({required Box box, required String key, T? defaultValue});
+//   void setValue(Box box, String key, T value);
+// }
+
+// class PrimitiveCacheDataHandler<T> extends CacheDataHandler<T> {
+//   @override
+//   T? getValue({required Box box, required String key, T? defaultValue}) {
+//     var result = box.get(key, defaultValue: defaultValue);
+//     return result;
+//   }
+
+//   @override
+//   void setValue(Box box, String key, T value) {
+//     box.put(key, value);
+//   }
+// }
+
+// class ObjectCacheDataHandler<T> extends CacheDataHandler<T> {
+//   final T Function(Map<String, dynamic> json) fromJson;
+
+//   ObjectCacheDataHandler({required this.fromJson});
+
+//   @override
+//   T? getValue({required Box box, required String key, T? defaultValue}) {
+//     final String? jsonData = box.get(key);
+//     if (jsonData != null) {
+//       return fromJson(jsonDecode(jsonData));
+//     }
+//     return defaultValue;
+//   }
+
+//   @override
+//   void setValue(Box box, String key, T value) {
+//     final jsonData = jsonEncode(value);
+//     box.put(key, jsonData);
+//   }
+// }

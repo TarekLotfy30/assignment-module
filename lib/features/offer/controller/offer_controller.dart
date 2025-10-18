@@ -27,12 +27,12 @@ class OfferController extends GetxController {
     update();
   }
 
-  void changeValue(OfferTypesEnum value) {
+  void toggleType(OfferTypesEnum value) {
     selectedType = value;
     update();
   }
 
-  void selectedRadioButton(EgyptCitiesEnum value) {
+  void toggleRadioButton(EgyptCitiesEnum value) {
     selectedRadio = value;
     update();
   }

@@ -56,7 +56,7 @@ class EgyptCitiesScrollableSheet extends StatelessWidget {
                     controller.selectedType,
                     controller.selectedRadio,
                   );
-                  controller.changeValue(controller.selectedType);
+                  controller.toggleType(controller.selectedType);
                   if (context.mounted) {
                     context.router.pop();
                   }

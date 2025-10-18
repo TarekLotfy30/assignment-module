@@ -16,9 +16,9 @@ import 'package:assignment/features/assignment/presentation/pages/score_page.dar
 import 'package:assignment/features/home/presentation/pages/home_page.dart'
     as _i2;
 import 'package:assignment/features/offer/data/models/offer_model.dart' as _i8;
-import 'package:assignment/features/offer/presentation/pages/offer_page.dart'
+import 'package:assignment/features/offer/presentation/page/offer_page.dart'
     as _i4;
-import 'package:assignment/features/offer_details/presentation/pages/offer_details_page.dart'
+import 'package:assignment/features/offer_details/presentation/page/offer_details_page.dart'
     as _i3;
 import 'package:auto_route/auto_route.dart' as _i6;
 import 'package:flutter/material.dart' as _i7;
