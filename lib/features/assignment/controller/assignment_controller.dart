@@ -1,7 +1,8 @@
-import 'package:assignment/core/routing/routes_name.dart';
-import 'package:assignment/features/assignment/model/question_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../core/routing/route_path.dart';
+import '../model/question_model.dart';
 
 class AssignmentController extends GetxController {
   int currentQuestionIndex = 0;
@@ -12,7 +13,9 @@ class AssignmentController extends GetxController {
   int get total => questions.length;
 
   void checkAnswer(int selectedIndex) {
-    if (isAnswered) return; // prevent multiple answers
+    if (isAnswered) {
+      return; // prevent multiple answers
+    }
 
     selectedAnswer = selectedIndex;
     isAnswered = true;
@@ -23,7 +26,7 @@ class AssignmentController extends GetxController {
     update(); // triggers GetBuilder rebuild
   }
 
-  void nextQuestion() {
+  Future<void> nextQuestion() async {
     if (currentQuestionIndex < questions.length - 1) {
       currentQuestionIndex++;
       isAnswered = false;
@@ -31,7 +34,7 @@ class AssignmentController extends GetxController {
       update(); // triggers GetBuilder rebuild
     } else {
       // assignment finished go to score screen
-      Get.offNamed(RoutesName.scoreView);
+      await Get.offNamed(RoutePath.score);
     }
   }
 
@@ -39,10 +42,18 @@ class AssignmentController extends GetxController {
     final isSelected = selectedAnswer == selectedIndex;
     final isCorrect =
         selectedIndex == questions[currentQuestionIndex].correctOptionIndex;
-    if (!isAnswered) return Colors.blueAccent;
-    if (isSelected && isCorrect) return Colors.green;
-    if (isSelected && !isCorrect) return Colors.red;
-    if (isCorrect) return Colors.green;
+    if (!isAnswered) {
+      return Colors.blueAccent;
+    }
+    if (isSelected && isCorrect) {
+      return Colors.green;
+    }
+    if (isSelected && !isCorrect) {
+      return Colors.red;
+    }
+    if (isCorrect) {
+      return Colors.green;
+    }
     return Colors.grey;
   }
 }
