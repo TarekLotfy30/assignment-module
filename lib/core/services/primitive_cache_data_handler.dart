@@ -35,20 +35,9 @@ class PrimitiveCacheDataHandler<T> extends CacheDataHandler<T> {
   String _getKeyString(AppSharedKey key) => key.toString().split('.').last;
 }
 
-
-
 // example  of usage
- 
-  // final PrimitiveCacheDataHandler<String> _handler;
 
-  // Future<void> _loadTheme() async {
- // Try to get saved theme
-  //   final storedTheme = _handler.getValue(
-  //     box: 'preferences',
-  //     key: _themeKey,
-  //     defaultValue: 'light',
-  //   );
+// CacheDataHandler<String> userStorage = PrimitiveCacheDataHandler<String>();
 
-  //   final theme = storedTheme == 'dark' ? AppTheme.dark : AppTheme.light;
-  //   emit(ThemeState(theme));
-  // }
+// userStorage.setValue(boxName: 'users', key: 'username', value: 'alice');
+// String? name = userStorage.getValue(boxName: 'users', key: 'username');

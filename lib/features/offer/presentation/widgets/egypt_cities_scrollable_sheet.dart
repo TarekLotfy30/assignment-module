@@ -52,10 +52,6 @@ class EgyptCitiesScrollableSheet extends StatelessWidget {
               SizedBox(height: AppSpacing.spacing24.h),
               ElevatedButton(
                 onPressed: () async {
-                  await controller.getOffers(
-                    controller.selectedType,
-                    controller.selectedRadio,
-                  );
                   controller.toggleType(controller.selectedType);
                   if (context.mounted) {
                     context.router.pop();

@@ -47,6 +47,56 @@
         "location": "45 شارع النصر - المنصورة - مصر"
       }
     ]
+    
+  },
+   {
+    "id": "5a91be7d-8b2a-48b6-92e1-6d6662efb13b",
+    "category": "مطاعم",
+    "location": "المنصورة",
+    "title": "الشبراوى",
+    "description": "استمتع بعرض خاص من كنتاكي مع خصومات تصل إلى 10٪ في جميع فروع المنصورة.",
+    "cover_photo": "https://source.unsplash.com/random/800x600?مطاعم",
+    "profile_photo": "https://source.unsplash.com/random/300x300?كنتاكي",
+    "image_url": "https://source.unsplash.com/random/1000x800?كنتاكي",
+    "discount": 10,
+    "has_discount": true,
+    "offer_details_list": [
+      {
+        "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+        {
+        "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+        {
+        "id": "44a084b0-d748-4ffe-98c7-8c9cf7a242dc",
+        "title": "خصم إضافي على الطلبات أونلاين"
+      },
+      {
+        "id": "373cc543-6b17-492c-b015-7fc7c883c118",
+        "title": "ساري حتى نهاية الشهر"
+      }
+    ],
+    "branches_list": [
+      {
+        "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+        "location": "45 شارع النصر - المنصورة - مصر"
+      },
+      {
+        "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+        "location": "45 شارع النصر - المنصورة - مصر"
+      },
+      {
+        "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+        "location": "45 شارع النصر - المنصورة - مصر"
+      },
+        {
+        "id": "b1e17c23-4e19-4751-b69b-7f30ac24c9f2",
+        "location": "45 شارع النصر - المنصورة - مصر"
+      }
+    ]
+    
   },
   {
     "id": "1ddd0d63-9461-495c-964c-65d32ab9839f",
@@ -582,11 +632,11 @@
   },
   {
     "id": "cfa11c15-fed4-4521-9830-71031e9d8ef5",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "الأقصر",
     "title": "سينما الزمالك",
     "description": "استمتع بعرض خاص من سينما الزمالك مع خصومات تصل إلى 25٪ في جميع فروع الأقصر.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?سينما الزمالك",
     "image_url": "https://source.unsplash.com/random/1000x800?سينما الزمالك",
     "discount": 25,
@@ -610,11 +660,11 @@
   },
   {
     "id": "5e4d1727-39c7-46bd-82df-32875988958b",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "السويس",
     "title": "كيدزانيا",
     "description": "استمتع بعرض خاص من كيدزانيا مع خصومات تصل إلى 15٪ في جميع فروع السويس.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?كيدزانيا",
     "image_url": "https://source.unsplash.com/random/1000x800?كيدزانيا",
     "discount": 15,
@@ -638,11 +688,11 @@
   },
   {
     "id": "3790b459-544d-4dea-9a0d-5fb81b179c22",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "بورسعيد",
     "title": "ماجيك لاند",
     "description": "استمتع بعرض خاص من ماجيك لاند مع خصومات تصل إلى 35٪ في جميع فروع بورسعيد.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?ماجيك لاند",
     "image_url": "https://source.unsplash.com/random/1000x800?ماجيك لاند",
     "discount": 35,
@@ -666,11 +716,11 @@
   },
   {
     "id": "c86766c9-7fd7-4ac4-8b91-33cfc24203ac",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "السويس",
     "title": "دريم بارك",
     "description": "استمتع بعرض خاص من دريم بارك مع خصومات تصل إلى 10٪ في جميع فروع السويس.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?دريم بارك",
     "image_url": "https://source.unsplash.com/random/1000x800?دريم بارك",
     "discount": 10,
@@ -694,11 +744,11 @@
   },
   {
     "id": "c3064f6a-245c-4727-bd3d-283b9085cb7c",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "الإسكندرية",
     "title": "الملاهى الجديدة",
     "description": "استمتع بعرض خاص من الملاهى الجديدة مع خصومات تصل إلى 25٪ في جميع فروع الإسكندرية.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?الملاهى الجديدة",
     "image_url": "https://source.unsplash.com/random/1000x800?الملاهى الجديدة",
     "discount": 25,
@@ -722,11 +772,11 @@
   },
   {
     "id": "d60bafdd-4b1a-4f43-9013-6372c3433612",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "القاهرة",
     "title": "بلو أوشن",
     "description": "استمتع بعرض خاص من بلو أوشن مع خصومات تصل إلى 15٪ في جميع فروع القاهرة.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?بلو أوشن",
     "image_url": "https://source.unsplash.com/random/1000x800?بلو أوشن",
     "discount": 15,
@@ -750,11 +800,11 @@
   },
   {
     "id": "8066456c-a9d0-4219-89d7-74a802aa90ce",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "المنصورة",
     "title": "جرين بارك",
     "description": "استمتع بعرض خاص من جرين بارك مع خصومات تصل إلى 10٪ في جميع فروع المنصورة.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?جرين بارك",
     "image_url": "https://source.unsplash.com/random/1000x800?جرين بارك",
     "discount": 10,
@@ -778,11 +828,11 @@
   },
   {
     "id": "3ad039d3-d577-4e05-954d-18ad30e21990",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "السويس",
     "title": "هابي لاند",
     "description": "استمتع بعرض خاص من هابي لاند مع خصومات تصل إلى 45٪ في جميع فروع السويس.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?هابي لاند",
     "image_url": "https://source.unsplash.com/random/1000x800?هابي لاند",
     "discount": 45,
@@ -806,11 +856,11 @@
   },
   {
     "id": "07d5c42b-46de-423c-84a9-9a1e4f4e6cab",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "طنطا",
     "title": "بلاي ستيشن كافيه",
     "description": "استمتع بعرض خاص من بلاي ستيشن كافيه مع خصومات تصل إلى 35٪ في جميع فروع طنطا.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?بلاي ستيشن كافيه",
     "image_url": "https://source.unsplash.com/random/1000x800?بلاي ستيشن كافيه",
     "discount": 35,
@@ -834,11 +884,11 @@
   },
   {
     "id": "7cfb3ff0-2a26-4d1a-9df4-c12071dcd36c",
-    "category": "ترفيهي",
+    "category": "ترفيهى",
     "location": "أسيوط",
     "title": "أكوا بارك",
     "description": "استمتع بعرض خاص من أكوا بارك مع خصومات تصل إلى 10٪ في جميع فروع أسيوط.",
-    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهي",
+    "cover_photo": "https://source.unsplash.com/random/800x600?ترفيهى",
     "profile_photo": "https://source.unsplash.com/random/300x300?أكوا بارك",
     "image_url": "https://source.unsplash.com/random/1000x800?أكوا بارك",
     "discount": 10,

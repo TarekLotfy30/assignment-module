@@ -17,8 +17,8 @@ class _OfferPageState extends State<OfferPage> {
   void initState() {
     super.initState();
     Get.find<OfferController>().getOffers(
-      Get.find<OfferController>().selectedType,
-      Get.find<OfferController>().selectedRadio,
+      type: Get.find<OfferController>().selectedType,
+      location: Get.find<OfferController>().selectedRadio,
     );
   }
 

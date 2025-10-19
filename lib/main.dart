@@ -7,8 +7,10 @@ import 'core/helpers/functions/init_services.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await Hive.initFlutter();
   await Hive.openBox('users');
+
   await configureSystemUI();
   await initializeServices();
 

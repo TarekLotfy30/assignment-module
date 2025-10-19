@@ -27,7 +27,7 @@ class TypeChip extends StatelessWidget {
           child: GestureDetector(
             onTap: () async {
               controller.toggleType(type);
-              await controller.getOffers(type, controller.selectedRadio);
+    
             },
             child: Chip(
               backgroundColor: isSelected

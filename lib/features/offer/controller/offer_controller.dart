@@ -9,44 +9,70 @@ import '../data/repo/offer_repo.dart';
 class OfferController extends GetxController {
   OfferRepo offerRepo = const OfferRepo();
   TextEditingController searchController = TextEditingController();
+
   List<OfferModel> offersItems = [];
   List<OfferModel> filteredItems = [];
+
   bool isQueryEmpty = true;
+
   EgyptCitiesEnum selectedRadio = EgyptCitiesEnum.values.first;
   OfferTypesEnum selectedType = OfferTypesEnum.values.first;
 
   void onSearchChanged(String query) {
-    if (query.isNotEmpty) {
-      isQueryEmpty = false;
-      filteredItems = offersItems
-          .where((item) => item.title!.contains(query))
-          .toList();
-    } else {
+    if (query.isEmpty) {
       isQueryEmpty = true;
+      filteredItems.clear();
+    } else {
+      isQueryEmpty = false;
+      filteredItems = offersItems.where((item) {
+        if (selectedType.index == 0) {
+          return item.title!.contains(query);
+        } else {
+          return item.title!.contains(query) &&
+              item.categoryType == selectedType;
+        }
+      }).toList();
     }
     update();
   }
 
-  void toggleType(OfferTypesEnum value) {
+  Future<void> toggleType(OfferTypesEnum value) async {
     selectedType = value;
+    await getOffers(type: selectedType, location: selectedRadio);
+    if (isQueryEmpty) {
+      filteredItems.clear();
+    } else {
+      filteredItems = offersItems.where((item) {
+        if (selectedType.index == 0) {
+          return item.title!.contains(searchController.text);
+        } else {
+          return item.title!.contains(searchController.text) &&
+              item.categoryType == selectedType;
+        }
+      }).toList();
+    }
     update();
   }
 
-  void toggleRadioButton(EgyptCitiesEnum value) {
+  Future<void> toggleRadioButton(EgyptCitiesEnum value) async {
     selectedRadio = value;
+    await getOffers(type: selectedType, location: selectedRadio);
     update();
   }
 
-  Future<void> getOffers(OfferTypesEnum type, EgyptCitiesEnum location) async {
+  Future<void> getOffers({
+    required OfferTypesEnum type,
+    required EgyptCitiesEnum location,
+  }) async {
     offersItems = [];
     if (type.index == 0) {
-      await _getAllOffersByLocation(location);
+      await _getAllOffers(location);
     } else {
       await _getCategoryOffers(location, type);
     }
   }
 
-  Future<void> _getAllOffersByLocation(EgyptCitiesEnum location) async {
+  Future<void> _getAllOffers(EgyptCitiesEnum location) async {
     await offerRepo.getOffers().then((value) {
       value.data
           .where((element) => element.location == location.getArabicName())

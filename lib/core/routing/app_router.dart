@@ -12,7 +12,6 @@ class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
     RedirectRoute(path: '/', redirectTo: RoutePath.home),
-
     AutoRoute(page: HomeRoute.page, path: RoutePath.home),
     AutoRoute(page: AssignmentRoute.page, path: RoutePath.assignment),
     AutoRoute(page: ScoreRoute.page, path: RoutePath.score),
