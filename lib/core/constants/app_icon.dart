@@ -12,4 +12,14 @@ class AppIcon {
   static const String locationFilter = 'assets/icons/location_target_icon.svg';
   static const String search = 'assets/icons/search.svg';
   static const String close = 'assets/icons/close.svg';
+
+  static const String person = "assets/icons/person.svg";
+  static const String askTeacher = 'assets/icons/ask_teacher.svg';
+  static const String cart = 'assets/icons/cart.svg';
+  static const String content = 'assets/icons/content.svg';
+  static const String logout = 'assets/icons/logout.svg';
+  static const String orders = 'assets/icons/orders.svg';
+  static const String settings = 'assets/icons/settings.svg';
+  static const String wallet = 'assets/icons/wallet.svg';
+  static const String arrowLeft = 'assets/icons/arrow_left.svg';
 }

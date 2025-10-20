@@ -28,25 +28,23 @@ class EgyptCitiesScrollableSheet extends StatelessWidget {
           child: Stack(
             alignment: AlignmentDirectional.bottomCenter,
             children: [
-              Scrollbar(
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'المنطقة',
-                        style: context.textThemeCustom.displayLarge?.copyWith(
-                          color: context.colorScheme.primary,
-                        ),
+              SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'المنطقة',
+                      style: context.textThemeCustom.displayLarge?.copyWith(
+                        color: context.colorScheme.primary,
                       ),
-                      const SizedBox(height: AppSpacing.spacing12),
-                      ...List.generate(
-                        EgyptCitiesEnum.values.length,
-                        (index) => EgyptCitiesList(index: index),
-                      ),
-                      SizedBox(height: AppSpacing.spacing24.h),
-                    ],
-                  ),
+                    ),
+                    const SizedBox(height: AppSpacing.spacing12),
+                    ...List.generate(
+                      EgyptCitiesEnum.values.length,
+                      (index) => EgyptCitiesList(index: index),
+                    ),
+                    SizedBox(height: AppSpacing.spacing24.h),
+                  ],
                 ),
               ),
               SizedBox(height: AppSpacing.spacing24.h),

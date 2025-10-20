@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "assignment",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "-d",
+        "chrome",
+        "--web-renderer",
+        "canvaskit",
+        "--web-port",
+        "7358"
+      ]
+    },
+    {
+      "name": "assignment (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": [
+        "-d",
+        "chrome",
+        "--web-renderer",
+        "canvaskit",
+        "--web-port",
+        "7358"
+      ]
+    },
+    {
+      "name": "assignment (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": [
+        "--web-renderer",
+        "canvaskit"
+      ]
+    }
+  ],
+  "debugSdkLibraries": false,
+  "debugExternalPackageLibraries": false
+}
