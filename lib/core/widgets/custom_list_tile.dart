@@ -31,8 +31,9 @@ class CustomListTile extends StatelessWidget {
               Text(
                 options.title,
                 textAlign: TextAlign.center,
-                style: context.textThemeCustom.titleMedium?.copyWith(
+                style: context.textThemeCustom.displaySmall?.copyWith(
                   color: context.colorScheme.onPrimary,
+                  fontSize: 20.sp,
                 ),
               ),
               const Spacer(),

@@ -21,6 +21,7 @@ class AppRouter extends RootStackRouter {
       page: StudentRoute.page,
       path: RoutePath.student,
       children: [
+        RedirectRoute(path: '', redirectTo: RoutePath.personalProfile),
         AutoRoute(
           page: PersonalProfileRoute.page,
           path: RoutePath.personalProfile,

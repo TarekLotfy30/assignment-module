@@ -16,7 +16,6 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   get: ^4.7.2
-
   auto_route: ^10.2.0
   flutter_svg: ^2.2.1
   easy_localization: ^3.0.8
@@ -50,91 +49,6 @@ flutter:
     - assets/icons/
     - assets/translations/
     - assets/json/
-    - lib/
-    - lib/app/
-    - lib/core/
-    - lib/core/di/
-    - lib/core/enum/
-    - lib/core/theme/
-    - lib/core/theme/text_themes/
-    - lib/core/theme/color_schemes/
-    - lib/core/theme/theme_constant/
-    - lib/core/theme/component_themes/
-    - lib/core/utils/
-    - lib/core/utils/colors/
-    - lib/core/utils/styles/
-    - lib/core/errors/
-    - lib/core/models/
-    - lib/core/helpers/
-    - lib/core/helpers/functions/
-    - lib/core/helpers/extensions/
-    - lib/core/routing/
-    - lib/core/widgets/
-    - lib/core/services/
-    - lib/core/services/local/
-    - lib/core/services/network/
-    - lib/core/constants/
-    - lib/core/responsive/
-    - lib/features/
-    - lib/features/home/
-    - lib/features/home/presentation/
-    - lib/features/home/presentation/pages/
-    - lib/features/home/presentation/widgets/
-    - lib/features/offer/
-    - lib/features/offer/data/
-    - lib/features/offer/data/repo/
-    - lib/features/offer/data/models/
-    - lib/features/offer/controller/
-    - lib/features/offer/presentation/
-    - lib/features/offer/presentation/page/
-    - lib/features/offer/presentation/widgets/
-    - lib/features/logout/
-    - lib/features/logout/presentation/
-    - lib/features/logout/presentation/page/
-    - lib/features/student/
-    - lib/features/student/data/
-    - lib/features/student/data/repo/
-    - lib/features/student/data/models/
-    - lib/features/student/presentation/
-    - lib/features/student/presentation/pages/
-    - lib/features/student/presentation/widgets/
-    - lib/features/student/presentation/controller/
-    - lib/features/settings/
-    - lib/features/settings/presentation/
-    - lib/features/settings/presentation/pages/
-    - lib/features/assignment/
-    - lib/features/assignment/model/
-    - lib/features/assignment/controller/
-    - lib/features/assignment/controller/bindings/
-    - lib/features/assignment/presentation/
-    - lib/features/assignment/presentation/pages/
-    - lib/features/assignment/presentation/widgets/
-    - lib/features/my_content/
-    - lib/features/my_content/presentation/
-    - lib/features/my_content/presentation/page/
-    - lib/features/your_orders/
-    - lib/features/your_orders/presentation/
-    - lib/features/your_orders/presentation/page/
-    - lib/features/your_wallet/
-    - lib/features/your_wallet/presentation/
-    - lib/features/your_wallet/presentation/page/
-    - lib/features/offer_details/
-    - lib/features/offer_details/data/
-    - lib/features/offer_details/data/repo/
-    - lib/features/offer_details/data/models/
-    - lib/features/offer_details/controller/
-    - lib/features/offer_details/presentation/
-    - lib/features/offer_details/presentation/page/
-    - lib/features/offer_details/presentation/widgets/
-    - lib/features/shopping_cart/
-    - lib/features/shopping_cart/presentation/
-    - lib/features/shopping_cart/presentation/page/
-    - lib/features/ask_my_teacher/
-    - lib/features/ask_my_teacher/presentation/
-    - lib/features/ask_my_teacher/presentation/page/
-    - lib/features/personal_profile/
-    - lib/features/personal_profile/presentation/
-    - lib/features/personal_profile/presentation/page/
 
 
   fonts:

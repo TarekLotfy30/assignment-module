@@ -4,4 +4,5 @@ class AppAssets {
   static const String profile = 'assets/images/png/profile.jpg';
   static const String cover = 'assets/images/png/cover.jpg';
   static const String ashtarLogo = 'assets/images/png/logo_ashtar.png';
+  static const String qrCode = 'assets/images/png/qr_code.png';
 }

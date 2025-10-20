@@ -7,7 +7,7 @@ class RoutePath {
   static const String student = '/student';
 
   // --------------------- Child Routes Of Student ---------------------
-  static const String personalProfile = ''; // initial route
+  static const String personalProfile = 'profile'; // initial route
   static const String askMyTeacher = 'ask-my-teacher';
   static const String myContent = 'my-content';
   static const String settings = 'settings';

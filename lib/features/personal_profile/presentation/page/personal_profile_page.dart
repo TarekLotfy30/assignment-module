@@ -1,33 +1,40 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../../../core/widgets/background_container.dart';
+import '../widgets/address_section.dart';
+import '../widgets/page_header.dart';
+import '../widgets/personal_information_section.dart';
+import '../widgets/profile_picture_section.dart';
+import '../widgets/qr_code_section.dart';
 
-// translate-me-ignore-all-file
 @RoutePage()
 class PersonalProfilePage extends StatelessWidget {
   const PersonalProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.symmetric(horizontal: 80, vertical: 50),
-      padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 40),
-      decoration: BoxDecoration(
-        color: context.colorScheme.surfaceContainer,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: SingleChildScrollView(
+    return const SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      child: BackgroundContainer(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'الملف الشخصى',
-              style: context.textThemeCustom.displayLarge?.copyWith(
-                color: context.colorScheme.primary,
-                fontSize: 30.sp,
+            TextHeader(),
+            SizedBox(height: 24),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  QrCodeSection(),
+                  SizedBox(height: 24),
+                  PersonalInformationSection(),
+                  SizedBox(height: 48),
+                  ProfilePictureSection(),
+                  SizedBox(height: 48),
+                  AddressSection(),
+                ],
               ),
             ),
           ],

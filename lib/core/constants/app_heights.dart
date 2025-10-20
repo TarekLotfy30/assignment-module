@@ -4,7 +4,7 @@ class AppHeights {
   AppHeights._();
 
   /// Standard button height
-  static final double buttonHeight = 48.h;
+  static final double buttonHeight = 48;
 
   /// Small button height
   static final double smallButtonHeight = 32.h;

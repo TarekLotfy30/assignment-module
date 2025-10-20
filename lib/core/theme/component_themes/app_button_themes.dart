@@ -25,7 +25,7 @@ abstract final class AppButtonThemes {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius.r),
         ),
-        padding: EdgeInsets.symmetric(vertical: AppPadding.padding14.h),
+        padding: EdgeInsets.symmetric(vertical: AppPadding.padding24.h),
         minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h),
         textStyle: AppTextThemes.textTheme.headlineLarge?.copyWith(
           fontFamily: AppFontFamily.teshrin,
@@ -39,14 +39,15 @@ abstract final class AppButtonThemes {
       style: OutlinedButton.styleFrom(
         backgroundColor: colorScheme.surface,
         foregroundColor: colorScheme.onSurface,
-        elevation: AppElevation.buttonElevation, //0
+        elevation: AppElevation.buttonElevation,
+        //0
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(
             AppCorners.buttonBorderRadius.r, //16
           ), //16
           side: BorderSide(
             color: colorScheme.primary,
-            width: AppBorderWidth.defaultBorderWidth.w, //1
+            width: AppBorderWidth.defaultBorderWidth.w,
           ),
         ),
         padding: EdgeInsets.symmetric(
@@ -65,7 +66,8 @@ abstract final class AppButtonThemes {
     return FloatingActionButtonThemeData(
       backgroundColor: colorScheme.primary,
       foregroundColor: colorScheme.onPrimary,
-      elevation: AppElevation.fabElevation, //6
+      elevation: AppElevation.fabElevation,
+      //6
       focusElevation: AppElevation.fabElevation + 2,
       hoverElevation: AppElevation.fabElevation + 2,
       highlightElevation: AppElevation.fabElevation + 4,
