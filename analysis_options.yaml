@@ -8,7 +8,7 @@
 # The following line activates a set of recommended lints for Flutter apps,
 # packages, and plugins designed to encourage good coding practices.
 analyzer:
-include: 
+include:
   - package:flutter_lints/flutter.yaml
 linter:
   rules:
@@ -203,11 +203,11 @@ bloc:
     - avoid_build_context_extensions
     - avoid_flutter_imports
     - avoid_public_bloc_methods
-    - avoid_public_cubit_methods
+    # - avoid_public_cubit_methods
     #  Prefer to keep all external state in the [state] object. # int count = 0;
     - avoid_public_fields
-    # - prefer_bloc
-    - prefer_cubit
+    - prefer_bloc
+    # - prefer_cubit
     - prefer_file_naming_conventions
     - prefer_void_public_cubit_methods
     - prefer_void_public_bloc_methods

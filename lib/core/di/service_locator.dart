@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../features/offer/controller/offer_controller.dart';
+import '../../features/personal_profile/presentation/controller/profile_bloc.dart';
 import '../routing/app_router.dart';
 import '../services/network/dio_consumer.dart';
 
@@ -17,14 +18,16 @@ Future<void> setupServiceLocator() async {
     serviceLocator.registerLazySingleton<AppRouter>(AppRouter.new);
     log('AppRouter registered', name: logger);
 
-    // OfferController Binding
-    Get.put(OfferController());
-
     // Dio and DioHelper
     log('Setting up Dio dependencies...', name: logger);
     final DioConsumer dioConsumer = DioConsumer();
     serviceLocator.registerSingleton<DioConsumer>(dioConsumer);
     log('DioConsumer registered as singleton', name: logger);
+
+    // OfferController
+    Get.put(OfferController());
+    // ProfileController
+    serviceLocator.registerSingleton<ProfileBloc>(ProfileBloc());
 
     log('Service Locator setup complete', name: logger);
   } catch (e, stackTrace) {

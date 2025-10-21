@@ -1,7 +1,10 @@
 import 'dart:developer';
 
+import 'package:bloc/bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:hive_flutter/adapters.dart';
 
+import '../../controller/bloc_observer.dart';
 import '../../di/service_locator.dart';
 
 /// Initialize all required services
@@ -10,13 +13,14 @@ Future<void> initializeServices() async {
   log('Initializing services...', name: 'initServices');
 
   //Initialize BLoC observer
-  //Bloc.observer = MyBlocObserver();
-  //log('BLoC observer initialized', name: 'initServices');
+  Bloc.observer = MyBlocObserver();
+  log('BLoC observer initialized', name: 'initServices');
 
   await Future.wait([
-    // Initialize EasyLocalization before running the app
     EasyLocalization.ensureInitialized(),
     setupServiceLocator(),
+    Hive.initFlutter(),
+    Hive.openBox('users'),
   ]);
   log('setupServiceLocator initialized', name: 'initServices');
 }

@@ -23,9 +23,9 @@ abstract final class AppButtonThemes {
         overlayColor: colorScheme.primary.withValues(alpha: 0.12),
         alignment: Alignment.center,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius.r),
+          borderRadius: BorderRadius.circular(AppCorners.cardBorderRadius),
         ),
-        padding: EdgeInsets.symmetric(vertical: AppPadding.padding24.h),
+        padding: EdgeInsets.symmetric(vertical: AppPadding.padding32.h),
         minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h),
         textStyle: AppTextThemes.textTheme.headlineLarge?.copyWith(
           fontFamily: AppFontFamily.teshrin,
