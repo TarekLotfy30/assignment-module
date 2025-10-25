@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../helpers/extensions/theme_extension.dart';
 
-class BackgroundContainer extends StatelessWidget {
-  const BackgroundContainer({super.key, this.child});
+class BackgroundCustom extends StatelessWidget {
+  const BackgroundCustom({super.key, this.child});
 
   final Widget? child;
 

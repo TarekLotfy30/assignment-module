@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import 'form_data.dart' show FormData;
+import 'form_data.dart';
 import 'form_title.dart';
 
 // translate-me-ignore-all-file

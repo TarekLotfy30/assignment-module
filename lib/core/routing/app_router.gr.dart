@@ -32,7 +32,7 @@ import 'package:assignment/features/settings/presentation/pages/settings_page.da
     as _i10;
 import 'package:assignment/features/shopping_cart/presentation/page/shopping_cart_page.dart'
     as _i11;
-import 'package:assignment/features/student/presentation/pages/student_page.dart'
+import 'package:assignment/features/student/presentation/page/student_page.dart'
     as _i12;
 import 'package:assignment/features/your_orders/presentation/page/your_orders_page.dart'
     as _i13;

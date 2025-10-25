@@ -21,7 +21,7 @@ class PersonalProfilePage extends StatelessWidget {
       value: serviceLocator.get<ProfileBloc>(),
       child: const SingleChildScrollView(
         physics: BouncingScrollPhysics(),
-        child: BackgroundContainer(
+        child: BackgroundCustom(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
