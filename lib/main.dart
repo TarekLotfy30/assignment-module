@@ -7,8 +7,10 @@ import 'core/helpers/functions/init_services.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await configureSystemUI();
   await initializeServices();
+
   runApp(
     EasyLocalization(
       supportedLocales: const [Locale('ar')],

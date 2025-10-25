@@ -1,0 +1,76 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/constants/app_icon.dart';
+import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../../../core/models/custom_list_tile.dart';
+import '../../../../core/widgets/build_optimized_svg.dart';
+
+class CustomListTile extends StatefulWidget {
+  const CustomListTile(this.options, {super.key});
+
+  final ListTileOptions options;
+
+  @override
+  State<CustomListTile> createState() => _CustomListTileState();
+}
+
+class _CustomListTileState extends State<CustomListTile> {
+  bool isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () async {
+        await AutoRouter.of(context).push(widget.options.destination);
+      },
+      child: MouseRegion(
+        onEnter: (_) => setState(() => isHovered = true),
+        onExit: (_) => setState(() => isHovered = false),
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 20.w, vertical: 7.5.h),
+          padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 12.5.w),
+          decoration: BoxDecoration(
+            color: isHovered ? context.colorScheme.onPrimary : null,
+            borderRadius: BorderRadius.circular(12.r),
+          ),
+          child: Row(
+            children: [
+              BuildOptimizedSvg(
+                widget.options.leadingIcon,
+                colorFilter: ColorFilter.mode(
+                  isHovered
+                      ? context.colorScheme.primary
+                      : context.colorScheme.onPrimary,
+                  BlendMode.srcIn,
+                ),
+              ),
+              SizedBox(width: 8.w),
+              Text(
+                widget.options.title,
+                style: context.textThemeCustom.headlineMedium?.copyWith(
+                  color: isHovered
+                      ? context.colorScheme.primary
+                      : context.colorScheme.onPrimary,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 19.sp,
+                ),
+              ),
+              const Spacer(),
+              BuildOptimizedSvg(
+                AppIcon.arrowLeft,
+                colorFilter: ColorFilter.mode(
+                  isHovered
+                      ? context.colorScheme.primary
+                      : context.colorScheme.onPrimary,
+                  BlendMode.srcIn,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
