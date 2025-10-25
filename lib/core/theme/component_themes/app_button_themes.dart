@@ -6,6 +6,7 @@ import '../../constants/app_corners.dart';
 import '../../constants/app_elevation.dart';
 import '../../constants/app_heights.dart';
 import '../../constants/app_padding.dart';
+import '../../utils/styles/app_font_weight.dart';
 import '../../utils/styles/app_fonts_family.dart';
 import '../text_themes/app_text_themes.dart';
 
@@ -23,11 +24,12 @@ abstract final class AppButtonThemes {
         overlayColor: colorScheme.primary.withValues(alpha: 0.12),
         alignment: Alignment.center,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppCorners.cardBorderRadius),
+          borderRadius: BorderRadius.circular(AppCorners.smallBorderRadius),
         ),
-        padding: EdgeInsets.symmetric(vertical: AppPadding.padding32.h),
-        minimumSize: Size(double.maxFinite, AppHeights.buttonHeight.h),
-        textStyle: AppTextThemes.textTheme.headlineLarge?.copyWith(
+        padding: EdgeInsets.symmetric(vertical: AppPadding.padding20.h),
+        minimumSize: Size(double.maxFinite, AppHeights.buttonHeight),
+        textStyle: AppTextThemes.textTheme.displayMedium?.copyWith(
+          fontWeight: AppFontWeight.medium,
           fontFamily: AppFontFamily.teshrin,
         ),
       ),

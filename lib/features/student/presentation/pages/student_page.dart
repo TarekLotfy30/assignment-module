@@ -15,11 +15,13 @@ class StudentPage extends StatelessWidget {
       backgroundColor: context.colorScheme.surface,
       body: Row(
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 39.h),
-            child: const SideBar(),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 39.h),
+              child: const SideBar(),
+            ),
           ),
-          const Expanded(child: AutoRouter()),
+          const Expanded(flex: 4, child: AutoRouter()),
         ],
       ),
     );

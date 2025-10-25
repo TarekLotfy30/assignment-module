@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helpers/extensions/theme_extension.dart';
 
+// translate-me-ignore-all-file
 class TextHeader extends StatelessWidget {
   const TextHeader({super.key});
 
@@ -12,7 +13,7 @@ class TextHeader extends StatelessWidget {
       'الملف الشخصى',
       style: context.textThemeCustom.displayLarge?.copyWith(
         color: context.colorScheme.primary,
-        fontSize: 30.sp,
+        fontSize: 36.sp,
       ),
     );
   }

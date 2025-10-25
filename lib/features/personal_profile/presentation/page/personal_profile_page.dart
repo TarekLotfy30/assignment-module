@@ -12,14 +12,9 @@ import '../widgets/profile_picture_section.dart';
 import '../widgets/qr_code_section.dart';
 
 @RoutePage()
-class PersonalProfilePage extends StatefulWidget {
+class PersonalProfilePage extends StatelessWidget {
   const PersonalProfilePage({super.key});
 
-  @override
-  State<PersonalProfilePage> createState() => _PersonalProfilePageState();
-}
-
-class _PersonalProfilePageState extends State<PersonalProfilePage> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
@@ -31,22 +26,10 @@ class _PersonalProfilePageState extends State<PersonalProfilePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextHeader(),
-              SizedBox(height: 24),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    QrCodeSection(),
-                    SizedBox(height: 24),
-                    PersonalInformationSection(),
-                    SizedBox(height: 48),
-                    ProfilePictureSection(),
-                    SizedBox(height: 48),
-                    AddressSection(),
-                  ],
-                ),
-              ),
+              QrCodeSection(),
+              PersonalInformationSection(),
+              ProfilePictureSection(),
+              AddressSection(),
             ],
           ),
         ),

@@ -9,10 +9,12 @@ class FormData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      data,
-      style: context.textThemeCustom.headlineSmall?.copyWith(
-        color: context.colorScheme.primary,
+    return Expanded(
+      child: Text(
+        " : $data",
+        style: context.textThemeCustom.headlineSmall?.copyWith(
+          color: context.colorScheme.tertiary,
+        ),
       ),
     );
   }

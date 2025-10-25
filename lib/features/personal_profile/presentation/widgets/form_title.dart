@@ -10,9 +10,9 @@ class FormTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "$title :",
+      title,
       style: context.textThemeCustom.headlineSmall?.copyWith(
-        color: const Color(0xff507CB5),
+        color: context.colorScheme.primary,
       ),
     );
   }

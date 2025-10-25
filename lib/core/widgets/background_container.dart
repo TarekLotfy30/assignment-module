@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../helpers/extensions/theme_extension.dart';
 
@@ -10,9 +11,8 @@ class BackgroundContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.symmetric(horizontal: 80, vertical: 50),
-      padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 40),
+      margin: EdgeInsets.fromLTRB(80.w, 50.h, 78.w, 50.h),
+      padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 48.h),
       decoration: BoxDecoration(
         color: context.colorScheme.surfaceContainer,
         borderRadius: BorderRadius.circular(20),
