@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../data/models/student_model/student_model.dart';
+import '../../data/models/profile_model/profile_model.dart';
 import '../controller/profile_bloc.dart';
 import 'form_data.dart';
 import 'form_title.dart';
@@ -15,7 +15,7 @@ class InformationSection extends StatelessWidget {
   }) : _blocInstance = blocInstance;
 
   final ProfileBloc _blocInstance;
-  final StudentModel student;
+  final ProfileModel student;
 
   @override
   Widget build(BuildContext context) {

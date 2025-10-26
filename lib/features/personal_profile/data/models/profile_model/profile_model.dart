@@ -6,7 +6,7 @@ import 'grades.dart';
 import 'user_survey.dart';
 import 'wallet.dart';
 
-class StudentModel extends Equatable {
+class ProfileModel extends Equatable {
   final int? id;
   final String? firstName;
   final String? lastName;
@@ -23,7 +23,7 @@ class StudentModel extends Equatable {
   final List<Wallet>? wallets;
   final List<dynamic>? promoCodes;
 
-  const StudentModel({
+  const ProfileModel({
     this.id,
     this.firstName,
     this.lastName,
@@ -41,7 +41,7 @@ class StudentModel extends Equatable {
     this.promoCodes,
   });
 
-  factory StudentModel.fromJson(Map<String, dynamic> data) => StudentModel(
+  factory ProfileModel.fromJson(Map<String, dynamic> data) => ProfileModel(
     id: data['id'] as int?,
     firstName: data['firstname'] as String?,
     lastName: data['lastname'] as String?,

@@ -11,7 +11,7 @@ class SaveState extends ProfileState {}
 class GetStudentDataLoadingState extends ProfileState {}
 
 class GetStudentDataSuccessState extends ProfileState {
-  final StudentModel studentModel;
+  final ProfileModel studentModel;
   GetStudentDataSuccessState({required this.studentModel});
 }
 

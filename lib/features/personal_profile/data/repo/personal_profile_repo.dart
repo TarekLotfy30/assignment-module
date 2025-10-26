@@ -1,18 +1,17 @@
 import '../../../../core/services/network/dio_consumer.dart';
 import '../../../../core/services/network/end_points.dart';
-import '../models/student_model/student_model.dart';
+import '../models/profile_model/profile_model.dart';
 
-class StudentRepo {
-  
+class PersonalProfileRepo {
   final DioConsumer _dioConsumer;
 
-  StudentRepo(this._dioConsumer);
-  Future<StudentModel> getStudent() async {
+  PersonalProfileRepo(this._dioConsumer);
+  Future<ProfileModel> getStudent() async {
     try {
       final result = await _dioConsumer.get(
         endPoint: EndPoints.student + EndPoints.me,
       );
-      return StudentModel.fromJson(result);
+      return ProfileModel.fromJson(result);
     } catch (e) {
       rethrow;
     }

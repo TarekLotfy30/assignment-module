@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../features/offer/controller/offer_controller.dart';
-import '../../features/personal_profile/data/repo/student_repo.dart';
+import '../../features/personal_profile/data/repo/personal_profile_repo.dart';
 import '../../features/personal_profile/presentation/controller/profile_bloc.dart';
 import '../routing/app_router.dart';
 import '../services/network/dio_consumer.dart';
@@ -25,8 +25,8 @@ Future<void> setupServiceLocator() async {
     log('DioConsumer registered as singleton', name: logger);
 
     // StudentRepo
-    serviceLocator.registerLazySingleton<StudentRepo>(
-      () => StudentRepo(serviceLocator<DioConsumer>()),
+    serviceLocator.registerLazySingleton<PersonalProfileRepo>(
+      () => PersonalProfileRepo(serviceLocator<DioConsumer>()),
     );
 
     // OfferController
@@ -34,7 +34,7 @@ Future<void> setupServiceLocator() async {
 
     // ProfileController
     serviceLocator.registerSingleton<ProfileBloc>(
-      ProfileBloc(studentRepo: serviceLocator<StudentRepo>()),
+      ProfileBloc(studentRepo: serviceLocator<PersonalProfileRepo>()),
     );
 
     log('Service Locator setup complete', name: logger);

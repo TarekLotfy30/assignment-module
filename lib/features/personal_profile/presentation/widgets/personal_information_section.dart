@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/di/service_locator.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import '../../data/models/student_model/student_model.dart';
+import '../../data/models/profile_model/profile_model.dart';
 import '../controller/profile_bloc.dart';
 import 'edit_section.dart';
 import 'information_section.dart';
@@ -54,7 +54,7 @@ class _PersonalInformationSectionState
                 case SaveState():
                   return InformationSection(
                     blocInstance: _blocInstance,
-                    student: const StudentModel(),
+                    student: const ProfileModel(),
                   );
                 case GetStudentDataSuccessState():
                   return InformationSection(
