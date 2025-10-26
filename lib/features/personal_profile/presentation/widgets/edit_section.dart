@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 import '../controller/profile_bloc.dart';
 import 'form_title.dart';
@@ -18,6 +19,7 @@ class EditSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       key: _formKey,
       child: Column(
         children: [
@@ -30,20 +32,35 @@ class EditSection extends StatelessWidget {
                   children: [
                     const FormTitle(title: "الاسم بالكامل رباعي"),
                     TextFormField(
-                      initialValue: "احمد محمد القنصل السيد",
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'الاسم مطلوب';
                         }
                         return null;
                       },
-                      onSaved: (value) {},
-                      autovalidateMode: AutovalidateMode.onUserInteraction,
-                      textInputAction: TextInputAction.next,
                       textDirection: TextDirection.rtl,
                     ),
                     const FormTitle(title: "رقم التليفون"),
-                    TextFormField(),
+                    IntlPhoneField(
+                      disableLengthCheck: true,
+                      initialCountryCode: 'EG',
+                      onChanged: (phone) {
+                        // print(phone.completeNumber);
+                      },
+                      onCountryChanged: (country) {
+                        //print('Country changed to: ' + country.code);
+                      },
+                      validator: (value) {
+                        if (value == null) {
+                          return 'رقم التليفون مطلوب';
+                        }
+                        if (value.isValidNumber()) {
+                          return 'رقم التليفون غير صحيح';
+                        }
+                        return null;
+                      },
+                      onSaved: (value) {},
+                    ),
                     const FormTitle(title: "الصف الدراسي"),
                     DropdownMenu(
                       label: const Text("ادخل الصف الدراسى"),
@@ -66,7 +83,24 @@ class EditSection extends StatelessWidget {
                       ],
                     ),
                     const FormTitle(title: "رقم تليفون الام"),
-                    TextFormField(),
+                    IntlPhoneField(
+                      disableLengthCheck: true,
+                      initialCountryCode: 'EG',
+                      onChanged: (phone) {
+                        // print(phone.completeNumber);
+                      },
+                      onCountryChanged: (country) {
+                        //print('Country changed to: ' + country.code);
+                      },
+                      validator: (value) {
+                        if (value == null) {
+                          return 'رقم التليفون مطلوب';
+                        }
+                        return null;
+                      },
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
+                      onSaved: (value) {},
+                    ),
                     const FormTitle(title: "المحافظة"),
                     DropdownMenu(
                       label: const Text("ادخل المحافظة"),
@@ -93,30 +127,23 @@ class EditSection extends StatelessWidget {
                   children: [
                     const FormTitle(title: "الاسم المستخدم"),
                     TextFormField(
-                      initialValue: "احمد محمد",
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'الاسم مطلوب';
                         }
                         return null;
                       },
-                      onSaved: (value) {},
                       autovalidateMode: AutovalidateMode.onUserInteraction,
-                      textInputAction: TextInputAction.next,
                       textDirection: TextDirection.rtl,
                     ),
-                    const FormTitle(title: "البريد الاليكتروني"),
+                    const FormTitle(title: "البريد الالكترونى"),
                     TextFormField(
-                      initialValue: "ahmed@gmail.com",
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'البريد مطلوب';
                         }
                         return null;
                       },
-                      onSaved: (value) {},
-                      autovalidateMode: AutovalidateMode.onUserInteraction,
-                      textInputAction: TextInputAction.next,
                       textDirection: TextDirection.rtl,
                       keyboardType: TextInputType.emailAddress,
                     ),
@@ -132,18 +159,31 @@ class EditSection extends StatelessWidget {
                       ],
                     ),
                     const FormTitle(title: "رقم التليفون الاب"),
-                    TextFormField(),
+                    IntlPhoneField(
+                      disableLengthCheck: true,
+                      initialCountryCode: 'EG',
+                      onChanged: (phone) {
+                        // print(phone.completeNumber);
+                      },
+                      onCountryChanged: (country) {
+                        //print('Country changed to: ' + country.code);
+                      },
+                      validator: (value) {
+                        if (value == null) {
+                          return 'رقم التليفون مطلوب';
+                        }
+                        return null;
+                      },
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
+                    ),
                     const FormTitle(title: "المدرسة"),
                     TextFormField(
-                      initialValue: "مناره القاهرة",
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'اسم المدرسة مطلوب';
                         }
                         return null;
                       },
-                      autovalidateMode: AutovalidateMode.onUserInteraction,
-                      textInputAction: TextInputAction.next,
                       textDirection: TextDirection.rtl,
                     ),
                   ],
@@ -157,7 +197,6 @@ class EditSection extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
-                  _formKey.currentState!.save();
                   _blocInstance.add(SaveData());
                 }
               },
