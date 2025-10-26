@@ -5,11 +5,12 @@
       "name": "assignment",
       "request": "launch",
       "type": "dart",
+      "flutterMode": "debug",
       "args": [
         "-d",
         "chrome",
-        "--web-renderer",
-        "canvaskit",
+        //"--web-renderer",
+        // "canvaskit",
         "--web-port",
         "7358"
       ]
@@ -23,8 +24,8 @@
         "-d",
         "chrome",
         "--web-renderer",
-        "canvaskit",
-        "--web-port",
+        // "canvaskit",
+        // "--web-port",
         "7358"
       ]
     },

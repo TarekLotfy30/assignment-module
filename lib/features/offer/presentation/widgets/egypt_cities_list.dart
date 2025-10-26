@@ -32,8 +32,8 @@ class EgyptCitiesList extends StatelessWidget {
           ),
           value: EgyptCitiesEnum.values[index],
           groupValue: controller.selectedRadio,
-          onChanged: (value) {
-            controller.toggleRadioButton(value!);
+          onChanged: (value) async {
+            await controller.toggleRadioButton(value!);
           },
           activeColor: context.colorScheme.primary,
           dense: true,

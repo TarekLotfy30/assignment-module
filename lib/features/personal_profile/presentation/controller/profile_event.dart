@@ -5,3 +5,5 @@ abstract class ProfileEvent {}
 class EditData extends ProfileEvent {}
 
 class SaveData extends ProfileEvent {}
+
+class GetData extends ProfileEvent {}

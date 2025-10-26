@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,8 +19,9 @@ class PersonalProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log('building personal profile page');
     return BlocProvider.value(
-      value: serviceLocator.get<ProfileBloc>(),
+      value: serviceLocator.get<ProfileBloc>()..add(GetData()),
       child: const SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: CustomBackground(

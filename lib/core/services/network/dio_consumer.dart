@@ -30,13 +30,14 @@ class DioConsumer implements ApiConsumer {
         receiveDataWhenStatusError: true,
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
+          'x-lang': 'ar',
+          'access-key': "application/json",
+          'Accept': "/",
         },
         preserveHeaderCase: false,
         followRedirects: true,
         maxRedirects: 5,
         persistentConnection: true,
-        listFormat: ListFormat.multi,
         validateStatus: (status) => status! < 500,
       ),
     );

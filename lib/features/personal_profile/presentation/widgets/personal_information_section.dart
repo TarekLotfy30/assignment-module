@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/di/service_locator.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
+import '../../data/models/student_model/student_model.dart';
 import '../controller/profile_bloc.dart';
 import 'edit_section.dart';
 import 'information_section.dart';
@@ -21,6 +22,7 @@ class _PersonalInformationSectionState
     extends State<PersonalInformationSection> {
   late final ProfileBloc _blocInstance;
   late final GlobalKey<FormState> _formKey;
+
   @override
   void initState() {
     super.initState();
@@ -50,12 +52,26 @@ class _PersonalInformationSectionState
               switch (state) {
                 case InitialState():
                 case SaveState():
-                  return InformationSection(blocInstance: _blocInstance);
+                  return InformationSection(
+                    blocInstance: _blocInstance,
+                    student: const StudentModel(),
+                  );
+                case GetStudentDataSuccessState():
+                  return InformationSection(
+                    blocInstance: _blocInstance,
+                    student: state.studentModel,
+                  );
                 case EditState():
                   return EditSection(
                     formKey: _formKey,
                     blocInstance: _blocInstance,
                   );
+                case GetStudentDataLoadingState():
+                  return const Center(child: CircularProgressIndicator());
+                case GetStudentDataErrorState():
+                  return const Center(child: Text("Error"));
+                default:
+                  return const Center(child: CircularProgressIndicator());
               }
             },
           ),

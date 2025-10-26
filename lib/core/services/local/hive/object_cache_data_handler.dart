@@ -2,11 +2,10 @@ import 'dart:convert';
 
 import 'package:hive/hive.dart';
 
+import '../app_shared_keys.dart';
 import 'cache_data_handler.dart';
-import 'local/app_shared_keys.dart';
 
 class ObjectCacheDataHandler<T> extends CacheDataHandler<T> {
-
   final T Function(Map<String, dynamic> json) fromJson;
 
   ObjectCacheDataHandler({required this.fromJson});
@@ -46,11 +45,9 @@ class ObjectCacheDataHandler<T> extends CacheDataHandler<T> {
   String _getKeyString(AppSharedKey key) => key.toString().split('.').last;
 }
 
-
 // final userCache = ObjectCacheDataHandler<User>(
-//     fromJson: User.fromJson, 
+//     fromJson: User.fromJson,
 //   );
-
 
 // final myUser = User(name: 'Alice', age: 30);
 

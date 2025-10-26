@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
 
+import '../app_shared_keys.dart';
 import 'cache_data_handler.dart';
-import 'local/app_shared_keys.dart';
 
 class PrimitiveCacheDataHandler<T> extends CacheDataHandler<T> {
   @override

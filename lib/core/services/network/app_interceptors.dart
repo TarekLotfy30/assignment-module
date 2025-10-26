@@ -8,14 +8,11 @@ class AppInterceptors extends Interceptor {
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
     log('REQUEST[${options.method}] => PATH: ${options.path}', name: _logger);
 
-    // Add authentication token if available
+    // Add authentication token
     final token = _getAuthToken();
     if (token != null) {
       options.headers['Authorization'] = 'Bearer $token';
     }
-    options.headers['Content-Type'] = 'application/json';
-    options.headers['Accept'] = 'application/json';
-    options.headers['lang'] = 'en';
 
     _logRequest(options);
 
@@ -51,8 +48,8 @@ class AppInterceptors extends Interceptor {
   // Get authentication token (implement based on your auth system)
   String? _getAuthToken() {
     // Implement token retrieval from secure storage
-    // return SecureStorage.getToken();
-    return null;
+    //return SecureStorage.getToken();
+    return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFibyBaZWlkIiwiaWQiOjIwNTY4OCwicm9sZSI6InN0dWRlbnQiLCJkYXRlIjoiM2I4MmY4NjQtZGQwMy00NGRmLWEyYjktMTA4MWVjZjY1Y2MwMTc2MDg2OTA3MzE0MSIsInN5c3RlbSI6IkVneXB0aWFuIFN5c3RlbSAtIEFyYWJpYyIsImdyYWRlIjoiR3JhZGUgMTAiLCJpYXQiOjE3NjA4NjkwNzMsImV4cCI6MTc2MDg2OTEzM30.73r42MkBWcy1f-sSM26uISxYU_SGFudduSB4VzVYCyA";
   }
 
   // Request logging (disable in production)

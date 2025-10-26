@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:hive_flutter/adapters.dart';
 
 import '../../controller/bloc_observer.dart';
 import '../../di/service_locator.dart';
@@ -19,8 +18,8 @@ Future<void> initializeServices() async {
   await Future.wait([
     EasyLocalization.ensureInitialized(),
     setupServiceLocator(),
-    Hive.initFlutter(),
-    Hive.openBox('users'),
+    // Hive.initFlutter(),
+    // Hive.openBox('users'),
   ]);
   log('setupServiceLocator initialized', name: 'initServices');
 }

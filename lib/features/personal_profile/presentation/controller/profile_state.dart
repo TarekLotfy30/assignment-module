@@ -1,9 +1,21 @@
 part of 'profile_bloc.dart';
 
-sealed class ProfileState {}
+abstract class ProfileState {}
 
-final class InitialState extends ProfileState {}
+class InitialState extends ProfileState {}
 
-final class EditState extends ProfileState {}
+class EditState extends ProfileState {}
 
-final class SaveState extends ProfileState {}
+class SaveState extends ProfileState {}
+
+class GetStudentDataLoadingState extends ProfileState {}
+
+class GetStudentDataSuccessState extends ProfileState {
+  final StudentModel studentModel;
+  GetStudentDataSuccessState({required this.studentModel});
+}
+
+class GetStudentDataErrorState extends ProfileState {
+  final String error;
+  GetStudentDataErrorState({required this.error});
+}

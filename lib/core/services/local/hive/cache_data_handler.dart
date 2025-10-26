@@ -1,4 +1,4 @@
-import 'local/app_shared_keys.dart';
+import '../app_shared_keys.dart';
 
 abstract class CacheDataHandler<T> {
   Future<T?> getValue({
@@ -11,5 +11,4 @@ abstract class CacheDataHandler<T> {
     required AppSharedKey key,
     required T value,
   });
-  
 }

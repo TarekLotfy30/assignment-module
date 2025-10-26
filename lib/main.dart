@@ -1,3 +1,5 @@
+// ignore: deprecated_member_use
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +12,6 @@ Future<void> main() async {
 
   await configureSystemUI();
   await initializeServices();
-
   runApp(
     EasyLocalization(
       supportedLocales: const [Locale('ar')],

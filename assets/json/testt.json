@@ -1,0 +1,112 @@
+{
+  "id": 205688,
+  "firstname": "Abo",
+  "lastname": "Zeid",
+  "phone": "+201123750240",
+  "email": null,
+  "slug": "abo-zeid33836101",
+  "father_mobile": null,
+  "grade_id": 18,
+  "cities": {
+    "id": 1,
+    "name": "القاهرة",
+    "country_id": 1,
+    "name_en": "Cairo",
+    "countries": {
+      "currency": "EGP",
+      "fawry": 1,
+      "credit": 1,
+      "electronic_wallet": 1,
+      "wallet": 1,
+      "title": "Egypt",
+      "showed_title": "مصر"
+    }
+  },
+  "user_survey": [
+    {
+      "device_id": "RljcdJZgnQbjsNFZRQLsiFeMFWPwgy"
+    }
+  ],
+  "parent_has_students": [],
+  "branches": {
+    "id": 1,
+    "title": "Egyptian System - Arabic",
+    "interval": null,
+    "days_off": null,
+    "icon": "egypt",
+    "admission": 1,
+    "season": null,
+    "admission_open_date": "01-03-2022",
+    "admission_close_date": "01-05-2022",
+    "admission_open_time": "09:00",
+    "admission_close_time": "13:00",
+    "showed_title": "نظام التعليم المصري - عام",
+    "old_branches": null,
+    "active": 1,
+    "image": "https://storage.googleapis.com/nis_control_bucket/branches/branchsvg.svg",
+    "description": "نهدف لتقليل تشتت الطُلاب في المذاكرة، من خلال فيديوهات شرح لكل المواضيع من أفضل المدرسين بالإضافة إلى توفير بنك أسئلة متنوع للحل والتدريب على الأفكار المختلفة، لضمان فهم الطالب للدرس والتأكد من استعداده للامتحانات.",
+    "selectedCategoryFirst": 0,
+    "next_step": 3,
+    "number_of_terms": 2,
+    "language": "ar"
+  },
+  "grades": {
+    "id": 18,
+    "title": "Grade 12",
+    "admission": null,
+    "branch_id": 1,
+    "price": 150,
+    "category_id": 3,
+    "showed_title": "الصف الثالث",
+    "active": 1,
+    "old_grades": null,
+    "next_step": 6,
+    "path": "home",
+    "zaker_seen": 1,
+    "modrsena_seen": 1,
+    "questions_bank_seen": 1,
+    "resources_seen": 1,
+    "ask_teacher_seen": 1,
+    "resources_seen_in_home": 1,
+    "reports_seen": 1,
+    "category": {
+      "id": 3,
+      "name": "Secondary",
+      "branch_id": 1,
+      "active": 1,
+      "old_category": null,
+      "next_step": null,
+      "showed_title": "ثانوي"
+    }
+  },
+  "wallets": [
+    {
+      "id": 208261,
+      "balance": 18130,
+      "country_id": 1,
+      "countries": {
+        "id": 1,
+        "title": "Egypt",
+        "auto_price": 0,
+        "support": 1,
+        "gram_price": 1025,
+        "currency": "EGP",
+        "code": "EG",
+        "phone_code": "+20",
+        "showed_title": "مصر",
+        "pound_to_cents": 100,
+        "ashtar_codes": 1,
+        "wallet": 1,
+        "electronic_wallet": 1,
+        "credit": 1,
+        "fawry": 1,
+        "apple_pay_currency": null
+      },
+      "student_id": 205688,
+      "created_at": "2024-09-23T14:34:49.000Z",
+      "updated_at": "2024-09-23T14:34:49.000Z",
+      "hold_balance": 0
+    }
+  ],
+  "promo_codes": []
+}

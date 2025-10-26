@@ -5,7 +5,6 @@ import 'branch_model.dart';
 import 'offer_detail.dart';
 
 class OfferModel extends Equatable implements BaseModel {
-  
   final String? id;
   final String? _category;
   final String? location;

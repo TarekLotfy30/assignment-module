@@ -107,10 +107,6 @@ class OfferController extends GetxController {
   }
 }
 
-
-
-
-
 // aOfferController extends ChangeNotifier {
 //   final OfferRepository _repo;
 //   List<Offer> offers = [];
@@ -125,6 +121,6 @@ class OfferController extends GetxController {
 //     offers = await _repo.fetchOffers();
 
 //     isLoading = false;
-//     notifyListeners();  
+//     notifyListeners();
 //   }
 // }
