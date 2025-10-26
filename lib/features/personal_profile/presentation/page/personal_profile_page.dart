@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/di/service_locator.dart';
-import '../../../../core/widgets/background_container.dart';
+import '../../../../core/widgets/custom_background.dart';
 import '../controller/profile_bloc.dart';
 import '../widgets/address_section.dart';
 import '../widgets/page_header.dart';
@@ -21,7 +21,7 @@ class PersonalProfilePage extends StatelessWidget {
       value: serviceLocator.get<ProfileBloc>(),
       child: const SingleChildScrollView(
         physics: BouncingScrollPhysics(),
-        child: BackgroundCustom(
+        child: CustomBackground(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

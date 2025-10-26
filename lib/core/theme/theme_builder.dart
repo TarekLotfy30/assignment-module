@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../utils/styles/app_fonts_family.dart';
 import 'component_themes/app_bar_theme.dart';
 import 'component_themes/app_bottom_sheet_theme.dart';
@@ -9,7 +8,9 @@ import 'component_themes/app_checkbox_theme.dart';
 import 'component_themes/app_chip_theme.dart';
 import 'component_themes/app_dialog_theme.dart';
 import 'component_themes/app_divider_theme.dart';
+import 'component_themes/app_drop_down_menu_theme.dart';
 import 'component_themes/app_input_theme.dart';
+import 'component_themes/app_scroll_bar_theme.dart';
 import 'component_themes/app_search_bar_theme.dart';
 import 'component_themes/app_switch_theme.dart';
 import 'theme_constant/theme_constants.dart';
@@ -59,17 +60,11 @@ abstract final class ThemeBuilder {
         colorScheme,
         textTheme,
       ),
-      scrollbarTheme: ScrollbarThemeData(
-        thumbColor: WidgetStateProperty.all<Color>(const Color(0xFF9AAFE4)),
-        mainAxisMargin: 30,
-        minThumbLength: 0.5,
-        interactive: false,
-        thumbVisibility: WidgetStateProperty.all<bool>(true),
-        trackVisibility: WidgetStateProperty.all<bool>(true),
-        thickness: WidgetStateProperty.all<double>(8),
-        radius: const Radius.circular(6),
-        trackColor: WidgetStateProperty.all<Color>(const Color(0xFFEBEFF9)),
-        trackBorderColor: WidgetStateProperty.all<Color>(Colors.transparent),
+      scrollbarTheme: AppScrollBarTheme.scrollbarTheme(),
+      dropdownMenuTheme: AppDropDownMenuTheme.dropdownMenuTheme(
+        colorScheme,
+        textTheme,
+        isDark: isDark,
       ),
     );
   }
