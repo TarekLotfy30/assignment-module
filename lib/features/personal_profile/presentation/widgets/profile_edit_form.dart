@@ -5,8 +5,8 @@ import '../controller/profile_bloc.dart';
 import 'form_title.dart';
 
 // translate-me-ignore-all-file
-class EditSection extends StatelessWidget {
-  const EditSection({
+class ProfileEditForm extends StatelessWidget {
+  const ProfileEditForm({
     super.key,
     required GlobalKey<FormState> formKey,
     required ProfileBloc blocInstance,

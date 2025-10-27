@@ -6,8 +6,8 @@ import '../../../../core/di/service_locator.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
 import '../../data/models/profile_model/profile_model.dart';
 import '../controller/profile_bloc.dart';
-import 'edit_section.dart';
 import 'information_section.dart';
+import 'profile_edit_form.dart';
 
 // translate-me-ignore-all-file
 class PersonalInformationSection extends StatefulWidget {
@@ -50,26 +50,26 @@ class _PersonalInformationSectionState
             bloc: _blocInstance,
             builder: (context, state) {
               switch (state) {
-                case InitialState():
-                case SaveState():
+                case ProfileInitial():
+                case ProfileLoading():
+                  return const Center(child: CircularProgressIndicator());
+                case ProfileLoaded():
                   return InformationSection(
                     blocInstance: _blocInstance,
-                    student: const ProfileModel(),
+                    user: state.profileModel,
                   );
-                case GetStudentDataSuccessState():
-                  return InformationSection(
-                    blocInstance: _blocInstance,
-                    student: state.studentModel,
-                  );
-                case EditState():
-                  return EditSection(
+                case ProfileError():
+                  return const Center(child: Text("Error"));
+                case ProfileEditing():
+                  return ProfileEditForm(
                     formKey: _formKey,
                     blocInstance: _blocInstance,
                   );
-                case GetStudentDataLoadingState():
-                  return const Center(child: CircularProgressIndicator());
-                case GetStudentDataErrorState():
-                  return const Center(child: Text("Error"));
+                case ProfileSaveSuccess():
+                  return InformationSection(
+                    blocInstance: _blocInstance,
+                    user: const ProfileModel(),
+                  );
                 default:
                   return const Center(child: CircularProgressIndicator());
               }

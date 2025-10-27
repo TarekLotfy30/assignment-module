@@ -11,11 +11,11 @@ class InformationSection extends StatelessWidget {
   const InformationSection({
     super.key,
     required ProfileBloc blocInstance,
-    required this.student,
+    required this.user,
   }) : _blocInstance = blocInstance;
 
   final ProfileBloc _blocInstance;
-  final ProfileModel student;
+  final ProfileModel user;
 
   @override
   Widget build(BuildContext context) {
@@ -31,15 +31,13 @@ class InformationSection extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const FormTitle(title: "الاسم بالكامل رباعي"),
-                      FormData(
-                        data: "${student.firstName} ${student.lastName}",
-                      ),
+                      FormData(data: "${user.firstName} ${user.lastName}"),
                     ],
                   ),
                   Row(
                     children: [
                       const FormTitle(title: "رقم التليفون"),
-                      FormData(data: student.phone ?? ""),
+                      FormData(data: user.phone ?? ""),
                     ],
                   ),
                   Row(
@@ -47,7 +45,7 @@ class InformationSection extends StatelessWidget {
                       const FormTitle(title: "الصف الدراسي"),
                       FormData(
                         data:
-                            "${student.grades!.showedTitle} ${student.grades!.category!.showedTitle}",
+                            "${user.grades!.showedTitle} ${user.grades!.category!.showedTitle}",
                       ),
                     ],
                   ),
@@ -60,7 +58,7 @@ class InformationSection extends StatelessWidget {
                   Row(
                     children: [
                       const FormTitle(title: "المحافظه"),
-                      FormData(data: student.cities?.name ?? ""),
+                      FormData(data: user.cities?.name ?? ""),
                     ],
                   ),
                 ],
@@ -74,27 +72,25 @@ class InformationSection extends StatelessWidget {
                   Row(
                     children: [
                       const FormTitle(title: "اسم المستخدم"),
-                      FormData(
-                        data: "${student.firstName} ${student.lastName}",
-                      ),
+                      FormData(data: "${user.firstName} ${user.lastName}"),
                     ],
                   ),
                   Row(
                     children: [
                       const FormTitle(title: "البريد الالكتروني"),
-                      FormData(data: student.email ?? ""),
+                      FormData(data: user.email ?? ""),
                     ],
                   ),
                   Row(
                     children: [
                       const FormTitle(title: "الشعبة العلمية"),
-                      FormData(data: student.branches?.showedTitle ?? ""),
+                      FormData(data: user.branches?.showedTitle ?? ""),
                     ],
                   ),
                   Row(
                     children: [
                       const FormTitle(title: "رقم تليفون الأب"),
-                      FormData(data: student.fatherMobile ?? ""),
+                      FormData(data: user.fatherMobile ?? ""),
                     ],
                   ),
                   const Row(

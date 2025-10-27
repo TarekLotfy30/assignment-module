@@ -12,6 +12,7 @@ Future<void> main() async {
 
   await configureSystemUI();
   await initializeServices();
+
   runApp(
     EasyLocalization(
       supportedLocales: const [Locale('ar')],

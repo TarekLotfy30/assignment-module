@@ -6,7 +6,7 @@ class PersonalProfileRepo {
   final DioConsumer _dioConsumer;
 
   PersonalProfileRepo(this._dioConsumer);
-  Future<ProfileModel> getStudent() async {
+  Future<ProfileModel> getUserProfile() async {
     try {
       final result = await _dioConsumer.get(
         endPoint: EndPoints.student + EndPoints.me,
