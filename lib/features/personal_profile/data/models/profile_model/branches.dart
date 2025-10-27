@@ -1,8 +1,6 @@
-import 'dart:convert';
+import '../../../../../core/models/base_model.dart';
 
-import 'package:equatable/equatable.dart';
-
-class Branches extends Equatable {
+class Branches extends BaseModel {
   final int? id;
   final String? title;
   final dynamic interval;
@@ -70,7 +68,8 @@ class Branches extends Equatable {
     language: data['language'] as String?,
   );
 
-  Map<String, dynamic> toMap() => {
+  @override
+  Map<String, dynamic> toJson() => {
     'id': id,
     'title': title,
     'interval': interval,
@@ -90,47 +89,29 @@ class Branches extends Equatable {
     'selectedCategoryFirst': selectedCategoryFirst,
     'next_step': nextStep,
     'number_of_terms': numberOfTerms,
-    'language': language,
   };
 
-  /// `dart:convert`
-  ///
-  /// Parses the string and returns the resulting Json object as [Branches].
-  factory Branches.fromJson(String data) {
-    return Branches.fromMap(json.decode(data) as Map<String, dynamic>);
-  }
-
-  /// `dart:convert`
-  ///
-  /// Converts [Branches] to a JSON string.
-  String toJson() => json.encode(toMap());
-
   @override
-  bool get stringify => true;
-
-  @override
-  List<Object?> get props {
-    return [
-      id,
-      title,
-      interval,
-      daysOff,
-      icon,
-      admission,
-      season,
-      admissionOpenDate,
-      admissionCloseDate,
-      admissionOpenTime,
-      admissionCloseTime,
-      showedTitle,
-      oldBranches,
-      active,
-      image,
-      description,
-      selectedCategoryFirst,
-      nextStep,
-      numberOfTerms,
-      language,
-    ];
-  }
+  List<Object?> get props => [
+    id,
+    title,
+    interval,
+    daysOff,
+    icon,
+    admission,
+    season,
+    admissionOpenDate,
+    admissionCloseDate,
+    admissionOpenTime,
+    admissionCloseTime,
+    showedTitle,
+    oldBranches,
+    active,
+    image,
+    description,
+    selectedCategoryFirst,
+    nextStep,
+    numberOfTerms,
+    language,
+  ];
 }

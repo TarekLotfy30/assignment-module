@@ -1,7 +1,8 @@
-abstract class BaseModel {
+import 'package:equatable/equatable.dart';
+
+abstract class BaseModel extends Equatable {
+  const BaseModel();
+
   Map<String, dynamic> toJson();
 
-  factory BaseModel.fromJson(Map<String, dynamic> json) {
-    throw UnimplementedError("Not implemented $json");
-  }
 }

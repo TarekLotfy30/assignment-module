@@ -1,10 +1,9 @@
-import 'package:equatable/equatable.dart';
 import '../../../../core/enum/offer_types.dart';
 import '../../../../core/models/base_model.dart';
 import 'branch_model.dart';
 import 'offer_detail.dart';
 
-class OfferModel extends Equatable implements BaseModel {
+class OfferModel extends BaseModel {
   final String? id;
   final String? _category;
   final String? location;
@@ -33,7 +32,6 @@ class OfferModel extends Equatable implements BaseModel {
     required this.branchesList,
   }) : _category = category;
 
-  @override
   factory OfferModel.fromJson(Map<String, dynamic> json) {
     return OfferModel(
       id: json['id'] as String?,

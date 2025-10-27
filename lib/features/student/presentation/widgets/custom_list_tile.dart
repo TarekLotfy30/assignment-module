@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/constants/app_icon.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import '../../../../core/models/custom_list_tile.dart';
 import '../../../../core/widgets/build_optimized_svg.dart';
+import '../../data/models/list_tile_options_model.dart';
 
 class CustomListTile extends StatefulWidget {
   const CustomListTile(this.options, {super.key});

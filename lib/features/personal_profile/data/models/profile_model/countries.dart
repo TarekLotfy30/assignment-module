@@ -1,8 +1,6 @@
-import 'dart:convert';
+import '../../../../../core/models/base_model.dart';
 
-import 'package:equatable/equatable.dart';
-
-class Countries extends Equatable {
+class Countries extends BaseModel {
   final String? currency;
   final int? fawry;
   final int? credit;
@@ -21,7 +19,7 @@ class Countries extends Equatable {
     this.showedTitle,
   });
 
-  factory Countries.fromMap(Map<String, dynamic> data) => Countries(
+  factory Countries.fromJson(Map<String, dynamic> data) => Countries(
     currency: data['currency'] as String?,
     fawry: data['fawry'] as int?,
     credit: data['credit'] as int?,
@@ -31,41 +29,27 @@ class Countries extends Equatable {
     showedTitle: data['showed_title'] as String?,
   );
 
-  Map<String, dynamic> toMap() => {
-    'currency': currency,
-    'fawry': fawry,
-    'credit': credit,
-    'electronic_wallet': electronicWallet,
-    'wallet': wallet,
-    'title': title,
-    'showed_title': showedTitle,
-  };
-
-  /// `dart:convert`
-  ///
-  /// Parses the string and returns the resulting Json object as [Countries].
-  factory Countries.fromJson(String data) {
-    return Countries.fromMap(json.decode(data) as Map<String, dynamic>);
-  }
-
-  /// `dart:convert`
-  ///
-  /// Converts [Countries] to a JSON string.
-  String toJson() => json.encode(toMap());
+  @override
+  List<Object?> get props => [
+    currency,
+    fawry,
+    credit,
+    electronicWallet,
+    wallet,
+    title,
+    showedTitle,
+  ];
 
   @override
-  bool get stringify => true;
-
-  @override
-  List<Object?> get props {
-    return [
-      currency,
-      fawry,
-      credit,
-      electronicWallet,
-      wallet,
-      title,
-      showedTitle,
-    ];
+  Map<String, dynamic> toJson() {
+    return {
+      'currency': currency,
+      'fawry': fawry,
+      'credit': credit,
+      'electronic_wallet': electronicWallet,
+      'wallet': wallet,
+      'title': title,
+      'showed_title': showedTitle,
+    };
   }
 }

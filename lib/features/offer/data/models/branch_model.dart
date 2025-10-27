@@ -1,12 +1,11 @@
 import '../../../../core/models/base_model.dart';
 
-class Branch implements BaseModel {
+class Branch extends BaseModel {
   final String? id;
   final String? location;
 
   const Branch({required this.id, required this.location});
 
-  @override
   factory Branch.fromJson(Map<String, dynamic> json) {
     return Branch(
       id: json['id'] as String?,
@@ -16,6 +15,9 @@ class Branch implements BaseModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return {"id": id, "location": location};
+    return {'id': id, 'location': location};
   }
+
+  @override
+  List<Object?> get props => [id, location];
 }

@@ -1,8 +1,7 @@
-import 'package:equatable/equatable.dart';
-
+import '../../../../../core/models/base_model.dart';
 import 'countries.dart';
 
-class Cities extends Equatable {
+class Cities extends BaseModel {
   final int? id;
   final String? name;
   final int? countryId;
@@ -24,16 +23,19 @@ class Cities extends Equatable {
     nameEn: data['name_en'] as String?,
     countries: data['countries'] == null
         ? null
-        : Countries.fromMap(data['countries'] as Map<String, dynamic>),
+        : Countries.fromJson(data['countries'] as Map<String, dynamic>),
   );
 
-  Map<String, dynamic> toMap() => {
-    'id': id,
-    'name': name,
-    'country_id': countryId,
-    'name_en': nameEn,
-    'countries': countries?.toMap(),
-  };
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'country_id': countryId,
+      'name_en': nameEn,
+      'countries': countries?.toJson(),
+    };
+  }
 
   @override
   List<Object?> get props => [id, name, countryId, nameEn, countries];

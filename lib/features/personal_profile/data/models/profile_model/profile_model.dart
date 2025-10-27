@@ -1,12 +1,11 @@
-import 'package:equatable/equatable.dart';
-
+import '../../../../../core/models/base_model.dart';
 import 'branches.dart';
 import 'cities.dart';
 import 'grades.dart';
 import 'user_survey.dart';
 import 'wallet.dart';
 
-class ProfileModel extends Equatable {
+class ProfileModel extends BaseModel {
   final int? id;
   final String? firstName;
   final String? lastName;
@@ -54,7 +53,7 @@ class ProfileModel extends Equatable {
         ? null
         : Cities.fromJson(data['cities'] as Map<String, dynamic>),
     userSurvey: (data['user_survey'] as List<dynamic>?)
-        ?.map((e) => UserSurvey.fromMap(e as Map<String, dynamic>))
+        ?.map((e) => UserSurvey.fromJson(e as Map<String, dynamic>))
         .toList(),
     parentHasStudents: data['parent_has_students'] as List<dynamic>?,
     branches: data['branches'] == null
@@ -62,13 +61,14 @@ class ProfileModel extends Equatable {
         : Branches.fromMap(data['branches'] as Map<String, dynamic>),
     grades: data['grades'] == null
         ? null
-        : Grades.fromMap(data['grades'] as Map<String, dynamic>),
+        : Grades.fromJson(data['grades'] as Map<String, dynamic>),
     wallets: (data['wallets'] as List<dynamic>?)
         ?.map((e) => Wallet.fromMap(e as Map<String, dynamic>))
         .toList(),
     promoCodes: data['promo_codes'] as List<dynamic>?,
   );
 
+  @override
   Map<String, dynamic> toJson() => {
     'id': id,
     'firstname': firstName,
@@ -78,11 +78,11 @@ class ProfileModel extends Equatable {
     'slug': slug,
     'father_mobile': fatherMobile,
     'grade_id': gradeId,
-    'cities': cities?.toMap(),
-    'user_survey': userSurvey?.map((e) => e.toMap()).toList(),
+    'cities': cities?.toJson(),
+    'user_survey': userSurvey?.map((e) => e.toJson()).toList(),
     'parent_has_students': parentHasStudents,
-    'branches': branches?.toMap(),
-    'grades': grades?.toMap(),
+    'branches': branches?.toJson(),
+    'grades': grades?.toJson(),
     'wallets': wallets?.map((e) => e.toMap()).toList(),
     'promo_codes': promoCodes,
   };

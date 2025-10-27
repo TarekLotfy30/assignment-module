@@ -1,10 +1,7 @@
-import 'dart:convert';
-
-import 'package:equatable/equatable.dart';
-
+import '../../../../../core/models/base_model.dart';
 import 'category.dart';
 
-class Grades extends Equatable {
+class Grades extends BaseModel {
   final int? id;
   final String? title;
   final dynamic admission;
@@ -47,7 +44,7 @@ class Grades extends Equatable {
     this.category,
   });
 
-  factory Grades.fromMap(Map<String, dynamic> data) => Grades(
+  factory Grades.fromJson(Map<String, dynamic> data) => Grades(
     id: data['id'] as int?,
     title: data['title'] as String?,
     admission: data['admission'] as dynamic,
@@ -71,7 +68,8 @@ class Grades extends Equatable {
         : Category.fromMap(data['category'] as Map<String, dynamic>),
   );
 
-  Map<String, dynamic> toMap() => {
+  @override
+  Map<String, dynamic> toJson() => {
     'id': id,
     'title': title,
     'admission': admission,
@@ -90,46 +88,29 @@ class Grades extends Equatable {
     'ask_teacher_seen': askTeacherSeen,
     'resources_seen_in_home': resourcesSeenInHome,
     'reports_seen': reportsSeen,
-    'category': category?.toMap(),
+    'category': category?.toJson(),
   };
 
-  /// `dart:convert`
-  ///
-  /// Parses the string and returns the resulting Json object as [Grades].
-  factory Grades.fromJson(String data) {
-    return Grades.fromMap(json.decode(data) as Map<String, dynamic>);
-  }
-
-  /// `dart:convert`
-  ///
-  /// Converts [Grades] to a JSON string.
-  String toJson() => json.encode(toMap());
-
   @override
-  bool get stringify => true;
-
-  @override
-  List<Object?> get props {
-    return [
-      id,
-      title,
-      admission,
-      branchId,
-      price,
-      categoryId,
-      showedTitle,
-      active,
-      oldGrades,
-      nextStep,
-      path,
-      zakerSeen,
-      modrsenaSeen,
-      questionsBankSeen,
-      resourcesSeen,
-      askTeacherSeen,
-      resourcesSeenInHome,
-      reportsSeen,
-      category,
-    ];
-  }
+  List<Object?> get props => [
+    id,
+    title,
+    admission,
+    branchId,
+    price,
+    categoryId,
+    showedTitle,
+    active,
+    oldGrades,
+    nextStep,
+    path,
+    zakerSeen,
+    modrsenaSeen,
+    questionsBankSeen,
+    resourcesSeen,
+    askTeacherSeen,
+    resourcesSeenInHome,
+    reportsSeen,
+    category,
+  ];
 }

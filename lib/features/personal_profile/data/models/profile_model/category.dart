@@ -1,8 +1,6 @@
-import 'dart:convert';
+import '../../../../../core/models/base_model.dart';
 
-import 'package:equatable/equatable.dart';
-
-class Category extends Equatable {
+class Category extends BaseModel {
   final int? id;
   final String? name;
   final int? branchId;
@@ -41,23 +39,21 @@ class Category extends Equatable {
     'showed_title': showedTitle,
   };
 
-  /// `dart:convert`
-  ///
-  /// Parses the string and returns the resulting Json object as [Category].
-  factory Category.fromJson(String data) {
-    return Category.fromMap(json.decode(data) as Map<String, dynamic>);
-  }
-
-  /// `dart:convert`
-  ///
-  /// Converts [Category] to a JSON string.
-  String toJson() => json.encode(toMap());
-
-  @override
-  bool get stringify => true;
-
   @override
   List<Object?> get props {
     return [id, name, branchId, active, oldCategory, nextStep, showedTitle];
+  }
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'branch_id': branchId,
+      'active': active,
+      'old_category': oldCategory,
+      'next_step': nextStep,
+      'showed_title': showedTitle,
+    };
   }
 }

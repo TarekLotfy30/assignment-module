@@ -31,7 +31,7 @@ class Wallet extends Equatable {
     countryId: data['country_id'] as int?,
     countries: data['countries'] == null
         ? null
-        : Countries.fromMap(data['countries'] as Map<String, dynamic>),
+        : Countries.fromJson(data['countries'] as Map<String, dynamic>),
     studentId: data['student_id'] as int?,
     createdAt: data['created_at'] == null
         ? null
@@ -46,7 +46,7 @@ class Wallet extends Equatable {
     'id': id,
     'balance': balance,
     'country_id': countryId,
-    'countries': countries?.toMap(),
+    'countries': countries?.toJson(),
     'student_id': studentId,
     'created_at': createdAt?.toIso8601String(),
     'updated_at': updatedAt?.toIso8601String(),

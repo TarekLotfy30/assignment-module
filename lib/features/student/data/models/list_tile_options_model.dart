@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 
-import '../constants/app_icon.dart';
-import '../routing/app_router.gr.dart';
+import '../../../../core/constants/app_icon.dart';
+import '../../../../core/routing/app_router.gr.dart';
 
 // translate-me-ignore-all-file
 class ListTileOptions {

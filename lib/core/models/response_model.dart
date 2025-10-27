@@ -1,8 +1,6 @@
-import 'package:equatable/equatable.dart';
-
 import 'base_model.dart';
 
-class ResponseModel<T extends BaseModel> extends Equatable {
+class ResponseModel<T extends BaseModel> extends BaseModel {
   final List<T> data;
   final int currentPage;
   final int nextPage;
@@ -34,4 +32,15 @@ class ResponseModel<T extends BaseModel> extends Equatable {
 
   @override
   List<Object?> get props => [data, currentPage, nextPage, totalCount, count];
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      "data": data.map((e) => e.toJson()).toList(),
+      "currentPage": currentPage,
+      "nextPage": nextPage,
+      "totalCount": totalCount,
+      "count": count,
+    };
+  }
 }

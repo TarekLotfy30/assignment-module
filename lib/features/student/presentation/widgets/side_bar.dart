@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import '../../../../core/models/custom_list_tile.dart';
+import '../../data/models/list_tile_options_model.dart';
 import 'ashtar_logo.dart';
 import 'custom_list_tile.dart';
 
