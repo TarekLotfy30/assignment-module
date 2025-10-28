@@ -4,9 +4,7 @@ class EndPoints {
   EndPoints._();
 
   /// The base URL for the API.
-  // This value is constant and does not change, saving memory
-  static const String baseUrl =
-      'https://ashtar-dashboard-80-bcl274pu2q-uc.a.run.app/';
+  static const String baseUrl = 'http://10.1.13.153:80/';
 
   static const String student = 'students/';
 

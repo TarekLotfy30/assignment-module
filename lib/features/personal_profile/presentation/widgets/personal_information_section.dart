@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/di/service_locator.dart';
 import '../../../../core/helpers/extensions/theme_extension.dart';
-import '../../data/models/profile_model/profile_model.dart';
 import '../controller/profile_bloc.dart';
 import 'information_section.dart';
 import 'profile_edit_form.dart';
@@ -21,12 +20,10 @@ class PersonalInformationSection extends StatefulWidget {
 class _PersonalInformationSectionState
     extends State<PersonalInformationSection> {
   late final ProfileBloc _blocInstance;
-  late final GlobalKey<FormState> _formKey;
 
   @override
   void initState() {
     super.initState();
-    _formKey = GlobalKey<FormState>();
     _blocInstance = serviceLocator.get<ProfileBloc>();
   }
 
@@ -50,28 +47,25 @@ class _PersonalInformationSectionState
             bloc: _blocInstance,
             builder: (context, state) {
               switch (state) {
-                case ProfileInitial():
-                case ProfileLoading():
+                case ProfileSaveLoading():
+                case GetProfileDataLoading():
                   return const Center(child: CircularProgressIndicator());
-                case ProfileLoaded():
-                  return InformationSection(
-                    blocInstance: _blocInstance,
-                    user: state.profileModel,
-                  );
-                case ProfileError():
+                case GetProfileDataSuccessfully():
+                  if (state.isEditing) {
+                    return ProfileEditForm(
+                      blocInstance: _blocInstance,
+                      user: state.profileModel,
+                    );
+                  } else {
+                    return InformationSection(
+                      blocInstance: _blocInstance,
+                      user: state.profileModel,
+                    );
+                  }
+                case GetProfileDataError():
                   return const Center(child: Text("Error"));
-                case ProfileEditing():
-                  return ProfileEditForm(
-                    formKey: _formKey,
-                    blocInstance: _blocInstance,
-                  );
-                case ProfileSaveSuccess():
-                  return InformationSection(
-                    blocInstance: _blocInstance,
-                    user: const ProfileModel(),
-                  );
                 default:
-                  return const Center(child: CircularProgressIndicator());
+                  return const SizedBox.shrink();
               }
             },
           ),

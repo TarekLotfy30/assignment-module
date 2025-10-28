@@ -7,8 +7,14 @@ abstract class ProfileEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class EditData extends ProfileEvent {}
+final class GetData extends ProfileEvent {}
 
-class SaveData extends ProfileEvent {}
+final class EditData extends ProfileEvent {}
 
-class GetData extends ProfileEvent {}
+final class SaveData extends ProfileEvent {
+  final ProfileModel updatedProfileModel;
+  const SaveData({required this.updatedProfileModel});
+
+  @override
+  List<Object> get props => [updatedProfileModel];
+}

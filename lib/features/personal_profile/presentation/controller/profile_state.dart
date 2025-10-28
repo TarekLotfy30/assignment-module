@@ -1,42 +1,48 @@
 part of 'profile_bloc.dart';
 
-sealed class ProfileState extends Equatable {
+abstract class ProfileState extends Equatable {
   const ProfileState();
 
   @override
   List<Object> get props => [];
 }
 
-final class ProfileInitial extends ProfileState {}
+class GetProfileDataLoading extends ProfileState {}
 
-final class ProfileLoading extends ProfileState {}
-
-final class ProfileLoaded extends ProfileState {
+class GetProfileDataSuccessfully extends ProfileState {
   final ProfileModel profileModel;
-  const ProfileLoaded({required this.profileModel});
+  final bool isEditing;
+
+  const GetProfileDataSuccessfully({
+    required this.profileModel,
+    this.isEditing = false,
+  });
+
+  GetProfileDataSuccessfully copyWith({
+    ProfileModel? profileModel,
+    bool? isEditing,
+  }) {
+    return GetProfileDataSuccessfully(
+      profileModel: profileModel ?? this.profileModel,
+      isEditing: isEditing ?? this.isEditing,
+    );
+  }
 
   @override
-  List<Object> get props => [profileModel];
+  List<Object> get props => [profileModel, isEditing];
 }
 
-final class ProfileError extends ProfileState {
+class GetProfileDataError extends ProfileState {
   final String error;
-  const ProfileError({required this.error});
+  const GetProfileDataError({required this.error});
 
   @override
   List<Object> get props => [error];
 }
 
-final class ProfileEditing extends ProfileState {}
+class ProfileSaveLoading extends ProfileState {}
 
-final class ProfileSaveLoading extends ProfileState {}
-
-final class ProfileSaveSuccess extends ProfileState {}
-
-final class ProfileSaveError extends ProfileState {
+class ProfileSaveError extends ProfileState {
   final String error;
   const ProfileSaveError({required this.error});
-
-  @override
-  List<Object> get props => [error];
 }

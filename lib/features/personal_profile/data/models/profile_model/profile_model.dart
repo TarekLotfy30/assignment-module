@@ -107,4 +107,40 @@ class ProfileModel extends BaseModel {
       promoCodes,
     ];
   }
+
+  ProfileModel copyWith({
+    int? id,
+    String? firstName,
+    String? lastName,
+    String? phone,
+    String? email,
+    String? slug,
+    String? fatherMobile,
+    int? gradeId,
+    Cities? cities,
+    List<UserSurvey>? userSurvey,
+    List<dynamic>? parentHasStudents,
+    Branches? branches,
+    Grades? grades,
+    List<Wallet>? wallets,
+    List<dynamic>? promoCodes,
+  }) {
+    return ProfileModel(
+      id: id ?? this.id,
+      firstName: firstName ?? this.firstName,
+      lastName: lastName ?? this.lastName,
+      phone: phone ?? this.phone,
+      email: email ?? this.email,
+      slug: slug ?? this.slug,
+      fatherMobile: fatherMobile ?? this.fatherMobile,
+      gradeId: gradeId ?? this.gradeId,
+      cities: cities ?? this.cities,
+      userSurvey: userSurvey ?? this.userSurvey,
+      parentHasStudents: parentHasStudents ?? this.parentHasStudents,
+      branches: branches ?? this.branches,
+      grades: grades ?? this.grades,
+      wallets: wallets ?? this.wallets,
+      promoCodes: promoCodes ?? this.promoCodes,
+    );
+  }
 }

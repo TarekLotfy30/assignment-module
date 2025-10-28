@@ -45,11 +45,12 @@ class AppInterceptors extends Interceptor {
     super.onError(err, handler);
   }
 
-  // Get authentication token (implement based on your auth system)
+  // Get authentication token
+
   String? _getAuthToken() {
     // Implement token retrieval from secure storage
     //return SecureStorage.getToken();
-    return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFibyBaZWlkIiwiaWQiOjIwNTY4OCwicm9sZSI6InN0dWRlbnQiLCJkYXRlIjoiM2I4MmY4NjQtZGQwMy00NGRmLWEyYjktMTA4MWVjZjY1Y2MwMTc2MDg2OTA3MzE0MSIsInN5c3RlbSI6IkVneXB0aWFuIFN5c3RlbSAtIEFyYWJpYyIsImdyYWRlIjoiR3JhZGUgMTAiLCJpYXQiOjE3NjA4NjkwNzMsImV4cCI6MTc2MDg2OTEzM30.73r42MkBWcy1f-sSM26uISxYU_SGFudduSB4VzVYCyA";
+    return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFibyBaZWlkIiwiaWQiOjIwNTY4OCwicm9sZSI6InN0dWRlbnQiLCJkYXRlIjoiOWNkMDQ0YWMtZjVlZC00OWI3LWFlNmQtOTNjY2QxNzlhMDMxMTc2MTQ3OTQ3MzYyNiIsInN5c3RlbSI6IkVneXB0aWFuIFN5c3RlbSAtIEFyYWJpYyIsImdyYWRlIjoiR3JhZGUgOSIsImlhdCI6MTc2MTQ3OTQ3MywiZXhwIjoxNzYxNDc5NTMzfQ.BlCH6NbKryAhJTVuE-_djTEHm7ylYql7LDdmpZrWkEQ";
   }
 
   // Request logging (disable in production)

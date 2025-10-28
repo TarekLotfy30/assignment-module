@@ -1,30 +1,30 @@
-import 'dart:developer';
-
 import 'package:bloc/bloc.dart';
+
+import '../helpers/classes/app_logger.dart';
 
 class MyBlocObserver extends BlocObserver {
   @override
   void onCreate(BlocBase bloc) {
     super.onCreate(bloc);
-    log('onCreate -- ${bloc.runtimeType}');
+    Logger.info('onCreate -- ${bloc.runtimeType}');
   }
 
   @override
   void onEvent(Bloc bloc, Object? event) {
     super.onEvent(bloc, event);
-    log('onEvent -- ${bloc.runtimeType}, $event');
+    Logger.info('onEvent -- ${bloc.runtimeType}, $event');
   }
 
   @override
   void onChange(BlocBase bloc, Change change) {
     super.onChange(bloc, change);
-    log('onChange -- ${bloc.runtimeType}, $change');
+    Logger.success('onChange -- ${bloc.runtimeType}, $change');
   }
 
   @override
   void onTransition(Bloc bloc, Transition transition) {
     super.onTransition(bloc, transition);
-    log('onTransition -- ${bloc.runtimeType}, $transition');
+    Logger.info('onTransition -- ${bloc.runtimeType}, $transition');
   }
 
   @override
@@ -35,18 +35,18 @@ class MyBlocObserver extends BlocObserver {
     StackTrace? stackTrace,
   ]) {
     super.onDone(bloc, event, error, stackTrace);
-    log('onDone -- ${bloc.runtimeType}, $event, $error');
+    Logger.info('onDone -- ${bloc.runtimeType}, $event, $error');
   }
 
   @override
   void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
-    log('onError -- ${bloc.runtimeType}, $error');
+    Logger.error('onError -- ${bloc.runtimeType}, $error');
     super.onError(bloc, error, stackTrace);
   }
 
   @override
   void onClose(BlocBase bloc) {
     super.onClose(bloc);
-    log('onClose -- ${bloc.runtimeType}');
+    Logger.warning('onClose -- ${bloc.runtimeType}');
   }
 }
